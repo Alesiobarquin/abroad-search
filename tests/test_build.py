@@ -18,8 +18,8 @@ class HousingReviewTest(unittest.TestCase):
         validate(self.data)
         rows = self.data['listings']
         self.assertEqual(len(rows), 61)
-        self.assertEqual(sum(p['status'] in ['prospect', 'lead'] for p in rows), 27)
-        self.assertEqual(sum(p['status'] == 'excluded' for p in rows), 31)
+        self.assertEqual(sum(p['status'] in ['prospect', 'lead'] for p in rows), 33)
+        self.assertEqual(sum(p['status'] == 'excluded' for p in rows), 25)
         self.assertEqual(sum(p['status'] == 'benchmark' for p in rows), 3)
         self.assertTrue(set('ABCDEFGHIJKLMNO').issubset({p['review_id'] for p in rows}))
 
@@ -66,6 +66,21 @@ class HousingReviewTest(unittest.TestCase):
         next(p for p in invalid['listings'] if p['review_id'] == 'A')['move_in_readiness']['status'] = 'confirmed'
         with self.assertRaises(AssertionError):
             validate(invalid)
+
+    def test_exclusion_recheck_distinguishes_duration_from_purpose(self):
+        from datetime import date
+        rows = {p['review_id']: p for p in self.data['listings']}
+        parcel = rows['R05']
+        self.assertEqual((date(2027, 3, 31) - date(2027, 1, 1)).days, 89)
+        self.assertTrue(parcel['duration_check']['duration_fits_in_principle'])
+        self.assertEqual(parcel['status'], 'excluded')
+        self.assertFalse(parcel['move_in_readiness']['bed_linen'])
+        self.assertFalse(parcel['move_in_readiness']['towels'])
+        self.assertEqual(parcel['cost']['subtotal_eur'], 9109.5)
+        reopened = {'R09', 'R20', 'R21', 'R23', 'R24', 'R30'}
+        self.assertEqual(set(self.data['exclusion_recheck']['reopened_review_ids']), reopened)
+        self.assertTrue(all(rows[k]['status'] == 'lead' and not rows[k]['calendar_verified'] for k in reopened))
+        self.assertEqual(sum('exclusion_audit' in p for p in rows.values()), 31)
 
     def test_embedded_data_cannot_close_script(self):
         data = copy.deepcopy(self.data)

@@ -4919,7 +4919,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -4931,9 +4931,10 @@
       },
       "deposit_eur": 4185,
       "issues": [
-        "Opens after both requested windows",
-        "Explicit leisure/holiday-only contract purpose",
-        "Known subtotal exceeds EUR 11040 before platform fee and cleaning"
+        "Advertised from April 1, 2027, after both requested stays.",
+        "Sheets, pillowcases, duvet covers and towels are not supplied.",
+        "Advertised rent / utility / admin subtotal exceeds the cap before platform and cleaning; fee liability needs a revised written quote.",
+        "Leisure-only policy and tourism declaration conflict with an unapproved academic-purpose booking."
       ],
       "conflicts": [
         "The previous map ranked this as a candidate. Earlier property-page evidence records a hard-filter failure; retained as excluded."
@@ -5123,12 +5124,23 @@
         ]
       },
       "move_in_readiness": {
-        "status": "unverified",
-        "bed_linen": null,
-        "pillows_and_duvets": null,
-        "towels": null,
+        "status": "not_ready_as_advertised",
+        "bed_linen": false,
+        "pillows_and_duvets": true,
+        "towels": false,
         "kitchenware": null,
-        "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+        "note": "The landlord supplies pillows, a mattress protector and duvet, but requires tenants to bring sheets, pillowcases, duvet covers and towels. No optional landlord-supplied package has been quoted.",
+        "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/932678",
+        "checked_at": "2026-11-03"
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Advertised from April 1, 2027, after both windows. Page also requires tenants to supply sheets / covers and towels. Advertised rent €2,790 + utilities €340 + 121% admin produces €12,765.90 before platform / cleaning; fee liability needs legal / contract clarification.",
+        "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/932678",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -5160,7 +5172,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -5172,9 +5184,9 @@
       },
       "deposit_eur": 0,
       "issues": [
-        "Opens December 2027",
-        "Advertised washing machine is in common areas",
-        "Layout text conflicts with four-bedroom header"
+        "Washing machine is advertised in common areas, not in-unit.",
+        "Advertised from December 26, 2027 on an outdated calendar; ask owner if this date is an error.",
+        "Room-layout text conflicts with the four-bedroom header."
       ],
       "conflicts": [
         "The previous map ranked this as a candidate. Earlier property-page evidence records a hard-filter failure; retained as excluded."
@@ -5335,6 +5347,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Public page still says December 26, 2027 and marks the calendar outdated. It explicitly lists a washing machine in common areas. Date may need owner correction; in-unit laundry requirement is not met as advertised.",
+        "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/1426235",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -5358,7 +5379,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -5431,6 +5452,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Still advertised from July 1, 2027 and only one bathroom. Both conflict with the requested window / layout.",
+        "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/1512664",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -5462,7 +5492,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -5474,8 +5504,7 @@
       },
       "deposit_eur": 3000,
       "issues": [
-        "Unavailable in January and February",
-        "Explicit holiday/recreational-only purpose"
+        "Advertised from March 1, 2027, so January and February are unavailable as currently advertised."
       ],
       "conflicts": [
         "The previous map ranked this as a candidate. Earlier property-page evidence records a hard-filter failure; retained as excluded."
@@ -5644,6 +5673,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Still advertised from March 1, 2027, missing January and February. No new blanket student ban is inferred.",
+        "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/1173455",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -5661,7 +5699,7 @@
         "Earlier review",
         "Map repo"
       ],
-      "address": "",
+      "address": "Carrer de Sardenya, Barcelona",
       "neighborhood": "El Parc i la Llacuna del Poblenou",
       "location": {
         "lat": 41.39121664,
@@ -5678,19 +5716,41 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
-        "items": [],
-        "unknown": [
-          "Complete mandatory fees and final occupancy quote"
+        "items": [
+          {
+            "label": "Rent: 3 × €1,950",
+            "amount_eur": 5850,
+            "estimated": false
+          },
+          {
+            "label": "Advertised utilities: 3 × €300",
+            "amount_eur": 900,
+            "estimated": false
+          },
+          {
+            "label": "Advertised landlord admin fee: 121% of one month (payability disputed)",
+            "amount_eur": 2359.5,
+            "estimated": false
+          }
         ],
-        "subtotal_eur": null,
-        "label": "No complete quote"
+        "unknown": [
+          "Dated platform booking fee",
+          "Final cleaning",
+          "Revised landlord fee schedule / legal treatment of advertised admin charge",
+          "Any optional landlord-supplied linen / towel service"
+        ],
+        "subtotal_eur": 9109.5,
+        "label": "Advertised comparison subtotal; fees / eligibility unresolved"
       },
       "deposit_eur": 2925,
       "issues": [
-        "Explicit leisure/holiday-only rental and tourism declaration required; academic study purpose not accepted"
+        "Sheets, pillowcases, duvet covers and towels are explicitly not supplied; fails the required arrival inventory as advertised.",
+        "Leisure-only policy requires a signed tourism declaration; obtain a contract / written approval accurately reflecting the disclosed UPF stay. Student status itself is not a blanket ban.",
+        "Duration fits in principle, but max-three-month description conflicts with max-eleven-month metadata.",
+        "Continuous dates, exact address / route, room ventilation and complete fees remain unverified."
       ],
       "conflicts": [
         "The previous map ranked this as a candidate. Earlier property-page evidence records a hard-filter failure; retained as excluded."
@@ -5877,12 +5937,33 @@
         ]
       },
       "move_in_readiness": {
-        "status": "unverified",
-        "bed_linen": null,
-        "pillows_and_duvets": null,
-        "towels": null,
+        "status": "not_ready_as_advertised",
+        "bed_linen": false,
+        "pillows_and_duvets": true,
+        "towels": false,
         "kitchenware": null,
-        "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+        "note": "The landlord supplies pillows, a mattress protector and duvet, but requires tenants to bring sheets, pillowcases, duvet covers and towels. No optional landlord-supplied package has been quoted.",
+        "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/201508",
+        "checked_at": "2026-11-03"
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion; correct the reason",
+        "finding": "Duration fits in principle: Jan 1–Mar 31 is 89 nights; Jan 5–Apr 1 is 86. The description says max three months while availability metadata says 11 months. Sheets, pillowcases, duvet covers and towels are expressly not supplied. Leisure-only policy requires a tourism declaration; no written approval of the disclosed UPF stay was obtained. Student status alone is not treated as a ban.",
+        "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/201508",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
+      },
+      "duration_check": {
+        "primary_nights": 89,
+        "flexible_nights": 86,
+        "full_calendar_month_alternative_nights": 90,
+        "minimum_32_nights_met": true,
+        "description_max_months": 3,
+        "metadata_max_months": 11,
+        "duration_fits_in_principle": true,
+        "continuous_calendar_verified": false
       }
     },
     {
@@ -5914,7 +5995,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -5926,7 +6007,8 @@
       },
       "deposit_eur": null,
       "issues": [
-        "Winter base rent alone exceeds the cap; the EUR 2500 headline applies to a different month"
+        "Washing machine is advertised in common areas; confirm whether a private machine actually exists.",
+        "Saved winter rent €4,000/month conflicts with current undated from-price €2,500; a fresh dated quote is needed."
       ],
       "conflicts": [
         "The previous map ranked this as a candidate. Earlier property-page evidence records a hard-filter failure; retained as excluded."
@@ -6086,6 +6168,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion; qualify price claim",
+        "finding": "Current page explicitly lists washing machine in common areas, although the description mentions a washing machine without specifying location. Saved winter quote was €4,000/month; the refreshed undated page only says from €2,500. Winter rent was not freshly quoted, so the price claim remains unresolved rather than treated as a new exact quote.",
+        "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/1403718",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -6109,7 +6200,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -6211,6 +6302,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Current ShBarcelona property page still advertises €5,500/month base rent, already above the €3,680 ceiling.",
+        "source_url": "https://www.shbarcelona.com/m/ausias-march-passieg-de-sant-joan--20078",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -6234,7 +6334,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -6298,12 +6398,21 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Current interactive Idealista page says the advert is no longer published. A cached search-reader page still shows the old €2,200 advert; that cached copy is not evidence of current inventory.",
+        "source_url": "https://www.idealista.com/inmueble/111641973/",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
       "id": "atemporal_AT2502024",
       "review_id": "R09",
-      "status": "excluded",
+      "status": "lead",
       "title": "4-bedroom, 2-bath apartment with terrace and balcony in Sant Martí",
       "platform": "aTemporal",
       "url": "https://www.atemporalbarcelona.es/en/barcelona/sant-marti/monthly-rental-apartment-with-4-bedrooms-2-bathrooms-with-terrace-and-balcony-in-sant-marti",
@@ -6321,7 +6430,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Reopened for clarification after the exclusion audit. Continuous Jan–Mar availability remains unverified.",
       "commute": {},
       "cost": {
         "items": [],
@@ -6333,10 +6442,12 @@
       },
       "deposit_eur": null,
       "issues": [
-        "Advertised available-from date is April 2036",
-        "Leisure/vacation/recreational/cultural-only purpose"
+        "Agency still displays April 2, 2036. This is an implausible date that may be a data error; it does not establish an open winter calendar or a verified nine-year occupancy. Ask the owner to correct / confirm dates and accurately documented UPF-purpose eligibility.",
+        "Not qualified: obtain the missing unit / layout, accurate lease-purpose approval, move-in inventory, continuous dates and complete quote before considering a booking."
       ],
-      "conflicts": [],
+      "conflicts": [
+        "Earlier exclusion was too categorical for the available evidence. Reopened as a preliminary lead, without treating any hard filter as passed."
+      ],
       "details": {
         "recorded_facts": {
           "neighborhood": "Sant Martí",
@@ -6388,6 +6499,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Reopen for date / purpose clarification",
+        "finding": "Agency still displays April 2, 2036. This is an implausible date that may be a data error; it does not establish an open winter calendar or a verified nine-year occupancy. Ask the owner to correct / confirm dates and accurately documented UPF-purpose eligibility.",
+        "source_url": "https://www.atemporalbarcelona.es/en/barcelona/sant-marti/monthly-rental-apartment-with-4-bedrooms-2-bathrooms-with-terrace-and-balcony-in-sant-marti",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -6411,7 +6531,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -6475,6 +6595,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Agency property page still advertises February 4, 2027, missing January. Generic student FAQ does not override the property-specific purpose restriction.",
+        "source_url": "https://www.atemporalbarcelona.es/en/barcelona/eixample/monthly-rental-apartment-with-4-bedrooms-and-2-bathrooms-with-balcony-in-the-eixample",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -6498,7 +6627,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -6562,6 +6691,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Agency property page still advertises February 11, 2027, missing January.",
+        "source_url": "https://www.atemporalbarcelona.es/en/barcelona/eixample/monthly-rental-apartment-with-4-bedrooms-and-2-bathrooms-with-a-large-terrace",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -6593,7 +6731,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -6750,6 +6888,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Agency property page still advertises June 24, 2027, after both windows.",
+        "source_url": "https://www.atemporalbarcelona.es/en/barcelona/eixample/monthly-rental-apartment-with-4-bedrooms-in-carrer-de-villaroel",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -6773,7 +6920,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -6837,6 +6984,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Agency property page still advertises July 31, 2027, after both windows.",
+        "source_url": "https://www.atemporalbarcelona.es/en/barcelona/eixample/monthly-rental-apartment-with-4-bedrooms-2-balconies-and-spacious-kitchen-in-leixample",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -6860,7 +7016,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -6923,6 +7079,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Refreshed public bookable-period data begins January 31, 2027. Both requested arrivals are earlier.",
+        "source_url": "https://housinganywhere.com/room/ut1516077/es/Barcelona/carrer-de-balmes",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -6946,7 +7111,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -7011,6 +7176,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Refreshed public bookable-period data begins April 30, 2027.",
+        "source_url": "https://housinganywhere.com/room/ut1284963/es/Barcelona/avinguda-de-mistral",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -7034,7 +7208,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -7097,6 +7271,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Refreshed public bookable-period data begins April 30, 2027.",
+        "source_url": "https://housinganywhere.com/room/ut1617641/es/Barcelona/carrer-de-c-rsega",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -7120,7 +7303,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -7183,6 +7366,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Refreshed public bookable-period data begins May 1, 2027.",
+        "source_url": "https://housinganywhere.com/room/ut1739448/es/Barcelona/carrer-creu-coberta",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -7206,7 +7398,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -7270,6 +7462,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Refreshed public bookable-period data begins May 1, 2027.",
+        "source_url": "https://housinganywhere.com/room/ut1704314/es/Barcelona/carrer-de-proven-a",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -7293,7 +7494,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -7356,13 +7557,22 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Refreshed public bookable-period data begins March 2, 2027, missing January and February.",
+        "source_url": "https://housinganywhere.com/room/ut1477522/es/Barcelona/carrer-de-sic-lia",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
       "id": "airbnb_1520926301115278169",
       "review_id": "R20",
-      "status": "excluded",
-      "title": "UKIO Viladomat / Cazu",
+      "status": "lead",
+      "title": "UKIO Viladomat — apartment collection; specific unit needed",
       "platform": "Airbnb / Ukio",
       "url": "https://www.airbnb.com/rooms/1520926301115278169?check_in=2027-01-01&check_out=2027-03-31&adults=4",
       "alternate_urls": [],
@@ -7372,14 +7582,14 @@
       "address": "",
       "neighborhood": "Eixample Esquerra",
       "location": null,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "area_m2": 78,
+      "bedrooms": null,
+      "bathrooms": null,
+      "area_m2": null,
       "base_rent_eur": null,
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Reopened for clarification after the exclusion audit. Continuous Jan–Mar availability remains unverified.",
       "commute": {},
       "cost": {
         "items": [],
@@ -7391,9 +7601,12 @@
       },
       "deposit_eur": null,
       "issues": [
-        "The complete sleeping-area list accounts for all four beds in only three bedrooms; no fourth room with a real bed was verified despite the four-bedroom aggregate metadata."
+        "The currently readable Airbnb page presents UKIO Viladomat as a collection of three apartments, not the specific previously inspected Cazu layout. The old three-bedroom sleeping arrangement remains historical evidence for that unit; no current four-bedroom unit or dates have been identified. A generic no-rooms message without selected dates is not proof of January unavailability.",
+        "Not qualified: obtain the missing unit / layout, accurate lease-purpose approval, move-in inventory, continuous dates and complete quote before considering a booking."
       ],
-      "conflicts": [],
+      "conflicts": [
+        "Earlier exclusion was too categorical for the available evidence. Reopened as a preliminary lead, without treating any hard filter as passed."
+      ],
       "details": {
         "room_beds": [
           "Queen",
@@ -7466,12 +7679,21 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Reopen as a collection / unit-identification lead",
+        "finding": "The currently readable Airbnb page presents UKIO Viladomat as a collection of three apartments, not the specific previously inspected Cazu layout. The old three-bedroom sleeping arrangement remains historical evidence for that unit; no current four-bedroom unit or dates have been identified. A generic no-rooms message without selected dates is not proof of January unavailability.",
+        "source_url": "https://www.airbnb.com/rooms/1520926301115278169?check_in=2027-01-01&check_out=2027-03-31&adults=4",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
       "id": "airbnb_612315805329855745",
       "review_id": "R21",
-      "status": "excluded",
+      "status": "lead",
       "title": "Delightful and Cheerful 4-Bedroom Monthly Rental",
       "platform": "Airbnb",
       "url": "https://www.airbnb.com/rooms/612315805329855745?check_in=2027-01-01&check_out=2027-03-31&adults=4",
@@ -7489,7 +7711,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Reopened for clarification after the exclusion audit. Continuous Jan–Mar availability remains unverified.",
       "commute": {},
       "cost": {
         "items": [],
@@ -7501,9 +7723,12 @@
       },
       "deposit_eur": null,
       "issues": [
-        "Description expressly limits purpose to leisure/vacation; not qualified for an academic stay"
+        "Host says the monthly rental is for leisure and vacation but does not explicitly say students are banned. Four bedrooms and 1.5 baths are described. The host also discusses laundering supplied sheets and towels. Obtain written approval of the actual UPF stay, exact address, qualifying direct commute, complete inventory and dated total.",
+        "Not qualified: obtain the missing unit / layout, accurate lease-purpose approval, move-in inventory, continuous dates and complete quote before considering a booking."
       ],
-      "conflicts": [],
+      "conflicts": [
+        "Earlier exclusion was too categorical for the available evidence. Reopened as a preliminary lead, without treating any hard filter as passed."
+      ],
       "details": {
         "room_beds": [
           "Single",
@@ -7569,11 +7794,22 @@
       },
       "move_in_readiness": {
         "status": "unverified",
-        "bed_linen": null,
+        "bed_linen": true,
         "pillows_and_duvets": null,
-        "towels": null,
+        "towels": true,
         "kitchenware": null,
-        "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+        "note": "The host advertises supplied sheets and towels. Pillows / winter bedding and a complete four-person arrival inventory still need confirmation; lease / layout questions are separate.",
+        "source_url": "https://www.airbnb.com/rooms/612315805329855745?check_in=2027-01-01&check_out=2027-03-31&adults=4",
+        "checked_at": "2026-11-03"
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Reopen for purpose / commute / quote clarification",
+        "finding": "Host says the monthly rental is for leisure and vacation but does not explicitly say students are banned. Four bedrooms and 1.5 baths are described. The host also discusses laundering supplied sheets and towels. Obtain written approval of the actual UPF stay, exact address, qualifying direct commute, complete inventory and dated total.",
+        "source_url": "https://www.airbnb.com/rooms/612315805329855745?check_in=2027-01-01&check_out=2027-03-31&adults=4",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -7597,7 +7833,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {
         "origin": "Carrer de Mossèn Amadeu Oller street geocode; house number not published",
         "walking_minutes": 82,
@@ -7718,12 +7954,21 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion; route evidence not refreshed",
+        "finding": "Stored route review found a 43-minute direct H16 trip and an 82-minute walk from the advertised Mossèn Amadeu Oller area. A qualifying ≤25-minute direct route has not been established. The current public fetch did not yield usable property details; no new route or calendar is claimed.",
+        "source_url": "https://www.airbnb.com/rooms/1728891327922528686?check_in=2027-01-01&check_out=2027-03-31&adults=4",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": false
       }
     },
     {
       "id": "airbnb_22838124",
       "review_id": "R23",
-      "status": "excluded",
+      "status": "lead",
       "title": "Nice, bright and central / WiFi / 10 min Rambla / Port",
       "platform": "Airbnb",
       "url": "https://www.airbnb.com/rooms/22838124?check_in=2027-01-01&check_out=2027-03-31&adults=4",
@@ -7734,14 +7979,14 @@
       "address": "",
       "neighborhood": "Poble-sec",
       "location": null,
-      "bedrooms": 4,
-      "bathrooms": 2,
+      "bedrooms": null,
+      "bathrooms": null,
       "area_m2": null,
       "base_rent_eur": null,
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Reopened for clarification after the exclusion audit. Continuous Jan–Mar availability remains unverified.",
       "commute": {},
       "cost": {
         "items": [],
@@ -7753,10 +7998,12 @@
       },
       "deposit_eur": null,
       "issues": [
-        "Four separate private sleeping rooms within one qualifying unit could not be established because the listing contradicts itself",
-        "Internet reliability concern in guest reports"
+        "Fresh readable page still conflicts: header four bedrooms / two baths, description one-bedroom studio, sleeping list three bedrooms. Sheets and towels are advertised. Request a floor plan proving four separate sleeping rooms in one unit; no fourth bedroom is assumed.",
+        "Not qualified: obtain the missing unit / layout, accurate lease-purpose approval, move-in inventory, continuous dates and complete quote before considering a booking."
       ],
-      "conflicts": [],
+      "conflicts": [
+        "Earlier exclusion was too categorical for the available evidence. Reopened as a preliminary lead, without treating any hard filter as passed."
+      ],
       "details": {
         "recorded_facts": {
           "neighborhood": "Poble-sec",
@@ -7828,17 +8075,28 @@
       },
       "move_in_readiness": {
         "status": "unverified",
-        "bed_linen": null,
+        "bed_linen": true,
         "pillows_and_duvets": null,
-        "towels": null,
+        "towels": true,
         "kitchenware": null,
-        "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+        "note": "The host advertises supplied sheets and towels. Pillows / winter bedding and a complete four-person arrival inventory still need confirmation; lease / layout questions are separate.",
+        "source_url": "https://www.airbnb.com/rooms/22838124?check_in=2027-01-01&check_out=2027-03-31&adults=4",
+        "checked_at": "2026-11-03"
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Reopen for layout clarification",
+        "finding": "Fresh readable page still conflicts: header four bedrooms / two baths, description one-bedroom studio, sleeping list three bedrooms. Sheets and towels are advertised. Request a floor plan proving four separate sleeping rooms in one unit; no fourth bedroom is assumed.",
+        "source_url": "https://www.airbnb.com/rooms/22838124?check_in=2027-01-01&check_out=2027-03-31&adults=4",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
       "id": "cotown_bailen33",
       "review_id": "R24",
-      "status": "excluded",
+      "status": "lead",
       "title": "Bailén 33 economy private rooms in a 3–4 person shared flat",
       "platform": "Cotown",
       "url": "https://cotown.com/shared-flats-bailen-33.html",
@@ -7856,7 +8114,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Reopened for clarification after the exclusion audit. Continuous Jan–Mar availability remains unverified.",
       "commute": {},
       "cost": {
         "items": [],
@@ -7868,10 +8126,12 @@
       },
       "deposit_eur": null,
       "issues": [
-        "Property expressly accepts recreational/leisure-use bookings only",
-        "Advertised room-type prices do not identify four simultaneously available rooms in the same flat"
+        "Current Cotown page explicitly restricts bookings to recreational / leisure use and says bring your bags. It does not identify four simultaneously bookable rooms in the same eligible flat. This can be an inquiry lead about an accurately documented UPF stay, not an accepted student cluster.",
+        "Not qualified: obtain the missing unit / layout, accurate lease-purpose approval, move-in inventory, continuous dates and complete quote before considering a booking."
       ],
-      "conflicts": [],
+      "conflicts": [
+        "Earlier exclusion was too categorical for the available evidence. Reopened as a preliminary lead, without treating any hard filter as passed."
+      ],
       "details": {
         "recorded_facts": {
           "neighborhood": "Dreta de l’Eixample",
@@ -7936,6 +8196,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Reopen for four-room / purpose clarification",
+        "finding": "Current Cotown page explicitly restricts bookings to recreational / leisure use and says bring your bags. It does not identify four simultaneously bookable rooms in the same eligible flat. This can be an inquiry lead about an accurately documented UPF stay, not an accepted student cluster.",
+        "source_url": "https://cotown.com/shared-flats-bailen-33.html",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -7959,7 +8228,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -8020,6 +8289,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Readable Idealista source still advertises €15,000/month base rent.",
+        "source_url": "https://www.idealista.com/inmueble/110160650/",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -8043,7 +8321,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -8098,6 +8376,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Readable Idealista source advertises €4,900/month; description also mentions €5,500. Either base price exceeds the group ceiling.",
+        "source_url": "https://www.idealista.com/inmueble/112068474/",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -8121,7 +8408,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -8174,6 +8461,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Current interactive Idealista page expressly states the kitchen is unequipped and the property unfurnished. This independently fails move-in readiness.",
+        "source_url": "https://www.idealista.com/inmueble/112469607/",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -8197,7 +8493,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -8274,6 +8570,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion; both windows retested",
+        "finding": "Re-entering Jan 1–Mar 31 and Jan 5–Apr 1 for four adults in the public booking-date fields returned a maximum 30-night stay for both. No booking request was submitted. The general page offers paid linen service for non-holiday rentals, but that does not resolve the stay limit.",
+        "source_url": "https://www.apartmentbarcelona.com/en/ab-home/1919/details/eur",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -8297,7 +8602,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -8356,12 +8661,21 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Current interactive Idealista page still states a minimum of 11 months, independently incompatible with the trimester.",
+        "source_url": "https://www.idealista.com/inmueble/112572535/",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
       "id": "idealista_112726365",
       "review_id": "R30",
-      "status": "excluded",
+      "status": "lead",
       "title": "Tantarantana terrace flat",
       "platform": "Idealista / LM Real Estate",
       "url": "https://www.idealista.com/inmueble/112726365/",
@@ -8379,21 +8693,42 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Reopened for clarification after the exclusion audit. Continuous Jan–Mar availability remains unverified.",
       "commute": {},
       "cost": {
-        "items": [],
-        "unknown": [
-          "Complete mandatory fees and final occupancy quote"
+        "items": [
+          {
+            "label": "Reduced-header rent scenario: 3 × €3,200",
+            "amount_eur": 9600,
+            "estimated": true
+          },
+          {
+            "label": "Advertised utilities: 3 × €250",
+            "amount_eur": 750,
+            "estimated": false
+          }
         ],
-        "subtotal_eur": null,
-        "label": "No complete quote"
+        "unknown": [
+          "Confirm reduced €3,200 vs body €3,900 rent; body-price scenario totals €12,450 before fees",
+          "All platform / agency charges",
+          "Final cleaning",
+          "Complete bedding / towel inventory"
+        ],
+        "subtotal_eur": 10350,
+        "label": "Lower advertised-rent scenario; only €690 fee headroom"
       },
-      "deposit_eur": null,
-      "issues": [
-        "Exclusively leisure/holiday/recreational/cultural stays; no study purpose approved"
+      "deposit_eur": [
+        6400,
+        7800
       ],
-      "conflicts": [],
+      "issues": [
+        "Readable Idealista header shows a reduced €3,200, while the body still says €3,900 + €250 utilities. The lower scenario leaves only €690 for all one-time costs over three months; the body-price scenario already exceeds the cap. No final quote or UPF-purpose approval. The property-specific restriction is leisure-only; no blanket student ban is inferred.",
+        "Not qualified: obtain the missing unit / layout, accurate lease-purpose approval, move-in inventory, continuous dates and complete quote before considering a booking."
+      ],
+      "conflicts": [
+        "Earlier exclusion was too categorical for the available evidence. Reopened as a preliminary lead, without treating any hard filter as passed.",
+        "Reduced header €3,200 vs unchanged description €3,900 + utilities; no exact winter quote obtained."
+      ],
       "details": {
         "recorded_facts": {
           "bedrooms": 4,
@@ -8440,6 +8775,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Reopen for price / purpose clarification",
+        "finding": "Readable Idealista header shows a reduced €3,200, while the body still says €3,900 + €250 utilities. The lower scenario leaves only €690 for all one-time costs over three months; the body-price scenario already exceeds the cap. No final quote or UPF-purpose approval. The property-specific restriction is leisure-only; no blanket student ban is inferred.",
+        "source_url": "https://www.idealista.com/inmueble/112726365/",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     },
     {
@@ -8463,7 +8807,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Screened out; see the recorded hard-filter failure below.",
+      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
       "commute": {},
       "cost": {
         "items": [],
@@ -8534,6 +8878,15 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+      },
+      "exclusion_audit": {
+        "checked_at": "2026-11-03",
+        "previous_status": "excluded",
+        "outcome": "Retain exclusion",
+        "finding": "Current dated Flatio page still has three bedrooms plus a living-room bed and a €34,397 full-stay total including €3,847 service fee. It fails sleeping-room layout and budget independently of purpose.",
+        "source_url": "https://www.flatio.com/rent/apartment/108124-barcelona?from=2027-01-01&to=2027-03-31",
+        "full_calendar_verified": false,
+        "fresh_page_or_route_verified": true
       }
     }
   ],
@@ -8548,5 +8901,36 @@
       ],
       "policy": "Furniture alone does not establish move-in readiness. Require explicit inclusion or written confirmation; photographs alone do not establish the supplied inventory."
     }
+  },
+  "exclusion_recheck": {
+    "checked_at": "2026-11-03",
+    "records_reviewed": 31,
+    "remaining_excluded": 25,
+    "reopened_as_unverified_leads": 6,
+    "reopened_review_ids": [
+      "R09",
+      "R20",
+      "R21",
+      "R23",
+      "R24",
+      "R30"
+    ],
+    "fully_verified_added": 0,
+    "policy": "Confirmed incompatible features / dates remain exclusions. Ambiguous layout, uncertain source dates or unapproved purpose are labelled for clarification rather than treated as a blanket student ban. Reopening is not landlord approval or a qualified match.",
+    "legal_sources": [
+      {
+        "url": "https://www.boe.es/eli/es-ct/l/2025/12/29/11",
+        "finding": "Article 66 bis distinguishes study-related housing from exclusively recreational / holiday purposes and requires documentary evidence of purpose."
+      },
+      {
+        "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003",
+        "finding": "Current consolidated LAU Article 2(3) covers justified temporary displacement for housing; Article 20(2) prohibits passing management / formalization costs to tenants. Advertised fees remain recorded as claims, not assumed payable or silently zeroed."
+      }
+    ],
+    "limitations": [
+      "R22 route evidence was not freshly recalculated and its current property page was not independently read.",
+      "Public pages and metadata do not establish uninterrupted availability for the requested dates.",
+      "No landlord was contacted and no holiday-purpose declaration or booking was submitted."
+    ]
   }
 }

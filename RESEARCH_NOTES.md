@@ -1,6 +1,6 @@
 # Housing review notes · November 3, 2026
 
-[Open the interactive map](https://alesiobarquin.github.io/abroad-search/) · [All recorded facts](upf_housing_candidates.json)
+[Open the interactive map](https://alesiobarquin.github.io/abroad-search/) · [All recorded facts](upf_housing_candidates.json) · [November 3 exclusion recheck](EXCLUSION_RECHECK.md)
 
 ## What to review first
 
@@ -10,6 +10,8 @@ The most useful first discussions remain **A (Roger de Llúria), B (Vilamarí), 
 
 The other map adds two worthwhile leads: **P (Spotahome 127175, Sicília / Arc de Triomf)** and **T (Spotahome 1477287, Balboa / Barceloneta)**. Their basic four-bedroom / two-bathroom metadata is present in saved listing data. Their winter calendars, academic purpose, room conditions and final fees remain unverified. The old summary’s room dimensions and exact fees are preserved as that agent’s claims, with their verification status explicit.
 
+**Exclusion recheck:** 31 prior exclusions reviewed; 6 reopened as unverified leads and 25 retained. See the [record-by-record audit](EXCLUSION_RECHECK.md). No reopened record is a qualified match.
+
 **No inquiries have been sent.** Selecting or saving a listing only creates a discussion shortlist. Choose properties before authorizing contact; personal sender details are not needed to review the map.
 
 ## Where the research differed
@@ -18,9 +20,9 @@ The other workspace supplied a useful Leaflet map and 21 candidate summaries. Th
 
 | Property | Previous map claim | Evidence retained in the merged review |
 | --- | --- | --- |
-| Spotahome 201508 · Sardenya | Top ranked, calendar verified, €585/person all-in | Saved property terms specify leisure / holiday purpose and a tourism declaration, incompatible with the academic stay. The observed admin fee was €2,359.50, rather than the old €240 allowance. Excluded. |
+| Spotahome 201508 · Sardenya | Top ranked, calendar verified, €585/person all-in | Duration fits in principle. The property requires tenants to bring sheets / covers and towels, failing the group’s arrival requirement. Leisure-only terms / tourism declaration require accurately disclosed purpose approval; student status alone is not a blanket ban. Advertised admin fee €2,359.50 is disputed, not the old €240 allowance. Excluded as advertised. |
 | Spotahome 1426235 · Lepant | Calendar verified | Advertised opening December 26, 2027, communal washer and conflicting room layout. Excluded. |
-| Spotahome 1403718 · Comte Borrell | €2,500 rent, calendar verified | Winter base rent shown as €4,000/month. Base rent alone exceeds cap. Excluded. |
+| Spotahome 1403718 · Comte Borrell | €2,500 rent, calendar verified | Saved winter rent was €4,000; current undated from-price €2,500 does not refresh that quote. Current page advertises communal washing machine, independently failing in-unit laundry. Excluded pending any owner correction. |
 | Spotahome 1173455 · Sicília | January–March candidate | Opening March 1 and leisure-only terms. Excluded. |
 | Spotahome 932678 · Llull | €2,790 rent, low all-in estimate | Opening April 1, leisure-only terms and €12,765.90 known comparison subtotal before platform / cleaning fees. Excluded. |
 | aTemporal AT1908007 · Villarroel | Calendar verified | Advertised June 24, 2027 opening and leisure-only terms. Excluded. |
@@ -151,11 +153,11 @@ These are four individual studios, not four confirmed rooms in one cluster. Comm
 
 ## Every prospect and preliminary lead
 
-Advertised rents are not complete quotes. P–AA are additions from the map workspace. N and S are provider / room-cluster search routes, not verified individual flats. The map and JSON contain all open questions.
+Advertised rents are not complete quotes. P–AA are additions from the map workspace; R09, R20, R21, R23, R24 and R30 were reopened after the exclusion audit and retain their original IDs. N and S are provider / room-cluster search routes. The map and JSON contain all open questions.
 
 | ID | Listing | Advertised group rent / month | Beds / baths / m² | Main unresolved issue |
 | --- | --- | ---: | --- | --- |
-| A | [Roger de Llúria — furnished four-bedroom student flat](https://www.habitatgejove.com/webv2c/en/piso.asp?CODI=2489) | €1,800 | 4 / 2 / 96 | Four public bedroom photos show one exterior double, an interior double and two small interior singles. Confirm ventilation and suitable desks for all four. |
+| A | [Roger de Llúria — furnished four-bedroom student flat](https://www.habitatgejove.com/webv2c/en/piso.asp?CODI=2489) | €1,800 | 4 / 2 / 96 | Move-in essentials unconfirmed: sheets, pillows / winter duvets and towels must be included before this flat meets the group’s requirement. |
 | B | [Four-bedroom furnished Vilamarí apartment](https://www.idealista.com/inmueble/112946294/) | €1,413 | 4 / 2 / 90 | Reconcile heating contradiction |
 | C | [4-bedroom apartment for rent in Sant Antoni](https://www.spotahome.com/barcelona/for-rent:apartments/324761?move-in=2027-01-05&move-out=2027-04-01) | €1,800 | 4 / 2 / 100 | Fresh confirmation of continuous Jan 5–Apr 1 availability |
 | D | [Sicília 220 — four bedrooms and two bathrooms](https://www.idealista.com/inmueble/109052955/) | €2,100 | 4 / 2 / 86 | Current continuous availability and student acceptance |
@@ -173,7 +175,7 @@ Advertised rents are not complete quotes. P–AA are additions from the map work
 | P | [Stylish 4-bedroom apartment for rent in Arc de Triomf area](https://www.spotahome.com/barcelona/for-rent:apartments/127175) | €2,000 | 4 / 2 / 80 | Continuous winter calendar, academic purpose, minimum stay, bedroom windows / desks, installed Wi-Fi speed and complete fees require confirmation. |
 | Q | [Spacious 4-bedroom apartment for rent in L'Esquerra de l'Eixample](https://www.spotahome.com/barcelona/for-rent:apartments/220029) | €2,400 | 4 / 2 / 112 | Continuous winter calendar, academic purpose, minimum stay, bedroom windows / desks, installed Wi-Fi speed and complete fees require confirmation. |
 | R | [4-bedroom apartment for rent in Sant Antoni](https://www.spotahome.com/barcelona/for-rent:apartments/1480143) | €1,800 | 4 / 2 / 90 | Continuous winter calendar, academic purpose, minimum stay, bedroom windows / desks, installed Wi-Fi speed and complete fees require confirmation. |
-| S | [Cotown Nàpols 206 - 4 Student Room Cluster with Common Terrace](https://www.cotown.com/en/barcelona) | Unquoted | ? / ? / ? | Generic Cotown destination link; four simultaneously available rooms in Nàpols 206 not established. |
+| S | [Cotown Nàpols 206 — possible four-room cluster](https://www.cotown.com/en/barcelona) | Unquoted | ? / ? / ? | Generic Cotown destination link; four simultaneously available rooms in Nàpols 206 not established. |
 | T | [4-bedroom apartment for rent in La Barceloneta, bills included.](https://www.spotahome.com/barcelona/for-rent:apartments/1477287) | €3,100 | 4 / 2 / 110 | Continuous winter calendar, academic purpose, minimum stay, bedroom windows / desks, installed Wi-Fi speed and complete fees require confirmation. |
 | U | [4-bedroom apartment for rent in el Clot, Barcelona](https://www.spotahome.com/barcelona/for-rent:apartments/201392) | €1,800 | 4 / 2 / 70 | Continuous winter calendar, academic purpose, minimum stay, bedroom windows / desks, installed Wi-Fi speed and complete fees require confirmation. |
 | V | [4-Bedroom Olympic Village Apartment near Bogatell Beach](https://www.airbnb.com/rooms/1564369702322944311) | €3,200 | 4 / 2.0 / 95 | Continuous winter calendar, academic purpose, minimum stay, bedroom windows / desks, installed Wi-Fi speed and complete fees require confirmation. |
@@ -182,22 +184,27 @@ Advertised rents are not complete quotes. P–AA are additions from the map work
 | Y | [4-bedroom apartment for rent in El Fort Pienc, bills included.](https://www.spotahome.com/barcelona/for-rent:apartments/907462) | €3,600 | 4 / 2 / 80 | Continuous winter calendar, academic purpose, minimum stay, bedroom windows / desks, installed Wi-Fi speed and complete fees require confirmation. |
 | Z | [Casanova Eixample 4-Bedroom Designer Apartment with 3 Baths](https://www.airbnb.com/rooms/12824656) | €3,480 | 4 / 3.0 / 120 | Continuous winter calendar, academic purpose, minimum stay, bedroom windows / desks, installed Wi-Fi speed and complete fees require confirmation. |
 | AA | [4-bedroom apartment for rent in l'Antiga Esquerra de l'Eixample](https://www.spotahome.com/barcelona/for-rent:apartments/1630520) | €3,237 | 4 / 2 / 98 | Only €579 remains for all one-time fees after rent + €250/month utilities in this scenario. The previous commute used a transfer; no qualifying direct route verified. |
+| R09 | [4-bedroom, 2-bath apartment with terrace and balcony in Sant Martí](https://www.atemporalbarcelona.es/en/barcelona/sant-marti/monthly-rental-apartment-with-4-bedrooms-2-bathrooms-with-terrace-and-balcony-in-sant-marti) | €2,295 | 4 / 2 / 144 | Agency still displays April 2, 2036. This is an implausible date that may be a data error; it does not establish an open winter calendar or a verified nine-year occupancy. Ask the owner to correct / confirm dates and accurately documented UPF-purpose eligibility. |
+| R20 | [UKIO Viladomat — apartment collection; specific unit needed](https://www.airbnb.com/rooms/1520926301115278169?check_in=2027-01-01&check_out=2027-03-31&adults=4) | Unquoted | ? / ? / ? | The currently readable Airbnb page presents UKIO Viladomat as a collection of three apartments, not the specific previously inspected Cazu layout. The old three-bedroom sleeping arrangement remains historical evidence for that unit; no current four-bedroom unit or dates have been identified. A generic no-rooms message without selected dates is not proof of January unavailability. |
+| R21 | [Delightful and Cheerful 4-Bedroom Monthly Rental](https://www.airbnb.com/rooms/612315805329855745?check_in=2027-01-01&check_out=2027-03-31&adults=4) | Unquoted | 4 / 1.5 / ? | Host says the monthly rental is for leisure and vacation but does not explicitly say students are banned. Four bedrooms and 1.5 baths are described. The host also discusses laundering supplied sheets and towels. Obtain written approval of the actual UPF stay, exact address, qualifying direct commute, complete inventory and dated total. |
+| R23 | [Nice, bright and central / WiFi / 10 min Rambla / Port](https://www.airbnb.com/rooms/22838124?check_in=2027-01-01&check_out=2027-03-31&adults=4) | Unquoted | ? / ? / ? | Fresh readable page still conflicts: header four bedrooms / two baths, description one-bedroom studio, sleeping list three bedrooms. Sheets and towels are advertised. Request a floor plan proving four separate sleeping rooms in one unit; no fourth bedroom is assumed. |
+| R24 | [Bailén 33 economy private rooms in a 3–4 person shared flat](https://cotown.com/shared-flats-bailen-33.html) | Unquoted | ? / ? / ? | Current Cotown page explicitly restricts bookings to recreational / leisure use and says bring your bags. It does not identify four simultaneously bookable rooms in the same eligible flat. This can be an inquiry lead about an accurately documented UPF stay, not an accepted student cluster. |
+| R30 | [Tantarantana terrace flat](https://www.idealista.com/inmueble/112726365/) | €3,200 | 4 / 2 / 250 | Readable Idealista header shows a reduced €3,200, while the body still says €3,900 + €250 utilities. The lower scenario leaves only €690 for all one-time costs over three months; the body-price scenario already exceeds the cap. No final quote or UPF-purpose approval. The property-specific restriction is leisure-only; no blanket student ban is inferred. |
 
-## Excluded screenings
+## Remaining excluded screenings
 
-These remain visible for traceability and to avoid repeating unsuccessful inquiries. They are not recommendations.
+25 remain excluded after the [31-record audit](EXCLUSION_RECHECK.md). Historical observations remain in the original snapshots.
 
 | ID | Source listing | Recorded reason |
 | --- | --- | --- |
-| R01 | [4-bedroom apartment in El Poblenou / Carrer de Llull](https://www.spotahome.com/barcelona/for-rent:apartments/932678) | Opens after both requested windows; Explicit leisure/holiday-only contract purpose; Known subtotal exceeds EUR 11040 before platform fee and cleaning |
-| R02 | [Bills-included 4-bedroom apartment in Fort Pienc](https://www.spotahome.com/barcelona/for-rent:apartments/1426235) | Opens December 2027; Advertised washing machine is in common areas; Layout text conflicts with four-bedroom header |
+| R01 | [4-bedroom apartment in El Poblenou / Carrer de Llull](https://www.spotahome.com/barcelona/for-rent:apartments/932678) | Advertised from April 1, 2027, after both requested stays.; Sheets, pillowcases, duvet covers and towels are not supplied.; Advertised rent / utility / admin subtotal exceeds the cap before platform and cleaning; fee liability needs a revised written quote.; Leisure-only policy and tourism declaration conflict with an unapproved academic-purpose booking. |
+| R02 | [Bills-included 4-bedroom apartment in Fort Pienc](https://www.spotahome.com/barcelona/for-rent:apartments/1426235) | Washing machine is advertised in common areas, not in-unit.; Advertised from December 26, 2027 on an outdated calendar; ask owner if this date is an error.; Room-layout text conflicts with the four-bedroom header. |
 | R03 | [4-bedroom apartment in El Fort Pienc](https://www.spotahome.com/barcelona/for-rent:apartments/1512664) | Only one bathroom; Unavailable until July 2027 |
-| R04 | [4-bedroom bills-included Eixample / Fort Pienc apartment](https://www.spotahome.com/barcelona/for-rent:apartments/1173455) | Unavailable in January and February; Explicit holiday/recreational-only purpose |
-| R05 | [4-bedroom apartment in El Parc i la Llacuna del Poblenou](https://www.spotahome.com/barcelona/for-rent:apartments/201508) | Explicit leisure/holiday-only rental and tourism declaration required; academic study purpose not accepted |
-| R06 | [4-bedroom bills-included apartment in La Nova Esquerra](https://www.spotahome.com/barcelona/for-rent:apartments/1403718) | Winter base rent alone exceeds the cap; the EUR 2500 headline applies to a different month |
+| R04 | [4-bedroom bills-included Eixample / Fort Pienc apartment](https://www.spotahome.com/barcelona/for-rent:apartments/1173455) | Advertised from March 1, 2027, so January and February are unavailable as currently advertised. |
+| R05 | [4-bedroom apartment in El Parc i la Llacuna del Poblenou](https://www.spotahome.com/barcelona/for-rent:apartments/201508) | Sheets, pillowcases, duvet covers and towels are explicitly not supplied; fails the required arrival inventory as advertised.; Leisure-only policy requires a signed tourism declaration; obtain a contract / written approval accurately reflecting the disclosed UPF stay. Student status itself is not a blanket ban.; Duration fits in principle, but max-three-month description conflicts with max-eleven-month metadata.; Continuous dates, exact address / route, room ventilation and complete fees remain unverified. |
+| R06 | [4-bedroom bills-included apartment in La Nova Esquerra](https://www.spotahome.com/barcelona/for-rent:apartments/1403718) | Washing machine is advertised in common areas; confirm whether a private machine actually exists.; Saved winter rent €4,000/month conflicts with current undated from-price €2,500; a fresh dated quote is needed. |
 | R07 | [Ausiàs March – Passeig de Sant Joan](https://www.shbarcelona.com/m/ausias-march-passieg-de-sant-joan--20078) | Base rent alone exceeds cap |
 | R08 | [Calle de Sicília, 212 / Fort Pienc](https://www.idealista.com/inmueble/111641973/) | Live listing page explicitly says advertisement no longer published |
-| R09 | [4-bedroom, 2-bath apartment with terrace and balcony in Sant Martí](https://www.atemporalbarcelona.es/en/barcelona/sant-marti/monthly-rental-apartment-with-4-bedrooms-2-bathrooms-with-terrace-and-balcony-in-sant-marti) | Advertised available-from date is April 2036; Leisure/vacation/recreational/cultural-only purpose |
 | R10 | [4-bedroom, 2-bath Eixample apartment with balcony](https://www.atemporalbarcelona.es/en/barcelona/eixample/monthly-rental-apartment-with-4-bedrooms-and-2-bathrooms-with-balcony-in-the-eixample) | Unavailable for January; Leisure-only purpose |
 | R11 | [4-bedroom, 2-bath Eixample apartment with large terrace](https://www.atemporalbarcelona.es/en/barcelona/eixample/monthly-rental-apartment-with-4-bedrooms-and-2-bathrooms-with-a-large-terrace) | Unavailable for January; Leisure-only purpose |
 | R12 | [4-bedroom apartment on Carrer de Villarroel](https://www.atemporalbarcelona.es/en/barcelona/eixample/monthly-rental-apartment-with-4-bedrooms-in-carrer-de-villaroel) | Unavailable until June 2027; Leisure-only purpose |
@@ -208,24 +215,19 @@ These remain visible for traceability and to avoid repeating unsuccessful inquir
 | R17 | [4-bedroom apartment on Creu Coberta](https://housinganywhere.com/room/ut1739448/es/Barcelona/carrer-creu-coberta) | Unavailable until May 1 |
 | R18 | [4-bedroom apartment on Provença](https://housinganywhere.com/room/ut1704314/es/Barcelona/carrer-de-proven-a) | Unavailable until May 1 |
 | R19 | [4-bedroom bills-included apartment on Sicília](https://housinganywhere.com/room/ut1477522/es/Barcelona/carrer-de-sic-lia) | Unavailable during January and February |
-| R20 | [UKIO Viladomat / Cazu](https://www.airbnb.com/rooms/1520926301115278169?check_in=2027-01-01&check_out=2027-03-31&adults=4) | The complete sleeping-area list accounts for all four beds in only three bedrooms; no fourth room with a real bed was verified despite the four-bedroom aggregate metadata. |
-| R21 | [Delightful and Cheerful 4-Bedroom Monthly Rental](https://www.airbnb.com/rooms/612315805329855745?check_in=2027-01-01&check_out=2027-03-31&adults=4) | Description expressly limits purpose to leisure/vacation; not qualified for an academic stay |
 | R22 | [Mossen Amadeu Oller](https://www.airbnb.com/rooms/1728891327922528686?check_in=2027-01-01&check_out=2027-03-31&adults=4) | Representative single-bus commute is 43 minutes, above the 25-minute ceiling |
-| R23 | [Nice, bright and central / WiFi / 10 min Rambla / Port](https://www.airbnb.com/rooms/22838124?check_in=2027-01-01&check_out=2027-03-31&adults=4) | Four separate private sleeping rooms within one qualifying unit could not be established because the listing contradicts itself; Internet reliability concern in guest reports |
-| R24 | [Bailén 33 economy private rooms in a 3–4 person shared flat](https://cotown.com/shared-flats-bailen-33.html) | Property expressly accepts recreational/leisure-use bookings only; Advertised room-type prices do not identify four simultaneously available rooms in the same flat |
 | R25 | [Selva de Mar duplex](https://www.idealista.com/inmueble/110160650/) | Base rent alone exceeds the group ceiling |
 | R26 | [Garcia Faria 81](https://www.idealista.com/inmueble/112068474/) | Base rent alone exceeds the ceiling; description separately says EUR 5500; Advertises an 11-month contract and the fourth room is an office with no real bed verified |
 | R27 | [Vila Olímpica sea-facing penthouse](https://www.idealista.com/inmueble/112469607/) | Explicitly unfurnished with unequipped kitchen |
 | R28 | [AB Paral·lel Apartment II](https://www.apartmentbarcelona.com/en/ab-home/1919/details/eur) | Selecting Jan 1–Mar 31, 2027 returns a maximum stay of 30 nights for these dates, incompatible with the required >31-night stay |
 | R29 | [Tallers seasonal apartment](https://www.idealista.com/inmueble/112572535/) | Explicit minimum stay of 11 months; Exclusively leisure/holiday/recreational purpose |
-| R30 | [Tantarantana terrace flat](https://www.idealista.com/inmueble/112726365/) | Exclusively leisure/holiday/recreational/cultural stays; no study purpose approved |
 | R31 | [Modern and elegant apartment — three bedrooms plus living-room bed](https://www.flatio.com/rent/apartment/108124-barcelona?from=2027-01-01&to=2027-03-31) | Only three separate bedrooms; fourth sleeping area is living room; Dated four-adult totals exceed EUR 11040 ceiling |
 
 ## Legal and fee uncertainty
 
 The [Spanish tax agency’s rental guidance](https://sede.agenciatributaria.gob.es/Sede/iva/iva-operaciones-inmobiliarias/alquilo-apartamento-turistico-tengo-que-iva.html) distinguishes accommodation with hotel-type services from rentals without them. A stay over 31 nights alone does not establish VAT exemption. Entry / exit cleaning alone is not treated as a hotel-type service in that guidance.
 
-The referenced [Real Decreto-ley 29/2026 record](https://www.boe.es/buscar/act.php?id=BOE-A-2026-20823) was located, but its full consolidated effect on each seasonal agency-fee arrangement was not established. No unknown agency fee has been assumed waived. Ask for the full non-refundable fee schedule and an academic-purpose lease before committing. HousingAnywhere’s fee scenarios use its [published tenant pricing](https://housinganywhere.com/pricing/tenants), not a dated booking quote.
+The [current consolidated LAU](https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003) was rechecked: Article 2(3) addresses justified temporary displacement and Article 20(2) prohibits passing management / contract-formalization charges to tenants. Advertised agency fees remain recorded as disputed quote items. No unknown fee has been silently assumed payable or waived. Ask for the full non-refundable fee schedule and an academic-purpose lease before committing. HousingAnywhere’s fee scenarios use its [published tenant pricing](https://housinganywhere.com/pricing/tenants), not a dated booking quote.
 
 ## Sharing and scope
 

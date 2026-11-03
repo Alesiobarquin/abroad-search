@@ -6,17 +6,19 @@ A shared housing review for four students attending UPF Ciutadella in January–
 
 ## Use it with your roommates
 
-1. Open the map. Search notes, statistics, the legend and archive links are inside **About this search**. It starts with all 61 combined findings. Use the status filter to focus on 27 prospects and preliminary leads.
+1. Open the map. Search notes, statistics, the legend and archive links are inside **About this search**. It starts with all 61 combined findings. Use the status filter to focus on 33 prospects and preliminary leads.
 2. Read **Details** before choosing a place. Dashed pins are approximate; some findings have no reliable location.
 3. Use the budget slider, walk-time selector, bathroom and balcony filters as needed. Reported walk times include clearly labelled original agent estimates.
 4. Click **Save** on places you like, then **Copy shortlist link**. The saved IDs travel in the link so roommates can review the same selection.
-5. Use **Research status** to review the 31 excluded listings or 3 residence benchmarks. Discuss choices in GitHub Issues or share the shortlist link directly.
+5. Use **Research status** to review the 25 excluded listings or 3 residence benchmarks. Discuss choices in GitHub Issues or share the shortlist link directly.
 
 Saving a place does not contact anyone. Outreach remains on hold until the group chooses properties and authorizes inquiries. A shortlist is stored in the link, not a shared account or live voting database.
 
+[November 3 exclusion recheck](EXCLUSION_RECHECK.md): all 31 original exclusions reviewed; 6 reopened for clarification. No property was promoted to a verified match.
+
 ## What the research establishes
 
-As of **November 3, 2026**, the merged set contains **61 distinct records**: 5 developed conditional prospects, 22 preliminary leads/search routes, 31 exclusions and 3 residence benchmarks. **Zero are fully verified or booking-ready.** A generic provider search is labelled as such, rather than counted as a confirmed flat.
+As of **November 3, 2026**, the merged set contains **61 distinct records**: 5 developed conditional prospects, 28 preliminary leads/search routes, 25 exclusions and 3 residence benchmarks. **Zero are fully verified or booking-ready.** A generic provider search is labelled as such, rather than counted as a confirmed flat.
 
 The earlier set had 49 records; the map repo had 21 summaries. Nine overlapped. The merge retains the earlier A–O review labels and adds the other map’s unique leads as P–AA. These labels are not value ranks.
 

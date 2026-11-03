@@ -23,7 +23,7 @@ body{height:100dvh;display:flex;flex-direction:column;overflow:hidden}.compact-h
 <header class="compact-header">
 <h1>Barcelona housing <span>· UPF Winter 2027</span></h1>
 <details id="aboutSearch"><summary>About this search</summary><div class="about-content">
-<h2>Search &amp; research notes</h2>
+<h2>Search &amp; research notes</h2><p><a href="https://github.com/Alesiobarquin/abroad-search/blob/main/EXCLUSION_RECHECK.md">November 3 exclusion recheck: 31 reviewed, 6 reopened for clarification</a></p>
 <p class="intro">Both agents’ housing research, combined. Explore the map, filter the listings and compare each agent’s full findings before choosing places to contact.</p>
 <p class="small muted">Jan 1–Mar 31 · flexible Jan 5–Apr 1, 2027 · ceiling €3,680/month for four · research snapshot <time>2026-11-03</time></p>
 <nav aria-label="Research links"><a href="https://github.com/Alesiobarquin/abroad-search/blob/main/RESEARCH_NOTES.md">Research &amp; differences</a><a href="upf_housing_candidates.json">Download all findings (JSON)</a><a href="https://github.com/Alesiobarquin/abroad-search">GitHub repo / discussion</a></nav>
@@ -117,7 +117,7 @@ function renderListings(filtered){
   const heading=p.address||p.title;
   const cardStatus=p.status==='excluded'?'Excluded':p.status==='benchmark'?'Residence benchmark':'Needs verification';
   const ready=p.move_in_readiness;
-  const readiness=ready?.status==='confirmed'?'Move-in essentials confirmed':p.review_id==='A'?'Sheets / towels unconfirmed':'Move-in essentials unconfirmed';
+  const readiness=ready?.status==='confirmed'?'Move-in essentials confirmed':ready?.status==='not_ready_as_advertised'?'Arrival essentials not supplied':p.review_id==='A'?'Sheets / towels unconfirmed':'Move-in essentials unconfirmed';
   card.innerHTML=`<div class="card-head"><h2><span class="card-id">${escapeHTML(p.review_id)}</span>${escapeHTML(heading)}</h2><button class="select-pick" type="button" aria-pressed="${selected.has(p.review_id)}" aria-label="Save ${escapeHTML(p.review_id)} for discussion">${selected.has(p.review_id)?'Saved ✓':'Save'}</button></div>
   <p class="muted small">${escapeHTML(p.neighborhood)} · ${escapeHTML(p.platform)}</p>
   <div class="meta"><span>${roomMeta}</span></div>
@@ -135,7 +135,7 @@ function renderListings(filtered){
   ${cost.items.length?`<table><caption class="muted">Group of four; refundable deposit excluded</caption><thead><tr><th scope="col">Item</th><th scope="col">EUR</th></tr></thead><tbody>${costRows}<tr><th scope="row">Subtotal</th><td>${money(cost.subtotal_eur)}</td></tr></tbody></table>`:'<p>No itemized quote available.</p>'}
   ${pp!=null&&pp>920?'<p class="warning">This scenario exceeds the €920/person ceiling before additional unquoted costs.</p>':''}
   <p>Still unquoted / unresolved:</p>${listHTML(cost.unknown)}<p>Refundable deposit, separate from occupancy cost: ${escapeHTML(depositText(p))}.</p>
-  <h3>Open questions / exclusion reasons</h3>${listHTML(p.issues)}${p.conflicts.length?'<h3>Differences between sources</h3>'+listHTML(p.conflicts):''}
+  ${p.exclusion_audit?`<h3>Exclusion recheck · ${escapeHTML(p.exclusion_audit.checked_at)}</h3><p><strong>${escapeHTML(p.exclusion_audit.outcome)}</strong></p><p>${escapeHTML(p.exclusion_audit.finding)}</p>`:""}<h3>Open questions / exclusion reasons</h3>${listHTML(p.issues)}${p.conflicts.length?'<h3>Differences between sources</h3>'+listHTML(p.conflicts):''}
   <details><summary>Recorded room, amenity &amp; lease details</summary>${factsHTML(p.details)}</details>
   <details><summary>Both agents’ full original findings</summary><p class="muted small">Source snapshots are preserved, including conflicting prices, scores, room descriptions and calendar claims. They are each agent’s recorded findings; see the assessment above for unresolved differences.</p>${p.original_map_findings?'<h3>Original map agent</h3>'+factsHTML(p.original_map_findings):'<p>No record for this property in the original map set.</p>'}${p.earlier_agent_findings?'<h3>Earlier research agent</h3>'+factsHTML(p.earlier_agent_findings):'<p>No record for this property in the earlier set.</p>'}</details>
   <h3>Research sources</h3><p>${escapeHTML(p.research_tracks.join(' + '))} · last researched ${escapeHTML(p.last_researched)}</p><div class="actions">${p.alternate_urls.map(u=>link(u,'Alternate listing / possible alias')).join('')}${loc?link(loc.source_url,'Location source'):''}${ready?.source_url?link(ready.source_url,'Arrival inventory source'):''}</div><p class="muted small">Aliases are possible duplicates unless the notes establish a match. The cheapest booking channel has not been determined where fees are unquoted.</p>

@@ -18,9 +18,11 @@ def validate(data):
     for p in listings:
         assert p['status'] in {'prospect', 'lead', 'excluded', 'benchmark'}
         readiness = p['move_in_readiness']
-        assert readiness['status'] in {'unverified', 'confirmed'}
+        assert readiness['status'] in {'unverified', 'confirmed', 'not_ready_as_advertised'}
         if readiness['status'] == 'confirmed':
             assert all(readiness[k] is True for k in ['bed_linen', 'pillows_and_duvets', 'towels', 'kitchenware']), 'Arrival essentials need explicit confirmation'
+        if readiness['status'] == 'not_ready_as_advertised':
+            assert any(readiness[k] is False for k in ['bed_linen', 'pillows_and_duvets', 'towels', 'kitchenware'])
         # shortcut: all records remain unqualified; revise this gate after full dated verification.
         assert p['calendar_verified'] is False and p['value_score'] is None
         for url in [p['url'], *p['alternate_urls'], *p['source_urls']]:
