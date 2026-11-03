@@ -6,7 +6,7 @@ A shared housing review for four students attending UPF Ciutadella in January–
 
 ## Use it with your roommates
 
-1. Open the map. It starts with all 61 combined findings. Use the status filter to focus on 27 prospects and preliminary leads.
+1. Open the map. Search notes, statistics, the legend and archive links are inside **About this search**. It starts with all 61 combined findings. Use the status filter to focus on 27 prospects and preliminary leads.
 2. Read **Details** before choosing a place. Dashed pins are approximate; some findings have no reliable location.
 3. Use the budget slider, walk-time selector, bathroom and balcony filters as needed. Reported walk times include clearly labelled original agent estimates.
 4. Click **Save** on places you like, then **Copy shortlist link**. The saved IDs travel in the link so roommates can review the same selection.
