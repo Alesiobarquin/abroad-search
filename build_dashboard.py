@@ -17,6 +17,10 @@ def validate(data):
     assert data['merge_counts']['earlier_records'] + data['merge_counts']['map_repo_records'] - data['merge_counts']['overlapping_records'] == len(listings)
     for p in listings:
         assert p['status'] in {'prospect', 'lead', 'excluded', 'benchmark'}
+        readiness = p['move_in_readiness']
+        assert readiness['status'] in {'unverified', 'confirmed'}
+        if readiness['status'] == 'confirmed':
+            assert all(readiness[k] is True for k in ['bed_linen', 'pillows_and_duvets', 'towels', 'kitchenware']), 'Arrival essentials need explicit confirmation'
         # shortcut: all records remain unqualified; revise this gate after full dated verification.
         assert p['calendar_verified'] is False and p['value_score'] is None
         for url in [p['url'], *p['alternate_urls'], *p['source_urls']]:

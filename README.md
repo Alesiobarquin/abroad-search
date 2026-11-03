@@ -7,7 +7,7 @@ A shared housing review for four students attending UPF Ciutadella in January–
 ## Use it with your roommates
 
 1. Open the map. It starts with all 61 combined findings. Use the status filter to focus on 27 prospects and preliminary leads.
-2. Read **Costs, rooms & open questions** before choosing a place. Dashed pins are approximate; some findings have no reliable location.
+2. Read **Details** before choosing a place. Dashed pins are approximate; some findings have no reliable location.
 3. Use the budget slider, walk-time selector, bathroom and balcony filters as needed. Reported walk times include clearly labelled original agent estimates.
 4. Click **Save** on places you like, then **Copy shortlist link**. The saved IDs travel in the link so roommates can review the same selection.
 5. Use **Research status** to review the 31 excluded listings or 3 residence benchmarks. Discuss choices in GitHub Issues or share the shortlist link directly.
@@ -20,7 +20,7 @@ As of **November 3, 2026**, the merged set contains **61 distinct records**: 5 d
 
 The earlier set had 49 records; the map repo had 21 summaries. Nine overlapped. The merge retains the earlier A–O review labels and adds the other map’s unique leads as P–AA. These labels are not value ranks.
 
-The target is four separate sleeping rooms, at least 1.5 bathrooms, furnished accommodation with heating, installed internet, study space and a washer. The group budget is **€3,680/month**, or **€11,040 for the three-month comparison**. January 1–March 31 is 89 nights; January 5–April 1 is 86 nights. The comparison uses three months and is not an exact invoice for either window.
+The target is four separate sleeping rooms, at least 1.5 bathrooms, furnished accommodation with heating, installed internet, study space and a washer. Move-in readiness also requires sheets, pillows / winter bedding, towels and equipped kitchenware for all four; furniture alone is not enough. The group budget is **€3,680/month**, or **€11,040 for the three-month comparison**. January 1–March 31 is 89 nights; January 5–April 1 is 86 nights. The comparison uses three months and is not an exact invoice for either window.
 
 Unknown fees are not zero. The map shows incomplete subtotals and estimates, with refundable deposits separate. Availability, academic-purpose leases, room ventilation and complete fees still need property-specific confirmation. Several previous “verified” rankings contradicted saved listing evidence; [the notes explain those corrections](RESEARCH_NOTES.md#where-the-research-differed).
 
@@ -39,6 +39,6 @@ python3 build_dashboard.py
 python3 -m unittest discover -s tests -v
 ```
 
-The tests check merge counts, material exclusions, cost arithmetic, safe links, embedded-data escaping and generated-file consistency. The public repo contains the combined assessment, code and [both agents’ complete finding snapshots](research/README.md). Original prices, room descriptions, calendar claims and scores are preserved beside the current assessment. Raw page captures, account/session data, local logs, personal application documents and old scraping scripts stay local. The other agent’s unfilled application and lease notes are retained as labelled source notes. There is no active watchdog in this version.
+The tests check merge counts, material exclusions, cost arithmetic, safe links, embedded-data escaping and generated-file consistency. The public repo contains the combined assessment, code and [both agents’ complete finding snapshots](research/README.md). Original prices, room descriptions, calendar claims and scores are preserved inside each card’s Details beside the current assessment. Raw page captures, account/session data, local logs, personal application documents and old scraping scripts stay local. The other agent’s unfilled application and lease notes are retained as labelled source notes. There is no active watchdog in this version.
 
 The map layout and initial listing summaries came from the other agent’s workspace. The merged evidence, corrections and interface changes were produced with Codex assistance. Listing facts belong to the linked sources; location data and map tiles are © OpenStreetMap contributors, under their respective [data](https://www.openstreetmap.org/copyright) and [tile usage](https://operations.osmfoundation.org/policies/tiles/) terms.

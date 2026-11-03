@@ -4,6 +4,8 @@
 
 ## What to review first
 
+**Arrival essentials now required:** bed linen, pillows / winter bedding, towels and equipped kitchenware for all four. A’s inspected agency page advertises kitchen utensils but does not explicitly include bedding or towels. Its move-in setup remains unconfirmed; furnished furniture alone is not a complete arrival inventory. This requirement applies to every option. Historical source findings are unchanged.
+
 The most useful first discussions remain **A (Roger de Llúria), B (Vilamarí), C (Sant Antoni) and E (Gran Via 671)**. A explicitly accepts student groups but has three interior bedrooms to examine. B has the lowest advertised rent and a heating contradiction. C has a flexible-date quote but an outdated calendar. E has space, student acceptance and a routed walk, but advertises 11-month contracts. None currently passes every filter.
 
 The other map adds two worthwhile leads: **P (Spotahome 127175, Sicília / Arc de Triomf)** and **T (Spotahome 1477287, Balboa / Barceloneta)**. Their basic four-bedroom / two-bathroom metadata is present in saved listing data. Their winter calendars, academic purpose, room conditions and final fees remain unverified. The old summary’s room dimensions and exact fees are preserved as that agent’s claims, with their verification status explicit.

@@ -56,6 +56,17 @@ class HousingReviewTest(unittest.TestCase):
         with self.assertRaises(AssertionError):
             validate(invalid)
 
+    def test_furniture_does_not_establish_arrival_readiness(self):
+        row = next(p for p in self.data['listings'] if p['review_id'] == 'A')
+        self.assertTrue(row['details']['property']['furnished'])
+        self.assertEqual(row['move_in_readiness']['status'], 'unverified')
+        self.assertIsNone(row['move_in_readiness']['bed_linen'])
+        self.assertIsNone(row['move_in_readiness']['towels'])
+        invalid = copy.deepcopy(self.data)
+        next(p for p in invalid['listings'] if p['review_id'] == 'A')['move_in_readiness']['status'] = 'confirmed'
+        with self.assertRaises(AssertionError):
+            validate(invalid)
+
     def test_embedded_data_cannot_close_script(self):
         data = copy.deepcopy(self.data)
         data['listings'][0]['title'] = '</script><script>alert("x")</script>'
