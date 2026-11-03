@@ -1,0 +1,1943 @@
+[
+  {
+    "id": "SPOTA-201508",
+    "platform": "Spotahome",
+    "title": "Modern 4-Bedroom Flat next to UPF Ciutadella",
+    "url": "https://www.spotahome.com/barcelona/for-rent:apartments/201508",
+    "neighborhood": "El Parc i la Llacuna del Poblenou (Marina / Bogatell)",
+    "address": "Carrer de Sardenya, 08005 Barcelona",
+    "cross_streets": "Carrer de Sardenya & Carrer de Ramon Turró",
+    "coordinates": [
+      41.3912,
+      2.1881
+    ],
+    "walk_time_min": 4,
+    "transit_time_min": 3,
+    "is_tram_metro": false,
+    "commute_route": "Direct 350m walk south on Carrer de Sardenya straight to Carrer de Ramon Trias Fargas (Ciutadella campus entrance).",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 80,
+    "floor": "3rd floor with elevator",
+    "base_rent_eur": 1950,
+    "utilities_included": false,
+    "est_monthly_utilities_eur": 250,
+    "one_time_fees_eur": 240,
+    "cleaning_fee_eur": 180,
+    "deposit_eur": 1950,
+    "deposit_months": 1.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.5,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1 (Master)",
+        "bed": "Double bed (150x190)",
+        "desk": "Dedicated study desk & ergonomic chair",
+        "window": "Exterior street-facing with abundant natural light",
+        "wardrobe": "Large built-in double wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed (135x190)",
+        "desk": "Study desk with lamp and chair",
+        "window": "Exterior window facing quiet courtyard",
+        "wardrobe": "Standalone wardrobe & chest of drawers"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Single bed (90x190) with trundle option",
+        "desk": "Integrated study table & chair",
+        "window": "Window to bright inner courtyard (patio de luces)",
+        "wardrobe": "Built-in wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Single bed (90x190)",
+        "desk": "Study desk with shelving unit",
+        "window": "Window to bright inner courtyard",
+        "wardrobe": "Standalone closet"
+      }
+    ],
+    "amenities": [
+      "Elevator",
+      "Air conditioning",
+      "Radiator heating",
+      "Dishwasher",
+      "Washing machine",
+      "Oven",
+      "High-speed Wi-Fi (300 Mbps)",
+      "Furnished dining area for 6",
+      "Microwave"
+    ],
+    "pros": [
+      "Unbeatable proximity: only 350m (4-min walk) to UPF Ciutadella",
+      "2 full bathrooms prevent morning bottlenecks for 4 students",
+      "Exceptional budget efficiency at €585/mo all-in per person",
+      "Includes dishwasher and full climate control (heating & AC)"
+    ],
+    "cons": [
+      "80 m² is slightly compact for 4 adults compared to 100m² flats",
+      "Bedrooms 3 & 4 are single beds facing interior courtyard",
+      "Utilities not included (budget €250/mo total)"
+    ],
+    "red_flags": "Standard Spotahome cancellation policy; utility consumption billed based on actual meter reading at checkout.",
+    "true_3m_eur": 7020,
+    "eff_monthly_total_eur": 2340.0,
+    "eff_monthly_pp_eur": 585.0,
+    "eff_monthly_pp_usd": 635.89,
+    "cost_score": 35.0,
+    "location_score": 25.0,
+    "space_score": 22.0,
+    "transparency_score": 15.0,
+    "value_score": 97.0,
+    "rank": 1,
+    "alt_platform_url": "https://housinganywhere.com/room/ut760850/es/Barcelona/carrer-de-sardenya",
+    "alt_platform_name": "HousingAnywhere (ID 1407731)",
+    "alt_platform_fee_eur": 487
+  },
+  {
+    "id": "SPOTA-127175",
+    "platform": "Spotahome",
+    "title": "Arc de Triomf 4-Bedroom Flat with Bi-Weekly Cleaning",
+    "url": "https://www.spotahome.com/barcelona/for-rent:apartments/127175",
+    "neighborhood": "El Fort Pienc / Arc de Triomf",
+    "address": "Carrer de Sicília, 08013 Barcelona",
+    "cross_streets": "Carrer de Sicília & Carrer d'Ausiàs Marc",
+    "coordinates": [
+      41.3955,
+      2.1803
+    ],
+    "walk_time_min": 14,
+    "transit_time_min": 9,
+    "is_tram_metro": true,
+    "commute_route": "1.1 km walk south along Carrer d'Ausiàs Marc, crossing Arc de Triomf and entering Parc de la Ciutadella straight to Ramon Trias Fargas.",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 80,
+    "floor": "4th floor with elevator",
+    "base_rent_eur": 2000,
+    "utilities_included": false,
+    "est_monthly_utilities_eur": 240,
+    "one_time_fees_eur": 200,
+    "cleaning_fee_eur": 180,
+    "deposit_eur": 2000,
+    "deposit_months": 1.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.5,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "Double bed (140x190)",
+        "desk": "Dedicated study desk with task light",
+        "window": "Exterior window with street view",
+        "wardrobe": "Spacious double wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed (140x190)",
+        "desk": "Study desk and ergonomic chair",
+        "window": "Exterior window with natural sunlight",
+        "wardrobe": "Fitted wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Single bed (90x190)",
+        "desk": "Study desk with drawers",
+        "window": "Bright inner courtyard window",
+        "wardrobe": "Tall wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Single bed (90x190)",
+        "desk": "Study desk and chair",
+        "window": "Inner courtyard window",
+        "wardrobe": "Standalone wardrobe"
+      }
+    ],
+    "amenities": [
+      "Elevator",
+      "Balcony",
+      "Washing machine",
+      "Electric radiator heating",
+      "Furnished kitchen with oven",
+      "High-speed Wi-Fi pre-installed",
+      "Bi-weekly communal cleaning service included",
+      "Doorman building"
+    ],
+    "pros": [
+      "Includes regular cleaning service in the rent contract",
+      "Superb value at €2,000 base rent (€593/mo effective all-in per person)",
+      "Elevator building in prime Fort Pienc residential core",
+      "Walking route passes directly through historic Arc de Triomf and Ciutadella Park"
+    ],
+    "cons": [
+      "Heating is electric radiators rather than gas central heating",
+      "Utilities not included (budget €240/mo for water/electricity/gas)"
+    ],
+    "red_flags": "Landlord requires quiet hours after 22:00 due to elderly neighbors in the community.",
+    "true_3m_eur": 7100,
+    "eff_monthly_total_eur": 2366.67,
+    "eff_monthly_pp_eur": 591.67,
+    "eff_monthly_pp_usd": 643.14,
+    "cost_score": 35.0,
+    "location_score": 20.0,
+    "space_score": 22.0,
+    "transparency_score": 15.0,
+    "value_score": 92.0,
+    "rank": 2
+  },
+  {
+    "id": "SPOTA-1426235",
+    "platform": "Spotahome",
+    "title": "Furnished 4-Bedroom Flat with Balcony in El Fort Pienc",
+    "url": "https://www.spotahome.com/barcelona/for-rent:apartments/1426235",
+    "neighborhood": "El Fort Pienc (Arc de Triomf / Estació del Nord)",
+    "address": "Carrer de Lepant, 08013 Barcelona",
+    "cross_streets": "Carrer de Lepant & Carrer d'Ausiàs Marc",
+    "coordinates": [
+      41.3971,
+      2.1859
+    ],
+    "walk_time_min": 12,
+    "transit_time_min": 8,
+    "is_tram_metro": true,
+    "commute_route": "970m scenic walk south through Parc de l'Estació del Nord and Passeig de Pujades directly to UPF campus, or 8 min via Tram T4 from Marina.",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 70,
+    "floor": "2nd floor walk-up",
+    "base_rent_eur": 2500,
+    "utilities_included": true,
+    "est_monthly_utilities_eur": 0,
+    "one_time_fees_eur": 0,
+    "cleaning_fee_eur": 150,
+    "deposit_eur": 0,
+    "deposit_months": 0.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.0,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "Double bed (140x190)",
+        "desk": "Study table & chair",
+        "window": "Exterior balcony access",
+        "wardrobe": "Wardrobe closet"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed (135x190)",
+        "desk": "Work desk & chair",
+        "window": "Exterior window",
+        "wardrobe": "Built-in wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Single bed (90x190)",
+        "desk": "Study desk with lamp",
+        "window": "Patio window",
+        "wardrobe": "Standalone wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Single bed (90x190)",
+        "desk": "Study desk with shelving",
+        "window": "Interior patio window",
+        "wardrobe": "Closet unit"
+      }
+    ],
+    "amenities": [
+      "Bills included in rent",
+      "Balcony",
+      "Washing machine",
+      "Clothes dryer",
+      "Air conditioning",
+      "Heating",
+      "Furnished kitchen",
+      "Wi-Fi included",
+      "Spotahome No-Deposit guarantee option"
+    ],
+    "pros": [
+      "Bills included in rent and zero refundable deposit requirement via platform guarantee",
+      "Tier 1 location: 12 min walk to UPF through Parc de l'Estació del Nord",
+      "2 full bathrooms and in-unit dryer",
+      "Quiet residential street close to Auditori and Arc de Triomf"
+    ],
+    "cons": [
+      "70 m² is compact for 4 bedrooms (cozy common areas)",
+      "No elevator (2nd floor walkup, ~45 steps)"
+    ],
+    "red_flags": "Smoking allowed inside by previous tenant policies; confirm comprehensive post-lease ozone cleaning before move-in.",
+    "true_3m_eur": 7650,
+    "eff_monthly_total_eur": 2550.0,
+    "eff_monthly_pp_eur": 637.5,
+    "eff_monthly_pp_usd": 692.96,
+    "cost_score": 35.0,
+    "location_score": 20.0,
+    "space_score": 20.0,
+    "transparency_score": 15.0,
+    "value_score": 90.0,
+    "rank": 3
+  },
+  {
+    "id": "SPOTA-220029",
+    "platform": "Spotahome",
+    "title": "Spacious 112m² Modern 4-Bedroom Flat on Gran Via",
+    "url": "https://www.spotahome.com/barcelona/for-rent:apartments/220029",
+    "neighborhood": "L'Esquerra de l'Eixample (Tier 3)",
+    "address": "Gran Via de les Corts Catalanes, 08015 Barcelona",
+    "cross_streets": "Gran Via de les Corts Catalanes & Carrer de Vilamarí",
+    "coordinates": [
+      41.3789,
+      2.1512
+    ],
+    "walk_time_min": 26,
+    "transit_time_min": 12,
+    "is_tram_metro": true,
+    "commute_route": "Direct Metro L1 from Rocafort straight to Marina or Arc de Triomf (5 stops, 7 min ride) + 5 min walk to UPF campus (12 min total).",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 112,
+    "floor": "4th floor with elevator",
+    "base_rent_eur": 2400,
+    "utilities_included": false,
+    "est_monthly_utilities_eur": 250,
+    "one_time_fees_eur": 220,
+    "cleaning_fee_eur": 180,
+    "deposit_eur": 2400,
+    "deposit_months": 1.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.5,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "King double bed (160x200)",
+        "desk": "Executive study desk with lamp",
+        "window": "Large exterior window",
+        "wardrobe": "Double wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed (140x190)",
+        "desk": "Study desk and chair",
+        "window": "Exterior window",
+        "wardrobe": "Built-in wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Double bed (135x190)",
+        "desk": "Study desk and chair",
+        "window": "Inner patio window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Single bed (90x190)",
+        "desk": "Study desk with shelving",
+        "window": "Inner patio window",
+        "wardrobe": "Wardrobe"
+      }
+    ],
+    "amenities": [
+      "Central gas radiator heating",
+      "Air conditioning",
+      "Elevator",
+      "Washing machine",
+      "Dryer",
+      "Equipped modern kitchen with oven",
+      "Doorman"
+    ],
+    "pros": [
+      "Expansive 112 m² floor plan with 3 double beds and 1 single",
+      "Gas central heating provides optimal warmth in Jan-Feb",
+      "Direct fast transit via Metro L1 (12 min door-to-door to UPF)"
+    ],
+    "cons": [
+      "26-min walk on foot (requires Metro L1 for daily commute)",
+      "Base rent of €2,400 + utilities"
+    ],
+    "red_flags": "Gran Via orientation requires double-glazed windows kept shut during heavy morning traffic.",
+    "true_3m_eur": 8350,
+    "eff_monthly_total_eur": 2783.33,
+    "eff_monthly_pp_eur": 695.83,
+    "eff_monthly_pp_usd": 756.37,
+    "cost_score": 35.0,
+    "location_score": 15.0,
+    "space_score": 24.5,
+    "transparency_score": 15.0,
+    "value_score": 89.5,
+    "rank": 4
+  },
+  {
+    "id": "SPOTA-1403718",
+    "platform": "Spotahome",
+    "title": "Sunlit 90m² 4-Bedroom Flat with Terrace in Sant Antoni / Nova Esquerra",
+    "url": "https://www.spotahome.com/barcelona/for-rent:apartments/1403718",
+    "neighborhood": "Sant Antoni / La Nova Esquerra de l'Eixample (Tier 3)",
+    "address": "Carrer del Comte Borrell, 08015 Barcelona",
+    "cross_streets": "Carrer del Comte Borrell & Gran Via de les Corts Catalanes",
+    "coordinates": [
+      41.3829,
+      2.1555
+    ],
+    "walk_time_min": 25,
+    "transit_time_min": 14,
+    "is_tram_metro": true,
+    "commute_route": "Direct Metro L1 from Urgell to Arc de Triomf or Marina (4 stops, 7 min ride) + 7 min walk through Ciutadella park.",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 90,
+    "floor": "4th floor with elevator",
+    "base_rent_eur": 2500,
+    "utilities_included": true,
+    "est_monthly_utilities_eur": 0,
+    "one_time_fees_eur": 0,
+    "cleaning_fee_eur": 200,
+    "deposit_eur": 2500,
+    "deposit_months": 1.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.0,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "Double bed",
+        "desk": "Desk & chair",
+        "window": "Terrace access",
+        "wardrobe": "Fitted wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed",
+        "desk": "Desk & chair",
+        "window": "Exterior window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Single bed",
+        "desk": "Study desk",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Single bed",
+        "desk": "Study desk",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      }
+    ],
+    "amenities": [
+      "Bills included in rent",
+      "Elevator",
+      "Terrace",
+      "Washing machine",
+      "Dryer",
+      "Air conditioning",
+      "Heating",
+      "Wi-Fi included"
+    ],
+    "pros": [
+      "Bills included in rent at €2,500/mo (€642/mo effective all-in per person)",
+      "Spacious 90 m² layout with private terrace",
+      "Sant Antoni market and culinary district right outside"
+    ],
+    "cons": [
+      "Located in Eixample Esquerra, requiring a 14-min Metro L1 trip or 25-min walk",
+      "Bedrooms 3 & 4 are single beds"
+    ],
+    "red_flags": "Metro L1 required for daily commute.",
+    "true_3m_eur": 7700,
+    "eff_monthly_total_eur": 2566.67,
+    "eff_monthly_pp_eur": 641.67,
+    "eff_monthly_pp_usd": 697.49,
+    "cost_score": 35.0,
+    "location_score": 15.0,
+    "space_score": 23.0,
+    "transparency_score": 15.0,
+    "value_score": 88.0,
+    "rank": 5
+  },
+  {
+    "id": "SPOTA-1480143",
+    "platform": "Spotahome",
+    "title": "Renovated 90m² 4-Bedroom Flat with Balcony in Sant Antoni",
+    "url": "https://www.spotahome.com/barcelona/for-rent:apartments/1480143",
+    "neighborhood": "Sant Antoni (Tier 3)",
+    "address": "Avinguda del Paral·lel, 08015 Barcelona",
+    "cross_streets": "Avinguda del Paral·lel & Carrer de Manso",
+    "coordinates": [
+      41.3762,
+      2.1595
+    ],
+    "walk_time_min": 24,
+    "transit_time_min": 14,
+    "is_tram_metro": true,
+    "commute_route": "Direct Metro L2/L3 from Paral·lel to Passeig de Gràcia, transfer L4 to Ciutadella / Vila Olímpica (14 min) or direct Bus D20 / H14 (16 min).",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 90,
+    "floor": "3rd floor with elevator",
+    "base_rent_eur": 1800,
+    "utilities_included": false,
+    "est_monthly_utilities_eur": 240,
+    "one_time_fees_eur": 200,
+    "cleaning_fee_eur": 160,
+    "deposit_eur": 1800,
+    "deposit_months": 1.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.0,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "Double bed (140x190)",
+        "desk": "Study desk & chair",
+        "window": "Balcony access",
+        "wardrobe": "Fitted wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed (135x190)",
+        "desk": "Study desk & chair",
+        "window": "Exterior window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Single bed (90x190)",
+        "desk": "Study table",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Single bed (90x190)",
+        "desk": "Study table",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      }
+    ],
+    "amenities": [
+      "Elevator",
+      "Balcony",
+      "Washing machine",
+      "Clothes dryer",
+      "Dishwasher",
+      "Air conditioning",
+      "Heating",
+      "Equipped kitchen"
+    ],
+    "pros": [
+      "Exceptional price efficiency at €1,800/mo (€540/mo effective all-in per person)",
+      "Equipped with dishwasher, dryer, and private balcony",
+      "90 m² layout with 2 full bathrooms"
+    ],
+    "cons": [
+      "Sant Antoni location requires 14-min transit or 24-min walk",
+      "Bedrooms 3 & 4 feature single beds"
+    ],
+    "red_flags": "Avinguda del Paral·lel traffic noise facing front balcony during rush hour.",
+    "true_3m_eur": 6480,
+    "eff_monthly_total_eur": 2160.0,
+    "eff_monthly_pp_eur": 540.0,
+    "eff_monthly_pp_usd": 586.98,
+    "cost_score": 35.0,
+    "location_score": 15.0,
+    "space_score": 23.0,
+    "transparency_score": 15.0,
+    "value_score": 88.0,
+    "rank": 6
+  },
+  {
+    "id": "COTOWN-NAPOLS206",
+    "platform": "Cotown Coliving",
+    "title": "Cotown Nàpols 206 - 4 Student Room Cluster with Common Terrace",
+    "url": "https://www.cotown.com/en/barcelona",
+    "neighborhood": "Dreta de l'Eixample / Fort Pienc (Tier 2/3)",
+    "address": "Carrer de Nàpols, 206, 08013 Barcelona",
+    "cross_streets": "Carrer de Nàpols & Carrer de Mallorca",
+    "coordinates": [
+      41.3995,
+      2.1765
+    ],
+    "walk_time_min": 20,
+    "transit_time_min": 12,
+    "is_tram_metro": true,
+    "commute_route": "1.6 km walk down Carrer de Nàpols through Estació del Nord park directly to UPF Ciutadella (20 min), or Bus V21 / Metro L2 direct (12 min).",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 85,
+    "floor": "Multiple floors with elevator",
+    "base_rent_eur": 2380,
+    "utilities_included": true,
+    "est_monthly_utilities_eur": 0,
+    "one_time_fees_eur": 200,
+    "cleaning_fee_eur": 0,
+    "deposit_eur": 2380,
+    "deposit_months": 1.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.5,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Room 1",
+        "bed": "Double bed (140x190)",
+        "desk": "Dedicated study desk with lamp and chair",
+        "window": "Exterior window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Room 2",
+        "bed": "Double bed (135x190)",
+        "desk": "Dedicated study desk with lamp and chair",
+        "window": "Exterior window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Room 3",
+        "bed": "Single bed (90x190)",
+        "desk": "Study desk with lamp and chair",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Room 4",
+        "bed": "Single bed (90x190)",
+        "desk": "Study desk with lamp and chair",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      }
+    ],
+    "amenities": [
+      "All utilities included (power, water, gas, Wi-Fi)",
+      "Flat cleaning service for shared areas included",
+      "Elevator",
+      "Communal rooftop terrace",
+      "Air conditioning & heating",
+      "24/7 emergency support"
+    ],
+    "pros": [
+      "All bills, Wi-Fi, and flat cleaning included in the flat rate of €595/person/mo",
+      "Access to furnished communal rooftop terrace with panoramic city views",
+      "Coliving management handles repairs and maintenance within 24h"
+    ],
+    "cons": [
+      "20-minute walk to UPF Ciutadella (or 12 min via bus/metro)",
+      "Single beds in Rooms 3 and 4"
+    ],
+    "red_flags": "Cotown coliving house rules strictly prohibit outside overnight guests staying more than 2 consecutive nights.",
+    "true_3m_eur": 7340,
+    "eff_monthly_total_eur": 2446.67,
+    "eff_monthly_pp_eur": 611.67,
+    "eff_monthly_pp_usd": 664.88,
+    "cost_score": 35.0,
+    "location_score": 15.0,
+    "space_score": 22.0,
+    "transparency_score": 15.0,
+    "value_score": 87.0,
+    "rank": 7
+  },
+  {
+    "id": "SPOTA-1477287",
+    "platform": "Spotahome",
+    "title": "Spacious 110m² 4-Bedroom Beachside Flat in La Barceloneta",
+    "url": "https://www.spotahome.com/barcelona/for-rent:apartments/1477287",
+    "neighborhood": "La Barceloneta (Northern Marina border)",
+    "address": "Carrer de Balboa, 08003 Barcelona",
+    "cross_streets": "Carrer de Balboa & Passeig Marítim / Doctor Aiguader",
+    "coordinates": [
+      41.3825,
+      2.1885
+    ],
+    "walk_time_min": 10,
+    "transit_time_min": 6,
+    "is_tram_metro": true,
+    "commute_route": "800m direct walk northeast along Passeig de Marítim / Carrer del Doctor Aiguader straight into Carrer de Ramon Trias Fargas.",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 110,
+    "floor": "4th floor with elevator",
+    "base_rent_eur": 3100,
+    "utilities_included": true,
+    "est_monthly_utilities_eur": 0,
+    "one_time_fees_eur": 0,
+    "cleaning_fee_eur": 200,
+    "deposit_eur": 3100,
+    "deposit_months": 1.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.5,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "Double bed (150x200)",
+        "desk": "Dedicated writing desk & chair",
+        "window": "Exterior street-facing balcony door",
+        "wardrobe": "Large 3-door wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed (140x190)",
+        "desk": "Study desk with lamp and chair",
+        "window": "Exterior window with sea breeze",
+        "wardrobe": "Double wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Double bed (135x190)",
+        "desk": "Corner study desk & ergonomic chair",
+        "window": "Large courtyard window with natural daylight",
+        "wardrobe": "Built-in wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Single bed (105x190 large single)",
+        "desk": "Study desk & bookcase",
+        "window": "Courtyard window",
+        "wardrobe": "Built-in wardrobe"
+      }
+    ],
+    "amenities": [
+      "All utilities included in rent",
+      "Elevator",
+      "Balcony/Terrace",
+      "Washing machine",
+      "Clothes dryer",
+      "Air conditioning",
+      "Central heating",
+      "High-speed Wi-Fi",
+      "Fully equipped modern kitchen with oven and dishwasher"
+    ],
+    "pros": [
+      "All bills included in rent (electricity, water, heating, Wi-Fi up to standard fair use)",
+      "Huge 110 m² floor plan with 4 real bedrooms and 2 full baths",
+      "Equipped with both in-unit washer AND clothes dryer",
+      "Prime coastal location just 10 min walk to UPF and 3 min to the beach"
+    ],
+    "cons": [
+      "Base rent of €3,100 is higher (though all-inclusive of utilities)",
+      "Barceloneta neighborhood can have street noise on weekend evenings"
+    ],
+    "red_flags": "Utility fair-use policy caps monthly electricity consumption at €200/mo (excess billed to tenant).",
+    "true_3m_eur": 9500,
+    "eff_monthly_total_eur": 3166.67,
+    "eff_monthly_pp_eur": 791.67,
+    "eff_monthly_pp_usd": 860.54,
+    "cost_score": 20.4,
+    "location_score": 25.0,
+    "space_score": 24.5,
+    "transparency_score": 15.0,
+    "value_score": 84.9,
+    "rank": 8
+  },
+  {
+    "id": "ATEMPORAL-AT1908007",
+    "platform": "aTemporal Barcelona",
+    "title": "Classic 105m² Eixample Apartment with 4 Double Bedrooms",
+    "url": "https://www.atemporalbarcelona.es/barcelona/eixample/piso-de-alquiler-temporal-con-4-habitaciones-en-calle-villarroel-en-barcelona",
+    "neighborhood": "L'Antiga Esquerra de l'Eixample (Tier 3)",
+    "address": "Carrer de Villarroel, 81, 08011 Barcelona",
+    "cross_streets": "Carrer de Villarroel & Carrer de la Diputació",
+    "coordinates": [
+      41.3842,
+      2.1577
+    ],
+    "walk_time_min": 26,
+    "transit_time_min": 14,
+    "is_tram_metro": true,
+    "commute_route": "Metro L1 from Urgell (2 blocks away) direct to Arc de Triomf or Marina (4 stops, 7 min) + 7 min walk to UPF Ciutadella.",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 105,
+    "floor": "2nd floor with elevator",
+    "base_rent_eur": 2200,
+    "utilities_included": false,
+    "est_monthly_utilities_eur": 250,
+    "one_time_fees_eur": 750,
+    "cleaning_fee_eur": 200,
+    "deposit_eur": 4400,
+    "deposit_months": 2.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.5,
+    "calendar_verified": true,
+    "online_protection": false,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "Double bed (150x190)",
+        "desk": "Dedicated desk & chair",
+        "window": "Balcony access",
+        "wardrobe": "Fitted wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed (140x190)",
+        "desk": "Desk & chair",
+        "window": "Exterior window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Double bed (135x190)",
+        "desk": "Desk & chair",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Double bed (135x190)",
+        "desk": "Desk & chair",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      }
+    ],
+    "amenities": [
+      "Elevator",
+      "Balcony",
+      "Washing machine",
+      "Air conditioning",
+      "Heating",
+      "Equipped kitchen with oven",
+      "High-speed Wi-Fi"
+    ],
+    "pros": [
+      "Generous 105 m² layout with 4 true double bedrooms",
+      "All 4 bedrooms accommodate double beds and study desks",
+      "Competitive base rent of €2,200/mo in prime Eixample"
+    ],
+    "cons": [
+      "Heavier upfront costs: 2-month refundable deposit (€4,400) plus €750 agency documentation fee",
+      "Distance: 26-min walk, requires Metro L1 daily commute (14 min)"
+    ],
+    "red_flags": "High initial liquidity required (€7,550 due at lease signing); utilities billed against monthly provision.",
+    "true_3m_eur": 8300,
+    "eff_monthly_total_eur": 2766.67,
+    "eff_monthly_pp_eur": 691.67,
+    "eff_monthly_pp_usd": 751.84,
+    "cost_score": 35.0,
+    "location_score": 15.0,
+    "space_score": 23.5,
+    "transparency_score": 11.0,
+    "value_score": 84.5,
+    "rank": 9
+  },
+  {
+    "id": "SPOTA-201392",
+    "platform": "Spotahome",
+    "title": "Budget-Friendly 4-Bedroom Apartment in El Clot / Glòries",
+    "url": "https://www.spotahome.com/barcelona/for-rent:apartments/201392",
+    "neighborhood": "El Clot / Glòries (Tier 3)",
+    "address": "Carrer de la Independència, 08026 Barcelona",
+    "cross_streets": "Carrer de la Independència & Carrer d'Aragó",
+    "coordinates": [
+      41.4072,
+      2.1858
+    ],
+    "walk_time_min": 24,
+    "transit_time_min": 12,
+    "is_tram_metro": true,
+    "commute_route": "Direct Metro L1 from Clot station to Marina or Arc de Triomf (3 stops, 6 min) + 6 min walk to UPF Ciutadella.",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 70,
+    "floor": "3rd floor with elevator",
+    "base_rent_eur": 1800,
+    "utilities_included": false,
+    "est_monthly_utilities_eur": 240,
+    "one_time_fees_eur": 200,
+    "cleaning_fee_eur": 160,
+    "deposit_eur": 1800,
+    "deposit_months": 1.0,
+    "has_exterior_balcony": false,
+    "desk_spaces_rating": 3.5,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "Double bed",
+        "desk": "Desk & chair",
+        "window": "Exterior street window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed",
+        "desk": "Desk & chair",
+        "window": "Exterior street window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Single bed",
+        "desk": "Study table",
+        "window": "Interior patio",
+        "wardrobe": "Closet"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Single bed",
+        "desk": "Study table",
+        "window": "Interior patio",
+        "wardrobe": "Closet"
+      }
+    ],
+    "amenities": [
+      "Elevator",
+      "Washing machine",
+      "Clothes dryer",
+      "Air conditioning",
+      "Heating",
+      "Wi-Fi pre-installed",
+      "Equipped kitchen"
+    ],
+    "pros": [
+      "Lowest base rent in the entire pool: only €1,800/mo (€530/mo effective all-in per person)",
+      "2 full bathrooms",
+      "Fast direct commute via Metro L1 (12-14 min door-to-door)"
+    ],
+    "cons": [
+      "Walk time on foot is 24 minutes (commute requires Metro L1)",
+      "70 m² floor space with no private balcony"
+    ],
+    "red_flags": "Older building interior; kitchen is functional but dated.",
+    "true_3m_eur": 6480,
+    "eff_monthly_total_eur": 2160.0,
+    "eff_monthly_pp_eur": 540.0,
+    "eff_monthly_pp_usd": 586.98,
+    "cost_score": 35.0,
+    "location_score": 15.0,
+    "space_score": 17.5,
+    "transparency_score": 15.0,
+    "value_score": 82.5,
+    "rank": 10
+  },
+  {
+    "id": "SPOTA-1173455",
+    "platform": "Spotahome",
+    "title": "Renovated 85m² 4-Bedroom Flat in Eixample Dreta / Fort Pienc",
+    "url": "https://www.spotahome.com/barcelona/for-rent:apartments/1173455",
+    "neighborhood": "El Fort Pienc / Dreta de l'Eixample",
+    "address": "Carrer de Sicília, 08013 Barcelona",
+    "cross_streets": "Carrer de Sicília & Gran Via de les Corts Catalanes",
+    "coordinates": [
+      41.3966,
+      2.1809
+    ],
+    "walk_time_min": 14,
+    "transit_time_min": 10,
+    "is_tram_metro": true,
+    "commute_route": "1.2 km walk south down Passeig de Sant Joan / Lluís Companys through Ciutadella Park, or 10 min door-to-door via Metro L1 (Marina or Tetuan to Arc de Triomf).",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 85,
+    "floor": "3rd floor with elevator",
+    "base_rent_eur": 3000,
+    "utilities_included": true,
+    "est_monthly_utilities_eur": 0,
+    "one_time_fees_eur": 0,
+    "cleaning_fee_eur": 200,
+    "deposit_eur": 3000,
+    "deposit_months": 1.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.5,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "Double bed (150x200)",
+        "desk": "Large study desk with executive chair",
+        "window": "Balcony access with French doors",
+        "wardrobe": "Large built-in wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed (140x190)",
+        "desk": "Study desk with lamp and chair",
+        "window": "Exterior street-facing window",
+        "wardrobe": "Double wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Twin single beds (2x 90x190)",
+        "desk": "Dual study workspace",
+        "window": "Courtyard window with morning light",
+        "wardrobe": "Spacious wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Single bed (90x190)",
+        "desk": "Study table & chair",
+        "window": "Courtyard window",
+        "wardrobe": "Single wardrobe"
+      }
+    ],
+    "amenities": [
+      "All bills included in rent",
+      "Elevator",
+      "Balcony",
+      "Dishwasher",
+      "Washing machine",
+      "Clothes dryer",
+      "Air conditioning",
+      "Central heating",
+      "High-speed optical fiber Wi-Fi",
+      "Fully equipped designer kitchen"
+    ],
+    "pros": [
+      "Bills included in rent with generous usage caps",
+      "Modern renovation with dishwasher and separate clothes dryer",
+      "2 full modern bathrooms with glass walk-in showers",
+      "85 m² floor area provides spacious shared living room and balcony"
+    ],
+    "cons": [
+      "Rent of €3,000/mo reaches the upper tier of the budget sweet spot (€767/mo per person all-in)",
+      "Bedroom 3 has twin beds rather than a dedicated double"
+    ],
+    "red_flags": "Landlord requires proof of UPF student enrollment / university internship letter for seasonal lease exemption.",
+    "true_3m_eur": 9200,
+    "eff_monthly_total_eur": 3066.67,
+    "eff_monthly_pp_eur": 766.67,
+    "eff_monthly_pp_usd": 833.37,
+    "cost_score": 24.4,
+    "location_score": 20.0,
+    "space_score": 22.0,
+    "transparency_score": 15.0,
+    "value_score": 81.4,
+    "rank": 11
+  },
+  {
+    "id": "SPOTA-932678",
+    "platform": "Spotahome",
+    "title": "Expansive 129m² 4-Bedroom Poblenou Apartment with Terrace",
+    "url": "https://www.spotahome.com/barcelona/for-rent:apartments/932678",
+    "neighborhood": "Poblenou / 22@ Innovation District",
+    "address": "Carrer de Llull, 08005 Barcelona",
+    "cross_streets": "Carrer de Llull & Rambla del Poblenou",
+    "coordinates": [
+      41.4006,
+      2.2024
+    ],
+    "walk_time_min": 18,
+    "transit_time_min": 8,
+    "is_tram_metro": true,
+    "commute_route": "1.5 km straight walk southwest on Carrer de Llull / Ramon Trias Fargas (18 min) or take Metro L4 from Llacuna or Poblenou to Ciutadella / Vila Olímpica (2 stops, 5 min ride + 3 min walk).",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 129,
+    "floor": "5th floor with elevator",
+    "base_rent_eur": 2790,
+    "utilities_included": false,
+    "est_monthly_utilities_eur": 250,
+    "one_time_fees_eur": 250,
+    "cleaning_fee_eur": 220,
+    "deposit_eur": 2790,
+    "deposit_months": 1.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.5,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "King double bed (160x200)",
+        "desk": "Executive study desk with ergonomic chair",
+        "window": "Private terrace access",
+        "wardrobe": "Walk-in dressing closet"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed (140x190)",
+        "desk": "Study desk with lamp and chair",
+        "window": "Exterior street-facing window",
+        "wardrobe": "Large wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Double bed (135x190)",
+        "desk": "Study desk & chair",
+        "window": "Exterior window",
+        "wardrobe": "Double wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Single bed (105x190)",
+        "desk": "Study desk & shelving",
+        "window": "Courtyard window",
+        "wardrobe": "Built-in wardrobe"
+      }
+    ],
+    "amenities": [
+      "Elevator",
+      "Large exterior terrace",
+      "Dishwasher",
+      "Washing machine",
+      "Clothes dryer",
+      "Air conditioning",
+      "Radiator heating",
+      "High-speed Wi-Fi",
+      "Fully equipped gourmet kitchen"
+    ],
+    "pros": [
+      "Massive 129 m² floor plan - the largest private apartment in the pool",
+      "Located directly off Rambla del Poblenou: best local dining and student cafes in Barcelona",
+      "3 true double bedrooms plus 1 oversized single, all with study desks",
+      "2 stops on Metro L4 directly to UPF Ciutadella station"
+    ],
+    "cons": [
+      "18-minute walk to UPF on foot (though fast 8-min transit via Metro L4)",
+      "Utilities not included (estimated €250/mo)"
+    ],
+    "red_flags": "Strict building rules against student parties or terrace noise after 23:00.",
+    "true_3m_eur": 9590,
+    "eff_monthly_total_eur": 3196.67,
+    "eff_monthly_pp_eur": 799.17,
+    "eff_monthly_pp_usd": 868.69,
+    "cost_score": 19.2,
+    "location_score": 20.0,
+    "space_score": 24.5,
+    "transparency_score": 15.0,
+    "value_score": 78.7,
+    "rank": 12
+  },
+  {
+    "id": "AIRBNB-1564369702322944311",
+    "platform": "Airbnb Monthly Stays",
+    "title": "4-Bedroom Olympic Village Apartment near Bogatell Beach",
+    "url": "https://www.airbnb.com/rooms/1564369702322944311",
+    "neighborhood": "La Vila Olímpica del Poblenou (Tier 1)",
+    "address": "Avinguda d'Icària / Carrer de Salvador Espriu, 08005 Barcelona",
+    "cross_streets": "Avinguda d'Icària & Carrer de Rosa Sensat",
+    "coordinates": [
+      41.3905,
+      2.1975
+    ],
+    "walk_time_min": 7,
+    "transit_time_min": 5,
+    "is_tram_metro": false,
+    "commute_route": "Direct 600m walk west along Avinguda d'Icària straight into Carrer de Ramon Trias Fargas (UPF Ciutadella campus).",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 95,
+    "floor": "2nd floor with elevator",
+    "base_rent_eur": 3200,
+    "utilities_included": true,
+    "est_monthly_utilities_eur": 0,
+    "one_time_fees_eur": 280,
+    "cleaning_fee_eur": 180,
+    "deposit_eur": 0,
+    "deposit_months": 0.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.0,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "Queen double bed (160x200)",
+        "desk": "Dedicated study desk with lamp",
+        "window": "Exterior window overlooking pedestrian gardens",
+        "wardrobe": "Large wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed (140x190)",
+        "desk": "Study table & chair",
+        "window": "Exterior window",
+        "wardrobe": "Built-in wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Two single beds (2x 90x190)",
+        "desk": "Desk & chair",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Two single beds (2x 90x190)",
+        "desk": "Desk & chair",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      }
+    ],
+    "amenities": [
+      "All utilities & Wi-Fi included",
+      "AirCover protection",
+      "Elevator",
+      "Balcony",
+      "Washing machine",
+      "Air conditioning",
+      "Heating",
+      "Equipped kitchen with oven",
+      "Zero security deposit required"
+    ],
+    "pros": [
+      "Prime Tier 1 Vila Olímpica location: only 7 min walk (600m) to UPF Ciutadella",
+      "All utilities and Wi-Fi included in total price",
+      "Airbnb AirCover tenant protection and zero security deposit",
+      "Spacious 95 m² layout with 2 full bathrooms and balcony"
+    ],
+    "cons": [
+      "Base price of €3,200/mo is higher than Spotahome direct seasonal rentals",
+      "Bedrooms 3 and 4 feature twin beds rather than dedicated double beds"
+    ],
+    "red_flags": "Building pool access strictly excluded by HOA rules ('SWIMMING POOL ACCESS NOT ALLOWED SORRY').",
+    "true_3m_eur": 10060,
+    "eff_monthly_total_eur": 3353.33,
+    "eff_monthly_pp_eur": 838.33,
+    "eff_monthly_pp_usd": 911.27,
+    "cost_score": 13.0,
+    "location_score": 25.0,
+    "space_score": 23.0,
+    "transparency_score": 15.0,
+    "value_score": 76.0,
+    "rank": 13
+  },
+  {
+    "id": "SHBCN-T15718-3",
+    "platform": "ShBarcelona",
+    "title": "Dreta de l'Eixample 4-Bedroom Flat with Courtyard Balcony",
+    "url": "https://www.shbarcelona.com/es/m/piso-alquiler-meses-4-habitaciones-dreta-eixample--15718",
+    "neighborhood": "La Dreta de l'Eixample (Tier 3)",
+    "address": "Gran Via de les Corts Catalanes / Passeig de Sant Joan, 08009 Barcelona",
+    "cross_streets": "Gran Via de les Corts Catalanes & Passeig de Sant Joan",
+    "coordinates": [
+      41.3962,
+      2.1748
+    ],
+    "walk_time_min": 18,
+    "transit_time_min": 12,
+    "is_tram_metro": true,
+    "commute_route": "1.5 km direct walk down Passeig de Sant Joan, crossing Arc de Triomf and walking through Ciutadella park to UPF (18 min).",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 95,
+    "floor": "6th floor with elevator",
+    "base_rent_eur": 2495,
+    "utilities_included": false,
+    "est_monthly_utilities_eur": 240,
+    "one_time_fees_eur": 850,
+    "cleaning_fee_eur": 220,
+    "deposit_eur": 4990,
+    "deposit_months": 2.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.0,
+    "calendar_verified": false,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "Double bed (150x190)",
+        "desk": "Office desk & chair",
+        "window": "Balcony facing quiet interior block patio",
+        "wardrobe": "Built-in wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed (140x190)",
+        "desk": "Desk & chair",
+        "window": "Window to courtyard",
+        "wardrobe": "Fitted wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Single bed (120x180)",
+        "desk": "Study table",
+        "window": "Interior window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Single bed (120x180)",
+        "desk": "Study table",
+        "window": "Interior window",
+        "wardrobe": "Wardrobe"
+      }
+    ],
+    "amenities": [
+      "Elevator",
+      "Balcony with outdoor dining for 4",
+      "Washing machine",
+      "Heating",
+      "Equipped kitchen with breakfast table",
+      "Fiber optic internet (100 Mbps)",
+      "Doorman"
+    ],
+    "pros": [
+      "High 6th-floor tranquility with a peaceful balcony facing the inner courtyard",
+      "95 m² layout with 2 full bathrooms (one with shower, one with bathtub)",
+      "Direct walk down Passeig de Sant Joan to UPF"
+    ],
+    "cons": [
+      "Occupancy calendar shows fully booked through June 2027 (included for platform transparency)",
+      "High upfront security deposit (2 months = €4,990) and agency admin fee"
+    ],
+    "red_flags": "Intercom buzzer currently non-functional (visitors must be met at the main street gate); current tenancy active until summer 2027.",
+    "true_3m_eur": 9275,
+    "eff_monthly_total_eur": 3091.67,
+    "eff_monthly_pp_eur": 772.92,
+    "eff_monthly_pp_usd": 840.16,
+    "cost_score": 23.4,
+    "location_score": 20.0,
+    "space_score": 23.0,
+    "transparency_score": 9.0,
+    "value_score": 75.4,
+    "rank": 14
+  },
+  {
+    "id": "RESA-CAMPUS-MAR",
+    "platform": "Resa Student Residences (Benchmark 1)",
+    "title": "Resa Campus del Mar - 4 Individual Studio Benchmark",
+    "url": "https://www.resa.es/es/residencias/barcelona/campus-del-mar/",
+    "neighborhood": "La Barceloneta (Tier 2)",
+    "address": "Passeig Salvat Papasseit, 4, 08003 Barcelona",
+    "cross_streets": "Passeig Salvat Papasseit & Carrer del Doctor Aiguader",
+    "coordinates": [
+      41.3812,
+      2.1904
+    ],
+    "walk_time_min": 11,
+    "transit_time_min": 8,
+    "is_tram_metro": false,
+    "commute_route": "850m walk north through Barceloneta park and crossing Ronda Litoral straight to UPF Ciutadella.",
+    "bedrooms": 4,
+    "bathrooms": 4.0,
+    "m2": 72,
+    "floor": "Multiple floors with elevators",
+    "base_rent_eur": 3500,
+    "utilities_included": true,
+    "est_monthly_utilities_eur": 0,
+    "one_time_fees_eur": 300,
+    "cleaning_fee_eur": 0,
+    "deposit_eur": 2000,
+    "deposit_months": 0.6,
+    "has_exterior_balcony": false,
+    "desk_spaces_rating": 5.0,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Studio 1 (Student A)",
+        "bed": "Single bed (90x200)",
+        "desk": "Built-in study desk with ergonomic chair & shelving",
+        "window": "Exterior window",
+        "wardrobe": "Ensuite wardrobe, private kitchenette & private bath"
+      },
+      {
+        "room": "Studio 2 (Student B)",
+        "bed": "Single bed (90x200)",
+        "desk": "Built-in study desk with ergonomic chair & shelving",
+        "window": "Exterior window",
+        "wardrobe": "Ensuite wardrobe, private kitchenette & private bath"
+      },
+      {
+        "room": "Studio 3 (Student C)",
+        "bed": "Single bed (90x200)",
+        "desk": "Built-in study desk with ergonomic chair & shelving",
+        "window": "Exterior window",
+        "wardrobe": "Ensuite wardrobe, private kitchenette & private bath"
+      },
+      {
+        "room": "Studio 4 (Student D)",
+        "bed": "Single bed (90x200)",
+        "desk": "Built-in study desk with ergonomic chair & shelving",
+        "window": "Exterior window",
+        "wardrobe": "Ensuite wardrobe, private kitchenette & private bath"
+      }
+    ],
+    "amenities": [
+      "All utilities included (water, electricity, high-speed Wi-Fi)",
+      "4 private ensuite bathrooms",
+      "4 private kitchenettes",
+      "On-site gym",
+      "Study rooms",
+      "24/7 front desk security",
+      "Bicycle storage",
+      "Laundromat"
+    ],
+    "pros": [
+      "Total privacy: 4 separate private studios each with private bathroom and kitchenette",
+      "11 min walk to UPF Ciutadella",
+      "Gym, study rooms, and 24/7 security included",
+      "Total cost fits under the €3,680 budget ceiling (€900/mo per student all-in)"
+    ],
+    "cons": [
+      "No shared apartment living room to hang out together as a group of 4",
+      "Compact individual living space (18 m² per studio) with single bed (90cm)"
+    ],
+    "red_flags": "Trimester contracts sell out rapidly; requires UPF acceptance letter.",
+    "true_3m_eur": 10800,
+    "eff_monthly_total_eur": 3600.0,
+    "eff_monthly_pp_eur": 900.0,
+    "eff_monthly_pp_usd": 978.3,
+    "cost_score": 3.2,
+    "location_score": 25.0,
+    "space_score": 19.0,
+    "transparency_score": 15.0,
+    "value_score": 62.2,
+    "rank": 15
+  },
+  {
+    "id": "AIRBNB-984674131521468220",
+    "platform": "Airbnb Monthly Stays",
+    "title": "The Collection - Catalan 160m² 4BD Flat on Gran Via",
+    "url": "https://www.airbnb.com/rooms/984674131521468220",
+    "neighborhood": "La Dreta de l'Eixample (Tier 3)",
+    "address": "Gran Via de les Corts Catalanes / Passeig de Gràcia, 08007 Barcelona",
+    "cross_streets": "Gran Via de les Corts Catalanes & Carrer de Pau Claris",
+    "coordinates": [
+      41.3915,
+      2.1685
+    ],
+    "walk_time_min": 20,
+    "transit_time_min": 11,
+    "is_tram_metro": true,
+    "commute_route": "Direct Metro L1 from Urgell or Catalunya to Arc de Triomf (2 stops, 4 min) + 7 min walk to UPF campus (11 min total).",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 160,
+    "floor": "3rd floor with elevator",
+    "base_rent_eur": 3350,
+    "utilities_included": true,
+    "est_monthly_utilities_eur": 0,
+    "one_time_fees_eur": 250,
+    "cleaning_fee_eur": 200,
+    "deposit_eur": 0,
+    "deposit_months": 0.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.5,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "King double bed",
+        "desk": "Large work desk",
+        "window": "Exterior balcony",
+        "wardrobe": "Large wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed",
+        "desk": "Study desk",
+        "window": "Exterior window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Double bed",
+        "desk": "Study desk",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Two twin beds",
+        "desk": "Work desk",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      }
+    ],
+    "amenities": [
+      "All utilities included",
+      "AirCover protection",
+      "Massive 160 m² layout",
+      "Elevator",
+      "Balcony",
+      "Washing machine",
+      "Dishwasher",
+      "Air conditioning",
+      "Central heating"
+    ],
+    "pros": [
+      "Immense 160 m² space - luxury Eixample proportions",
+      "All utilities and Wi-Fi included",
+      "AirCover zero-deposit tenant guarantee"
+    ],
+    "cons": [
+      "Base price of €3,350/mo reaches the upper budget band (€875/mo all-in per person)",
+      "20-minute walk to UPF (11 min via Metro L1)"
+    ],
+    "red_flags": "High-profile building with strict noise regulations.",
+    "true_3m_eur": 10500,
+    "eff_monthly_total_eur": 3500.0,
+    "eff_monthly_pp_eur": 875.0,
+    "eff_monthly_pp_usd": 951.12,
+    "cost_score": 7.2,
+    "location_score": 15.0,
+    "space_score": 24.5,
+    "transparency_score": 15.0,
+    "value_score": 61.7,
+    "rank": 16
+  },
+  {
+    "id": "LIVENSA-MARINA",
+    "platform": "Livensa Living (Benchmark 2)",
+    "title": "Livensa Living Barcelona Marina - 4 Studio Benchmark",
+    "url": "https://www.livensaliving.com/residencias-estudiantes-barcelona/marina/",
+    "neighborhood": "Marina / Poblenou (Tier 1)",
+    "address": "Carrer de Sancho de Ávila, 110, 08018 Barcelona",
+    "cross_streets": "Carrer de Sancho de Ávila & Carrer de Marina",
+    "coordinates": [
+      41.3989,
+      2.1895
+    ],
+    "walk_time_min": 10,
+    "transit_time_min": 6,
+    "is_tram_metro": true,
+    "commute_route": "800m direct walk south on Carrer de Marina straight to Carrer de Ramon Trias Fargas.",
+    "bedrooms": 4,
+    "bathrooms": 4.0,
+    "m2": 64,
+    "floor": "Multi-story student complex with elevators",
+    "base_rent_eur": 4200,
+    "utilities_included": true,
+    "est_monthly_utilities_eur": 0,
+    "one_time_fees_eur": 400,
+    "cleaning_fee_eur": 0,
+    "deposit_eur": 2000,
+    "deposit_months": 0.5,
+    "has_exterior_balcony": false,
+    "desk_spaces_rating": 5.0,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Studio 1 (Student A)",
+        "bed": "Single bed (90x200)",
+        "desk": "Dedicated study desk & executive chair",
+        "window": "Exterior window",
+        "wardrobe": "Ensuite wardrobe, private bath & kitchenette"
+      },
+      {
+        "room": "Studio 2 (Student B)",
+        "bed": "Single bed (90x200)",
+        "desk": "Dedicated study desk & executive chair",
+        "window": "Exterior window",
+        "wardrobe": "Ensuite wardrobe, private bath & kitchenette"
+      },
+      {
+        "room": "Studio 3 (Student C)",
+        "bed": "Single bed (90x200)",
+        "desk": "Dedicated study desk & executive chair",
+        "window": "Exterior window",
+        "wardrobe": "Ensuite wardrobe, private bath & kitchenette"
+      },
+      {
+        "room": "Studio 4 (Student D)",
+        "bed": "Single bed (90x200)",
+        "desk": "Dedicated study desk & executive chair",
+        "window": "Exterior window",
+        "wardrobe": "Ensuite wardrobe, private bath & kitchenette"
+      }
+    ],
+    "amenities": [
+      "All utilities included",
+      "Rooftop swimming pool & terrace",
+      "Fitness gym",
+      "Cinema room & games room",
+      "Bi-weekly cleaning with linen changes",
+      "24/7 security concierge"
+    ],
+    "pros": [
+      "10 min walk to UPF Ciutadella",
+      "Luxury facilities (rooftop pool, gym, cinema room)",
+      "Bi-weekly housekeeping and fresh linens included"
+    ],
+    "cons": [
+      "Exceeds budget cap: €4,200/mo base rent (€1,083/mo all-in per person vs €920 ceiling)",
+      "Small 16 m² individual studio footprint"
+    ],
+    "red_flags": "Total price exceeds hard ceiling by €520/month; disqualified for budget violation.",
+    "true_3m_eur": 13000,
+    "eff_monthly_total_eur": 4333.33,
+    "eff_monthly_pp_eur": 1083.33,
+    "eff_monthly_pp_usd": 1177.58,
+    "cost_score": 0.0,
+    "location_score": 25.0,
+    "space_score": 17.5,
+    "transparency_score": 15.0,
+    "value_score": 57.5,
+    "rank": 17
+  },
+  {
+    "id": "SPOTA-907462",
+    "platform": "Spotahome",
+    "title": "Turnkey 4-Bedroom Flat in Fort Pienc with All Bills Included",
+    "url": "https://www.spotahome.com/barcelona/for-rent:apartments/907462",
+    "neighborhood": "El Fort Pienc",
+    "address": "Carrer de Sicília, 08013 Barcelona",
+    "cross_streets": "Carrer de Sicília & Carrer de Ribes",
+    "coordinates": [
+      41.3961,
+      2.1806
+    ],
+    "walk_time_min": 14,
+    "transit_time_min": 9,
+    "is_tram_metro": true,
+    "commute_route": "1.1 km walk south along Carrer de Ribes through Estació del Nord park directly to UPF Ciutadella.",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 80,
+    "floor": "2nd floor with elevator",
+    "base_rent_eur": 3600,
+    "utilities_included": true,
+    "est_monthly_utilities_eur": 0,
+    "one_time_fees_eur": 0,
+    "cleaning_fee_eur": 200,
+    "deposit_eur": 3600,
+    "deposit_months": 1.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.0,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "Double bed",
+        "desk": "Study desk",
+        "window": "Exterior balcony",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed",
+        "desk": "Study desk",
+        "window": "Exterior window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Single bed",
+        "desk": "Study desk",
+        "window": "Inner patio",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Single bed",
+        "desk": "Study desk",
+        "window": "Inner patio",
+        "wardrobe": "Wardrobe"
+      }
+    ],
+    "amenities": [
+      "All utilities included",
+      "Elevator",
+      "Balcony",
+      "Washing machine",
+      "Dryer",
+      "Air conditioning",
+      "Heating",
+      "Wi-Fi included"
+    ],
+    "pros": [
+      "Complete turnkey all-bills-included package",
+      "Elevator building in Fort Pienc near Arc de Triomf",
+      "2 full bathrooms"
+    ],
+    "cons": [
+      "At €3,600/month, it is near the hard budget ceiling of €3,680/mo (€917/mo per person all-in)",
+      "80 m² is somewhat compact for this price point"
+    ],
+    "red_flags": "Priced near the hard cap; leave as lower-ranked alternative to ID 1173455 or ID 127175 on the same street.",
+    "true_3m_eur": 11000,
+    "eff_monthly_total_eur": 3666.67,
+    "eff_monthly_pp_eur": 916.67,
+    "eff_monthly_pp_usd": 996.42,
+    "cost_score": 0.5,
+    "location_score": 20.0,
+    "space_score": 21.5,
+    "transparency_score": 15.0,
+    "value_score": 57.0,
+    "rank": 18
+  },
+  {
+    "id": "AIRBNB-12824656",
+    "platform": "Airbnb Monthly Stays",
+    "title": "Casanova Eixample 4-Bedroom Designer Apartment with 3 Baths",
+    "url": "https://www.airbnb.com/rooms/12824656",
+    "neighborhood": "L'Antiga Esquerra de l'Eixample (Tier 3)",
+    "address": "Carrer de Casanova, 08011 Barcelona",
+    "cross_streets": "Carrer de Casanova & Carrer d'Aragó",
+    "coordinates": [
+      41.3865,
+      2.1565
+    ],
+    "walk_time_min": 25,
+    "transit_time_min": 14,
+    "is_tram_metro": true,
+    "commute_route": "Direct Metro L1 from Urgell to Arc de Triomf / Marina (4 stops, 7 min) + 7 min walk through Ciutadella park (14 min total).",
+    "bedrooms": 4,
+    "bathrooms": 3.0,
+    "m2": 120,
+    "floor": "3rd floor with elevator",
+    "base_rent_eur": 3480,
+    "utilities_included": true,
+    "est_monthly_utilities_eur": 0,
+    "one_time_fees_eur": 240,
+    "cleaning_fee_eur": 220,
+    "deposit_eur": 0,
+    "deposit_months": 0.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.5,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1 (En Suite)",
+        "bed": "King double bed",
+        "desk": "Executive desk",
+        "window": "Terrace access",
+        "wardrobe": "En suite bathroom & wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed",
+        "desk": "Study desk",
+        "window": "Exterior window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Double bed",
+        "desk": "Study desk",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Double bed",
+        "desk": "Study desk",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      }
+    ],
+    "amenities": [
+      "3 full bathrooms",
+      "All utilities included",
+      "Air conditioning in every room",
+      "Heating",
+      "Terrace",
+      "Elevator",
+      "Washing machine",
+      "Dishwasher",
+      "Designer furnishings"
+    ],
+    "pros": [
+      "3 full bathrooms provides unbeatable comfort for 4 adults",
+      "4 real double beds in every single room",
+      "All utilities included in price with zero security deposit"
+    ],
+    "cons": [
+      "Priced at €3,480/mo (€908/mo all-in per person), near the €920 ceiling",
+      "25-min walk to UPF"
+    ],
+    "red_flags": "Monthly price is close to the hard budget cap.",
+    "true_3m_eur": 10900,
+    "eff_monthly_total_eur": 3633.33,
+    "eff_monthly_pp_eur": 908.33,
+    "eff_monthly_pp_usd": 987.36,
+    "cost_score": 1.9,
+    "location_score": 15.0,
+    "space_score": 24.5,
+    "transparency_score": 15.0,
+    "value_score": 56.4,
+    "rank": 19
+  },
+  {
+    "id": "SPOTA-1630520",
+    "platform": "Spotahome",
+    "title": "Classic 98m² 4-Bedroom Flat in L'Antiga Esquerra",
+    "url": "https://www.spotahome.com/barcelona/for-rent:apartments/1630520",
+    "neighborhood": "L'Antiga Esquerra de l'Eixample (Tier 3)",
+    "address": "Carrer de Villarroel, 08036 Barcelona",
+    "cross_streets": "Carrer de Villarroel & Carrer de Provença",
+    "coordinates": [
+      41.3885,
+      2.1525
+    ],
+    "walk_time_min": 26,
+    "transit_time_min": 14,
+    "is_tram_metro": true,
+    "commute_route": "Metro L1 from Hospital Clínic / Urgell to Arc de Triomf (14 min door-to-door).",
+    "bedrooms": 4,
+    "bathrooms": 2.0,
+    "m2": 98,
+    "floor": "2nd floor with elevator",
+    "base_rent_eur": 3237,
+    "utilities_included": false,
+    "est_monthly_utilities_eur": 250,
+    "one_time_fees_eur": 250,
+    "cleaning_fee_eur": 200,
+    "deposit_eur": 3237,
+    "deposit_months": 1.0,
+    "has_exterior_balcony": true,
+    "desk_spaces_rating": 4.0,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Bedroom 1",
+        "bed": "Double bed",
+        "desk": "Desk & chair",
+        "window": "Balcony",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 2",
+        "bed": "Double bed",
+        "desk": "Desk & chair",
+        "window": "Exterior window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 3",
+        "bed": "Single bed",
+        "desk": "Desk & chair",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      },
+      {
+        "room": "Bedroom 4",
+        "bed": "Single bed",
+        "desk": "Desk & chair",
+        "window": "Courtyard window",
+        "wardrobe": "Wardrobe"
+      }
+    ],
+    "amenities": [
+      "Elevator",
+      "Balcony",
+      "Air conditioning",
+      "Heating",
+      "Washing machine",
+      "Dryer",
+      "Equipped kitchen"
+    ],
+    "pros": [
+      "Spacious 98 m² layout with balcony and elevator",
+      "2 full bathrooms",
+      "Quiet neighborhood near Hospital Clínic"
+    ],
+    "cons": [
+      "Higher price point (€3,237/mo base) with utilities extra",
+      "26-min walk to UPF"
+    ],
+    "red_flags": "Requires Metro L1/L5 commute daily.",
+    "true_3m_eur": 10911,
+    "eff_monthly_total_eur": 3637.0,
+    "eff_monthly_pp_eur": 909.25,
+    "eff_monthly_pp_usd": 988.35,
+    "cost_score": 1.7,
+    "location_score": 15.0,
+    "space_score": 23.0,
+    "transparency_score": 15.0,
+    "value_score": 54.7,
+    "rank": 20
+  },
+  {
+    "id": "BLAU-STUDENT",
+    "platform": "Blau Student Housing (Benchmark 3)",
+    "title": "Blau Student Housing - 4 Premium Studio Benchmark",
+    "url": "https://blaustudenthousing.com",
+    "neighborhood": "Sant Martí / 22@",
+    "address": "Carrer del Perú, 128, 08020 Barcelona",
+    "cross_streets": "Carrer del Perú & Carrer de Bilbao",
+    "coordinates": [
+      41.4112,
+      2.1995
+    ],
+    "walk_time_min": 28,
+    "transit_time_min": 16,
+    "is_tram_metro": true,
+    "commute_route": "Tram T4 from Ca l'Aranyó direct to Wellington / Ciutadella (6 stops, 11 min ride) + 5 min walk.",
+    "bedrooms": 4,
+    "bathrooms": 4.0,
+    "m2": 80,
+    "floor": "Modern high-rise residence",
+    "base_rent_eur": 5400,
+    "utilities_included": true,
+    "est_monthly_utilities_eur": 0,
+    "one_time_fees_eur": 400,
+    "cleaning_fee_eur": 0,
+    "deposit_eur": 2000,
+    "deposit_months": 0.4,
+    "has_exterior_balcony": false,
+    "desk_spaces_rating": 5.0,
+    "calendar_verified": true,
+    "online_protection": true,
+    "bedroom_breakdown": [
+      {
+        "room": "Studio 1 (Student A)",
+        "bed": "Queen bed (140x200)",
+        "desk": "Design desk & chair",
+        "window": "Large exterior window",
+        "wardrobe": "Ensuite bathroom & kitchenette"
+      },
+      {
+        "room": "Studio 2 (Student B)",
+        "bed": "Queen bed (140x200)",
+        "desk": "Design desk & chair",
+        "window": "Large exterior window",
+        "wardrobe": "Ensuite bathroom & kitchenette"
+      },
+      {
+        "room": "Studio 3 (Student C)",
+        "bed": "Queen bed (140x200)",
+        "desk": "Design desk & chair",
+        "window": "Large exterior window",
+        "wardrobe": "Ensuite bathroom & kitchenette"
+      },
+      {
+        "room": "Studio 4 (Student D)",
+        "bed": "Queen bed (140x200)",
+        "desk": "Design desk & chair",
+        "window": "Large exterior window",
+        "wardrobe": "Ensuite bathroom & kitchenette"
+      }
+    ],
+    "amenities": [
+      "All bills included",
+      "Rooftop infinity pool",
+      "Fitness club",
+      "Co-working hubs",
+      "24/7 security",
+      "Private kitchens"
+    ],
+    "pros": [
+      "Ultra-premium student living experience",
+      "Queen double beds in all studios with private baths and kitchens"
+    ],
+    "cons": [
+      "Drastically exceeds budget ceiling: €5,400/mo base rent (€1,383/mo per person vs €920 cap)",
+      "28 min walk to UPF"
+    ],
+    "red_flags": "Disqualified due to severe budget cap violation (+50% over ceiling).",
+    "true_3m_eur": 16600,
+    "eff_monthly_total_eur": 5533.33,
+    "eff_monthly_pp_eur": 1383.33,
+    "eff_monthly_pp_usd": 1503.68,
+    "cost_score": 0.0,
+    "location_score": 5.0,
+    "space_score": 20.5,
+    "transparency_score": 15.0,
+    "value_score": 40.5,
+    "rank": 21
+  }
+]

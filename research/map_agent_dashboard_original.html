@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPF Ciutadella Winter 2027 Housing Intelligence Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        :root {
+            --bg: #0b1120;
+            --surface: #1e293b;
+            --surface-card: #0f172a;
+            --border: #334155;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --primary: #38bdf8;
+            --success: #34d399;
+            --warning: #fbbf24;
+            --danger: #f87171;
+            --accent: #818cf8;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+        header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.65rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            background: #0284c7;
+            color: white;
+            letter-spacing: 0.03em;
+        }
+        .pulse-live {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #34d399;
+            margin-right: 5px;
+            box-shadow: 0 0 8px #34d399;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 1rem;
+            padding: 1rem 1.5rem 0.5rem 1.5rem;
+        }
+        .stat-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            padding: 1rem 1.25rem;
+        }
+        .stat-val {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 0.2rem;
+        }
+        .filter-panel {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            margin: 0.75rem 1.5rem;
+            padding: 1rem 1.25rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+        .filter-group input[type="text"], .filter-group select {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 0.4rem 0.6rem;
+            border-radius: 0.375rem;
+            font-size: 0.85rem;
+            outline: none;
+        }
+        .filter-group input[type="range"] {
+            accent-color: var(--primary);
+            cursor: pointer;
+        }
+        .filter-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            cursor: pointer;
+            font-size: 0.85rem;
+            color: var(--text);
+            margin-top: 1rem;
+        }
+        .filter-checkbox input {
+            accent-color: var(--primary);
+            width: 16px;
+            height: 16px;
+        }
+        .main-grid {
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 1.25rem;
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            height: calc(100vh - 280px);
+            min-height: 520px;
+        }
+        @media (max-width: 1024px) {
+            .main-grid { grid-template-columns: 1fr; height: auto; }
+        }
+        #map {
+            border-radius: 0.75rem;
+            border: 1px solid var(--border);
+            height: 100%;
+            min-height: 480px;
+        }
+        .list-container {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            height: 100%;
+            overflow-y: auto;
+            padding: 0.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+        .listing-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border);
+            border-radius: 0.5rem;
+            padding: 0.9rem;
+            transition: all 0.15s ease-in-out;
+            cursor: pointer;
+        }
+        .listing-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(56, 189, 248, 0.15);
+        }
+        .listing-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.4rem;
+        }
+        .rank-badge {
+            background: #334155;
+            color: #f1f5f9;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 0.15rem 0.45rem;
+            border-radius: 0.25rem;
+        }
+        .score-pill {
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.375rem;
+        }
+        .score-high { background: rgba(52, 211, 153, 0.15); color: #34d399; border: 1px solid #34d399; }
+        .score-mid { background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid #38bdf8; }
+        .score-low { background: rgba(251, 191, 36, 0.15); color: #fbbf24; border: 1px solid #fbbf24; }
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            margin: 0.4rem 0;
+            background: rgba(15, 23, 42, 0.6);
+            padding: 0.4rem 0.6rem;
+            border-radius: 0.35rem;
+        }
+        .action-btns {
+            display: flex;
+            gap: 0.4rem;
+            margin-top: 0.5rem;
+            flex-wrap: wrap;
+        }
+        .btn {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            padding: 0.35rem 0.65rem;
+            border-radius: 0.375rem;
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 600;
+            transition: background 0.15s;
+        }
+        .btn:hover { background: #0369a1; }
+        .btn-secondary {
+            background: #334155;
+            color: #e2e8f0;
+        }
+        .btn-secondary:hover { background: #475569; }
+        .tag {
+            display: inline-block;
+            font-size: 0.7rem;
+            padding: 0.15rem 0.4rem;
+            border-radius: 0.25rem;
+            background: rgba(129, 140, 248, 0.2);
+            color: #c7d2fe;
+            border: 1px solid rgba(129, 140, 248, 0.4);
+            margin-right: 0.3rem;
+            margin-bottom: 0.2rem;
+        }
+        .arbitrage-pill {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.15rem 0.45rem;
+            border-radius: 0.25rem;
+            background: rgba(52, 211, 153, 0.2);
+            color: #34d399;
+            border: 1px solid #34d399;
+        }
+    </style>
+</head>
+<body>
+<div style="position:relative;z-index:10000;background:#fff3cd;color:#3b2f10;padding:14px 24px;font:15px/1.5 sans-serif;border-bottom:2px solid #d97706"><strong>Original agent snapshot, preserved for comparison.</strong> Prices, scores and calendar claims below have not all been verified. The old “watchdog live” label is historical; that process was stopped. <a href="../index.html" style="color:#075985">Open the combined light-mode map →</a></div>
+    <header>
+        <div>
+            <h1>UPF Ciutadella Winter 2027 Housing Intelligence</h1>
+            <p style="color: var(--text-muted); font-size: 0.85rem;">Target Lease: Jan 1 – Mar 31, 2027 (3 Mos) | 4 Adults | Anchor: Carrer de Ramon Trias Fargas, 25-27</p>
+        </div>
+        <div style="text-align: right;">
+            <span class="badge"><span class="pulse-live"></span>WATCHDOG LIVE</span>
+            <div style="color: var(--text-muted); font-size: 0.75rem; margin-top: 0.25rem;">Cycle: Every 15 min | November 03, 2026 - 10:59:08</div>
+        </div>
+    </header>
+
+    <div class="stats">
+        <div class="stat-card">
+            <div style="color: var(--text-muted); font-size: 0.75rem; font-weight: 600;">ACTIVE CANDIDATES</div>
+            <div class="stat-val" id="statCandidates">21 Properties</div>
+        </div>
+        <div class="stat-card">
+            <div style="color: var(--text-muted); font-size: 0.75rem; font-weight: 600;">TOP VALUE SCORE</div>
+            <div class="stat-val" style="color: var(--success);">97.0/100</div>
+        </div>
+        <div class="stat-card">
+            <div style="color: var(--text-muted); font-size: 0.75rem; font-weight: 600;">LOWEST ALL-IN / PERSON</div>
+            <div class="stat-val" style="color: var(--primary);">€540 <span style="font-size: 0.85rem; color: var(--text-muted);">($587 USD)</span></div>
+        </div>
+        <div class="stat-card">
+            <div style="color: var(--text-muted); font-size: 0.75rem; font-weight: 600;">CLOSEST APARTMENT</div>
+            <div class="stat-val" style="color: var(--warning);">4 min <span style="font-size: 0.85rem; color: var(--text-muted);">(350m walk)</span></div>
+        </div>
+    </div>
+
+    <div class="filter-panel">
+        <div class="filter-group" style="flex: 1; min-width: 180px;">
+            <label>Search Neighborhood / Street</label>
+            <input type="text" id="filterSearch" placeholder="e.g. Sardenya, Fort Pienc, Poblenou..." />
+        </div>
+        <div class="filter-group" style="min-width: 150px;">
+            <label>Max All-In / Person: <span id="budgetDisplay" style="color: var(--primary); font-weight: 700;">€920</span></label>
+            <input type="range" id="filterBudget" min="500" max="920" step="10" value="920" />
+        </div>
+        <div class="filter-group" style="min-width: 130px;">
+            <label>Max Walk Commute</label>
+            <select id="filterWalk">
+                <option value="999">Any Commute</option>
+                <option value="10">&le; 10 min (Ultra close)</option>
+                <option value="15">&le; 15 min (Tier 1)</option>
+                <option value="20">&le; 20 min (Tier 2)</option>
+                <option value="25">&le; 25 min (Tier 3)</option>
+            </select>
+        </div>
+        <div class="filter-group" style="min-width: 120px;">
+            <label>Platform</label>
+            <select id="filterPlatform">
+                <option value="all">All Platforms</option>
+                <option value="Spotahome">Spotahome</option>
+                <option value="HousingAnywhere">HousingAnywhere</option>
+                <option value="Cotown">Cotown</option>
+                <option value="Airbnb">Airbnb</option>
+            </select>
+        </div>
+        <label class="filter-checkbox">
+            <input type="checkbox" id="filterTwoBaths" />
+            <span>2+ Bathrooms</span>
+        </label>
+        <label class="filter-checkbox">
+            <input type="checkbox" id="filterBalcony" />
+            <span>Balcony/Terrace</span>
+        </label>
+        <div style="margin-top: 1rem; margin-left: auto;">
+            <button id="resetFilters" class="btn btn-secondary" style="cursor: pointer;">Reset Filters</button>
+        </div>
+    </div>
+
+    <div class="main-grid">
+        <div id="map"></div>
+        <div class="list-container" id="listingList"></div>
+    </div>
+
+    <script>
+        const properties = [{"id": "SPOTA-201508", "rank": 1, "title": "Modern 4-Bedroom Flat next to UPF Ciutadella", "score": 97.0, "price_pp_eur": 585.0, "price_pp_usd": 635.89, "base_rent_eur": 1950, "walk_min": 4, "transit_min": 3, "commute_route": "Direct 350m walk south on Carrer de Sardenya straight to Carrer de Ramon Trias Fargas (Ciutadella campus entrance).", "beds": 4, "baths": 2.0, "m2": 80, "has_balcony": true, "deposit_eur": 1950, "deposit_months": 1.0, "utilities_included": false, "platform": "Spotahome", "url": "https://www.spotahome.com/barcelona/for-rent:apartments/201508", "alt_url": "https://housinganywhere.com/room/ut760850/es/Barcelona/carrer-de-sardenya", "alt_name": "HousingAnywhere (ID 1407731)", "alt_fee": 487, "lat": 41.3912, "lon": 2.1881, "neighborhood": "El Parc i la Llacuna del Poblenou (Marina / Bogatell)", "pros": ["Unbeatable proximity: only 350m (4-min walk) to UPF Ciutadella", "2 full bathrooms prevent morning bottlenecks for 4 students", "Exceptional budget efficiency at \u20ac585/mo all-in per person", "Includes dishwasher and full climate control (heating & AC)"], "cons": ["80 m\u00b2 is slightly compact for 4 adults compared to 100m\u00b2 flats", "Bedrooms 3 & 4 are single beds facing interior courtyard", "Utilities not included (budget \u20ac250/mo total)"], "red_flags": "Standard Spotahome cancellation policy; utility consumption billed based on actual meter reading at checkout."}, {"id": "SPOTA-127175", "rank": 2, "title": "Arc de Triomf 4-Bedroom Flat with Bi-Weekly Cleaning", "score": 92.0, "price_pp_eur": 591.67, "price_pp_usd": 643.14, "base_rent_eur": 2000, "walk_min": 14, "transit_min": 9, "commute_route": "1.1 km walk south along Carrer d'Ausi\u00e0s Marc, crossing Arc de Triomf and entering Parc de la Ciutadella straight to Ramon Trias Fargas.", "beds": 4, "baths": 2.0, "m2": 80, "has_balcony": true, "deposit_eur": 2000, "deposit_months": 1.0, "utilities_included": false, "platform": "Spotahome", "url": "https://www.spotahome.com/barcelona/for-rent:apartments/127175", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3955, "lon": 2.1803, "neighborhood": "El Fort Pienc / Arc de Triomf", "pros": ["Includes regular cleaning service in the rent contract", "Superb value at \u20ac2,000 base rent (\u20ac593/mo effective all-in per person)", "Elevator building in prime Fort Pienc residential core", "Walking route passes directly through historic Arc de Triomf and Ciutadella Park"], "cons": ["Heating is electric radiators rather than gas central heating", "Utilities not included (budget \u20ac240/mo for water/electricity/gas)"], "red_flags": "Landlord requires quiet hours after 22:00 due to elderly neighbors in the community."}, {"id": "SPOTA-1426235", "rank": 3, "title": "Furnished 4-Bedroom Flat with Balcony in El Fort Pienc", "score": 90.0, "price_pp_eur": 637.5, "price_pp_usd": 692.96, "base_rent_eur": 2500, "walk_min": 12, "transit_min": 8, "commute_route": "970m scenic walk south through Parc de l'Estaci\u00f3 del Nord and Passeig de Pujades directly to UPF campus, or 8 min via Tram T4 from Marina.", "beds": 4, "baths": 2.0, "m2": 70, "has_balcony": true, "deposit_eur": 0, "deposit_months": 0.0, "utilities_included": true, "platform": "Spotahome", "url": "https://www.spotahome.com/barcelona/for-rent:apartments/1426235", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3971, "lon": 2.1859, "neighborhood": "El Fort Pienc (Arc de Triomf / Estaci\u00f3 del Nord)", "pros": ["Bills included in rent and zero refundable deposit requirement via platform guarantee", "Tier 1 location: 12 min walk to UPF through Parc de l'Estaci\u00f3 del Nord", "2 full bathrooms and in-unit dryer", "Quiet residential street close to Auditori and Arc de Triomf"], "cons": ["70 m\u00b2 is compact for 4 bedrooms (cozy common areas)", "No elevator (2nd floor walkup, ~45 steps)"], "red_flags": "Smoking allowed inside by previous tenant policies; confirm comprehensive post-lease ozone cleaning before move-in."}, {"id": "SPOTA-220029", "rank": 4, "title": "Spacious 112m\u00b2 Modern 4-Bedroom Flat on Gran Via", "score": 89.5, "price_pp_eur": 695.83, "price_pp_usd": 756.37, "base_rent_eur": 2400, "walk_min": 26, "transit_min": 12, "commute_route": "Direct Metro L1 from Rocafort straight to Marina or Arc de Triomf (5 stops, 7 min ride) + 5 min walk to UPF campus (12 min total).", "beds": 4, "baths": 2.0, "m2": 112, "has_balcony": true, "deposit_eur": 2400, "deposit_months": 1.0, "utilities_included": false, "platform": "Spotahome", "url": "https://www.spotahome.com/barcelona/for-rent:apartments/220029", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3789, "lon": 2.1512, "neighborhood": "L'Esquerra de l'Eixample (Tier 3)", "pros": ["Expansive 112 m\u00b2 floor plan with 3 double beds and 1 single", "Gas central heating provides optimal warmth in Jan-Feb", "Direct fast transit via Metro L1 (12 min door-to-door to UPF)"], "cons": ["26-min walk on foot (requires Metro L1 for daily commute)", "Base rent of \u20ac2,400 + utilities"], "red_flags": "Gran Via orientation requires double-glazed windows kept shut during heavy morning traffic."}, {"id": "SPOTA-1403718", "rank": 5, "title": "Sunlit 90m\u00b2 4-Bedroom Flat with Terrace in Sant Antoni / Nova Esquerra", "score": 88.0, "price_pp_eur": 641.67, "price_pp_usd": 697.49, "base_rent_eur": 2500, "walk_min": 25, "transit_min": 14, "commute_route": "Direct Metro L1 from Urgell to Arc de Triomf or Marina (4 stops, 7 min ride) + 7 min walk through Ciutadella park.", "beds": 4, "baths": 2.0, "m2": 90, "has_balcony": true, "deposit_eur": 2500, "deposit_months": 1.0, "utilities_included": true, "platform": "Spotahome", "url": "https://www.spotahome.com/barcelona/for-rent:apartments/1403718", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3829, "lon": 2.1555, "neighborhood": "Sant Antoni / La Nova Esquerra de l'Eixample (Tier 3)", "pros": ["Bills included in rent at \u20ac2,500/mo (\u20ac642/mo effective all-in per person)", "Spacious 90 m\u00b2 layout with private terrace", "Sant Antoni market and culinary district right outside"], "cons": ["Located in Eixample Esquerra, requiring a 14-min Metro L1 trip or 25-min walk", "Bedrooms 3 & 4 are single beds"], "red_flags": "Metro L1 required for daily commute."}, {"id": "SPOTA-1480143", "rank": 6, "title": "Renovated 90m\u00b2 4-Bedroom Flat with Balcony in Sant Antoni", "score": 88.0, "price_pp_eur": 540.0, "price_pp_usd": 586.98, "base_rent_eur": 1800, "walk_min": 24, "transit_min": 14, "commute_route": "Direct Metro L2/L3 from Paral\u00b7lel to Passeig de Gr\u00e0cia, transfer L4 to Ciutadella / Vila Ol\u00edmpica (14 min) or direct Bus D20 / H14 (16 min).", "beds": 4, "baths": 2.0, "m2": 90, "has_balcony": true, "deposit_eur": 1800, "deposit_months": 1.0, "utilities_included": false, "platform": "Spotahome", "url": "https://www.spotahome.com/barcelona/for-rent:apartments/1480143", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3762, "lon": 2.1595, "neighborhood": "Sant Antoni (Tier 3)", "pros": ["Exceptional price efficiency at \u20ac1,800/mo (\u20ac540/mo effective all-in per person)", "Equipped with dishwasher, dryer, and private balcony", "90 m\u00b2 layout with 2 full bathrooms"], "cons": ["Sant Antoni location requires 14-min transit or 24-min walk", "Bedrooms 3 & 4 feature single beds"], "red_flags": "Avinguda del Paral\u00b7lel traffic noise facing front balcony during rush hour."}, {"id": "COTOWN-NAPOLS206", "rank": 7, "title": "Cotown N\u00e0pols 206 - 4 Student Room Cluster with Common Terrace", "score": 87.0, "price_pp_eur": 611.67, "price_pp_usd": 664.88, "base_rent_eur": 2380, "walk_min": 20, "transit_min": 12, "commute_route": "1.6 km walk down Carrer de N\u00e0pols through Estaci\u00f3 del Nord park directly to UPF Ciutadella (20 min), or Bus V21 / Metro L2 direct (12 min).", "beds": 4, "baths": 2.0, "m2": 85, "has_balcony": true, "deposit_eur": 2380, "deposit_months": 1.0, "utilities_included": true, "platform": "Cotown Coliving", "url": "https://www.cotown.com/en/barcelona", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3995, "lon": 2.1765, "neighborhood": "Dreta de l'Eixample / Fort Pienc (Tier 2/3)", "pros": ["All bills, Wi-Fi, and flat cleaning included in the flat rate of \u20ac595/person/mo", "Access to furnished communal rooftop terrace with panoramic city views", "Coliving management handles repairs and maintenance within 24h"], "cons": ["20-minute walk to UPF Ciutadella (or 12 min via bus/metro)", "Single beds in Rooms 3 and 4"], "red_flags": "Cotown coliving house rules strictly prohibit outside overnight guests staying more than 2 consecutive nights."}, {"id": "SPOTA-1477287", "rank": 8, "title": "Spacious 110m\u00b2 4-Bedroom Beachside Flat in La Barceloneta", "score": 84.9, "price_pp_eur": 791.67, "price_pp_usd": 860.54, "base_rent_eur": 3100, "walk_min": 10, "transit_min": 6, "commute_route": "800m direct walk northeast along Passeig de Mar\u00edtim / Carrer del Doctor Aiguader straight into Carrer de Ramon Trias Fargas.", "beds": 4, "baths": 2.0, "m2": 110, "has_balcony": true, "deposit_eur": 3100, "deposit_months": 1.0, "utilities_included": true, "platform": "Spotahome", "url": "https://www.spotahome.com/barcelona/for-rent:apartments/1477287", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3825, "lon": 2.1885, "neighborhood": "La Barceloneta (Northern Marina border)", "pros": ["All bills included in rent (electricity, water, heating, Wi-Fi up to standard fair use)", "Huge 110 m\u00b2 floor plan with 4 real bedrooms and 2 full baths", "Equipped with both in-unit washer AND clothes dryer", "Prime coastal location just 10 min walk to UPF and 3 min to the beach"], "cons": ["Base rent of \u20ac3,100 is higher (though all-inclusive of utilities)", "Barceloneta neighborhood can have street noise on weekend evenings"], "red_flags": "Utility fair-use policy caps monthly electricity consumption at \u20ac200/mo (excess billed to tenant)."}, {"id": "ATEMPORAL-AT1908007", "rank": 9, "title": "Classic 105m\u00b2 Eixample Apartment with 4 Double Bedrooms", "score": 84.5, "price_pp_eur": 691.67, "price_pp_usd": 751.84, "base_rent_eur": 2200, "walk_min": 26, "transit_min": 14, "commute_route": "Metro L1 from Urgell (2 blocks away) direct to Arc de Triomf or Marina (4 stops, 7 min) + 7 min walk to UPF Ciutadella.", "beds": 4, "baths": 2.0, "m2": 105, "has_balcony": true, "deposit_eur": 4400, "deposit_months": 2.0, "utilities_included": false, "platform": "aTemporal Barcelona", "url": "https://www.atemporalbarcelona.es/barcelona/eixample/piso-de-alquiler-temporal-con-4-habitaciones-en-calle-villarroel-en-barcelona", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3842, "lon": 2.1577, "neighborhood": "L'Antiga Esquerra de l'Eixample (Tier 3)", "pros": ["Generous 105 m\u00b2 layout with 4 true double bedrooms", "All 4 bedrooms accommodate double beds and study desks", "Competitive base rent of \u20ac2,200/mo in prime Eixample"], "cons": ["Heavier upfront costs: 2-month refundable deposit (\u20ac4,400) plus \u20ac750 agency documentation fee", "Distance: 26-min walk, requires Metro L1 daily commute (14 min)"], "red_flags": "High initial liquidity required (\u20ac7,550 due at lease signing); utilities billed against monthly provision."}, {"id": "SPOTA-201392", "rank": 10, "title": "Budget-Friendly 4-Bedroom Apartment in El Clot / Gl\u00f2ries", "score": 82.5, "price_pp_eur": 540.0, "price_pp_usd": 586.98, "base_rent_eur": 1800, "walk_min": 24, "transit_min": 12, "commute_route": "Direct Metro L1 from Clot station to Marina or Arc de Triomf (3 stops, 6 min) + 6 min walk to UPF Ciutadella.", "beds": 4, "baths": 2.0, "m2": 70, "has_balcony": false, "deposit_eur": 1800, "deposit_months": 1.0, "utilities_included": false, "platform": "Spotahome", "url": "https://www.spotahome.com/barcelona/for-rent:apartments/201392", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.4072, "lon": 2.1858, "neighborhood": "El Clot / Gl\u00f2ries (Tier 3)", "pros": ["Lowest base rent in the entire pool: only \u20ac1,800/mo (\u20ac530/mo effective all-in per person)", "2 full bathrooms", "Fast direct commute via Metro L1 (12-14 min door-to-door)"], "cons": ["Walk time on foot is 24 minutes (commute requires Metro L1)", "70 m\u00b2 floor space with no private balcony"], "red_flags": "Older building interior; kitchen is functional but dated."}, {"id": "SPOTA-1173455", "rank": 11, "title": "Renovated 85m\u00b2 4-Bedroom Flat in Eixample Dreta / Fort Pienc", "score": 81.4, "price_pp_eur": 766.67, "price_pp_usd": 833.37, "base_rent_eur": 3000, "walk_min": 14, "transit_min": 10, "commute_route": "1.2 km walk south down Passeig de Sant Joan / Llu\u00eds Companys through Ciutadella Park, or 10 min door-to-door via Metro L1 (Marina or Tetuan to Arc de Triomf).", "beds": 4, "baths": 2.0, "m2": 85, "has_balcony": true, "deposit_eur": 3000, "deposit_months": 1.0, "utilities_included": true, "platform": "Spotahome", "url": "https://www.spotahome.com/barcelona/for-rent:apartments/1173455", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3966, "lon": 2.1809, "neighborhood": "El Fort Pienc / Dreta de l'Eixample", "pros": ["Bills included in rent with generous usage caps", "Modern renovation with dishwasher and separate clothes dryer", "2 full modern bathrooms with glass walk-in showers", "85 m\u00b2 floor area provides spacious shared living room and balcony"], "cons": ["Rent of \u20ac3,000/mo reaches the upper tier of the budget sweet spot (\u20ac767/mo per person all-in)", "Bedroom 3 has twin beds rather than a dedicated double"], "red_flags": "Landlord requires proof of UPF student enrollment / university internship letter for seasonal lease exemption."}, {"id": "SPOTA-932678", "rank": 12, "title": "Expansive 129m\u00b2 4-Bedroom Poblenou Apartment with Terrace", "score": 78.7, "price_pp_eur": 799.17, "price_pp_usd": 868.69, "base_rent_eur": 2790, "walk_min": 18, "transit_min": 8, "commute_route": "1.5 km straight walk southwest on Carrer de Llull / Ramon Trias Fargas (18 min) or take Metro L4 from Llacuna or Poblenou to Ciutadella / Vila Ol\u00edmpica (2 stops, 5 min ride + 3 min walk).", "beds": 4, "baths": 2.0, "m2": 129, "has_balcony": true, "deposit_eur": 2790, "deposit_months": 1.0, "utilities_included": false, "platform": "Spotahome", "url": "https://www.spotahome.com/barcelona/for-rent:apartments/932678", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.4006, "lon": 2.2024, "neighborhood": "Poblenou / 22@ Innovation District", "pros": ["Massive 129 m\u00b2 floor plan - the largest private apartment in the pool", "Located directly off Rambla del Poblenou: best local dining and student cafes in Barcelona", "3 true double bedrooms plus 1 oversized single, all with study desks", "2 stops on Metro L4 directly to UPF Ciutadella station"], "cons": ["18-minute walk to UPF on foot (though fast 8-min transit via Metro L4)", "Utilities not included (estimated \u20ac250/mo)"], "red_flags": "Strict building rules against student parties or terrace noise after 23:00."}, {"id": "AIRBNB-1564369702322944311", "rank": 13, "title": "4-Bedroom Olympic Village Apartment near Bogatell Beach", "score": 76.0, "price_pp_eur": 838.33, "price_pp_usd": 911.27, "base_rent_eur": 3200, "walk_min": 7, "transit_min": 5, "commute_route": "Direct 600m walk west along Avinguda d'Ic\u00e0ria straight into Carrer de Ramon Trias Fargas (UPF Ciutadella campus).", "beds": 4, "baths": 2.0, "m2": 95, "has_balcony": true, "deposit_eur": 0, "deposit_months": 0.0, "utilities_included": true, "platform": "Airbnb Monthly Stays", "url": "https://www.airbnb.com/rooms/1564369702322944311", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3905, "lon": 2.1975, "neighborhood": "La Vila Ol\u00edmpica del Poblenou (Tier 1)", "pros": ["Prime Tier 1 Vila Ol\u00edmpica location: only 7 min walk (600m) to UPF Ciutadella", "All utilities and Wi-Fi included in total price", "Airbnb AirCover tenant protection and zero security deposit", "Spacious 95 m\u00b2 layout with 2 full bathrooms and balcony"], "cons": ["Base price of \u20ac3,200/mo is higher than Spotahome direct seasonal rentals", "Bedrooms 3 and 4 feature twin beds rather than dedicated double beds"], "red_flags": "Building pool access strictly excluded by HOA rules ('SWIMMING POOL ACCESS NOT ALLOWED SORRY')."}, {"id": "SHBCN-T15718-3", "rank": 14, "title": "Dreta de l'Eixample 4-Bedroom Flat with Courtyard Balcony", "score": 75.4, "price_pp_eur": 772.92, "price_pp_usd": 840.16, "base_rent_eur": 2495, "walk_min": 18, "transit_min": 12, "commute_route": "1.5 km direct walk down Passeig de Sant Joan, crossing Arc de Triomf and walking through Ciutadella park to UPF (18 min).", "beds": 4, "baths": 2.0, "m2": 95, "has_balcony": true, "deposit_eur": 4990, "deposit_months": 2.0, "utilities_included": false, "platform": "ShBarcelona", "url": "https://www.shbarcelona.com/es/m/piso-alquiler-meses-4-habitaciones-dreta-eixample--15718", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3962, "lon": 2.1748, "neighborhood": "La Dreta de l'Eixample (Tier 3)", "pros": ["High 6th-floor tranquility with a peaceful balcony facing the inner courtyard", "95 m\u00b2 layout with 2 full bathrooms (one with shower, one with bathtub)", "Direct walk down Passeig de Sant Joan to UPF"], "cons": ["Occupancy calendar shows fully booked through June 2027 (included for platform transparency)", "High upfront security deposit (2 months = \u20ac4,990) and agency admin fee"], "red_flags": "Intercom buzzer currently non-functional (visitors must be met at the main street gate); current tenancy active until summer 2027."}, {"id": "RESA-CAMPUS-MAR", "rank": 15, "title": "Resa Campus del Mar - 4 Individual Studio Benchmark", "score": 62.2, "price_pp_eur": 900.0, "price_pp_usd": 978.3, "base_rent_eur": 3500, "walk_min": 11, "transit_min": 8, "commute_route": "850m walk north through Barceloneta park and crossing Ronda Litoral straight to UPF Ciutadella.", "beds": 4, "baths": 4.0, "m2": 72, "has_balcony": false, "deposit_eur": 2000, "deposit_months": 0.6, "utilities_included": true, "platform": "Resa Student Residences (Benchmark 1)", "url": "https://www.resa.es/es/residencias/barcelona/campus-del-mar/", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3812, "lon": 2.1904, "neighborhood": "La Barceloneta (Tier 2)", "pros": ["Total privacy: 4 separate private studios each with private bathroom and kitchenette", "11 min walk to UPF Ciutadella", "Gym, study rooms, and 24/7 security included", "Total cost fits under the \u20ac3,680 budget ceiling (\u20ac900/mo per student all-in)"], "cons": ["No shared apartment living room to hang out together as a group of 4", "Compact individual living space (18 m\u00b2 per studio) with single bed (90cm)"], "red_flags": "Trimester contracts sell out rapidly; requires UPF acceptance letter."}, {"id": "AIRBNB-984674131521468220", "rank": 16, "title": "The Collection - Catalan 160m\u00b2 4BD Flat on Gran Via", "score": 61.7, "price_pp_eur": 875.0, "price_pp_usd": 951.12, "base_rent_eur": 3350, "walk_min": 20, "transit_min": 11, "commute_route": "Direct Metro L1 from Urgell or Catalunya to Arc de Triomf (2 stops, 4 min) + 7 min walk to UPF campus (11 min total).", "beds": 4, "baths": 2.0, "m2": 160, "has_balcony": true, "deposit_eur": 0, "deposit_months": 0.0, "utilities_included": true, "platform": "Airbnb Monthly Stays", "url": "https://www.airbnb.com/rooms/984674131521468220", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3915, "lon": 2.1685, "neighborhood": "La Dreta de l'Eixample (Tier 3)", "pros": ["Immense 160 m\u00b2 space - luxury Eixample proportions", "All utilities and Wi-Fi included", "AirCover zero-deposit tenant guarantee"], "cons": ["Base price of \u20ac3,350/mo reaches the upper budget band (\u20ac875/mo all-in per person)", "20-minute walk to UPF (11 min via Metro L1)"], "red_flags": "High-profile building with strict noise regulations."}, {"id": "LIVENSA-MARINA", "rank": 17, "title": "Livensa Living Barcelona Marina - 4 Studio Benchmark", "score": 57.5, "price_pp_eur": 1083.33, "price_pp_usd": 1177.58, "base_rent_eur": 4200, "walk_min": 10, "transit_min": 6, "commute_route": "800m direct walk south on Carrer de Marina straight to Carrer de Ramon Trias Fargas.", "beds": 4, "baths": 4.0, "m2": 64, "has_balcony": false, "deposit_eur": 2000, "deposit_months": 0.5, "utilities_included": true, "platform": "Livensa Living (Benchmark 2)", "url": "https://www.livensaliving.com/residencias-estudiantes-barcelona/marina/", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3989, "lon": 2.1895, "neighborhood": "Marina / Poblenou (Tier 1)", "pros": ["10 min walk to UPF Ciutadella", "Luxury facilities (rooftop pool, gym, cinema room)", "Bi-weekly housekeeping and fresh linens included"], "cons": ["Exceeds budget cap: \u20ac4,200/mo base rent (\u20ac1,083/mo all-in per person vs \u20ac920 ceiling)", "Small 16 m\u00b2 individual studio footprint"], "red_flags": "Total price exceeds hard ceiling by \u20ac520/month; disqualified for budget violation."}, {"id": "SPOTA-907462", "rank": 18, "title": "Turnkey 4-Bedroom Flat in Fort Pienc with All Bills Included", "score": 57.0, "price_pp_eur": 916.67, "price_pp_usd": 996.42, "base_rent_eur": 3600, "walk_min": 14, "transit_min": 9, "commute_route": "1.1 km walk south along Carrer de Ribes through Estaci\u00f3 del Nord park directly to UPF Ciutadella.", "beds": 4, "baths": 2.0, "m2": 80, "has_balcony": true, "deposit_eur": 3600, "deposit_months": 1.0, "utilities_included": true, "platform": "Spotahome", "url": "https://www.spotahome.com/barcelona/for-rent:apartments/907462", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3961, "lon": 2.1806, "neighborhood": "El Fort Pienc", "pros": ["Complete turnkey all-bills-included package", "Elevator building in Fort Pienc near Arc de Triomf", "2 full bathrooms"], "cons": ["At \u20ac3,600/month, it is near the hard budget ceiling of \u20ac3,680/mo (\u20ac917/mo per person all-in)", "80 m\u00b2 is somewhat compact for this price point"], "red_flags": "Priced near the hard cap; leave as lower-ranked alternative to ID 1173455 or ID 127175 on the same street."}, {"id": "AIRBNB-12824656", "rank": 19, "title": "Casanova Eixample 4-Bedroom Designer Apartment with 3 Baths", "score": 56.4, "price_pp_eur": 908.33, "price_pp_usd": 987.36, "base_rent_eur": 3480, "walk_min": 25, "transit_min": 14, "commute_route": "Direct Metro L1 from Urgell to Arc de Triomf / Marina (4 stops, 7 min) + 7 min walk through Ciutadella park (14 min total).", "beds": 4, "baths": 3.0, "m2": 120, "has_balcony": true, "deposit_eur": 0, "deposit_months": 0.0, "utilities_included": true, "platform": "Airbnb Monthly Stays", "url": "https://www.airbnb.com/rooms/12824656", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3865, "lon": 2.1565, "neighborhood": "L'Antiga Esquerra de l'Eixample (Tier 3)", "pros": ["3 full bathrooms provides unbeatable comfort for 4 adults", "4 real double beds in every single room", "All utilities included in price with zero security deposit"], "cons": ["Priced at \u20ac3,480/mo (\u20ac908/mo all-in per person), near the \u20ac920 ceiling", "25-min walk to UPF"], "red_flags": "Monthly price is close to the hard budget cap."}, {"id": "SPOTA-1630520", "rank": 20, "title": "Classic 98m\u00b2 4-Bedroom Flat in L'Antiga Esquerra", "score": 54.7, "price_pp_eur": 909.25, "price_pp_usd": 988.35, "base_rent_eur": 3237, "walk_min": 26, "transit_min": 14, "commute_route": "Metro L1 from Hospital Cl\u00ednic / Urgell to Arc de Triomf (14 min door-to-door).", "beds": 4, "baths": 2.0, "m2": 98, "has_balcony": true, "deposit_eur": 3237, "deposit_months": 1.0, "utilities_included": false, "platform": "Spotahome", "url": "https://www.spotahome.com/barcelona/for-rent:apartments/1630520", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.3885, "lon": 2.1525, "neighborhood": "L'Antiga Esquerra de l'Eixample (Tier 3)", "pros": ["Spacious 98 m\u00b2 layout with balcony and elevator", "2 full bathrooms", "Quiet neighborhood near Hospital Cl\u00ednic"], "cons": ["Higher price point (\u20ac3,237/mo base) with utilities extra", "26-min walk to UPF"], "red_flags": "Requires Metro L1/L5 commute daily."}, {"id": "BLAU-STUDENT", "rank": 21, "title": "Blau Student Housing - 4 Premium Studio Benchmark", "score": 40.5, "price_pp_eur": 1383.33, "price_pp_usd": 1503.68, "base_rent_eur": 5400, "walk_min": 28, "transit_min": 16, "commute_route": "Tram T4 from Ca l'Arany\u00f3 direct to Wellington / Ciutadella (6 stops, 11 min ride) + 5 min walk.", "beds": 4, "baths": 4.0, "m2": 80, "has_balcony": false, "deposit_eur": 2000, "deposit_months": 0.4, "utilities_included": true, "platform": "Blau Student Housing (Benchmark 3)", "url": "https://blaustudenthousing.com", "alt_url": null, "alt_name": null, "alt_fee": null, "lat": 41.4112, "lon": 2.1995, "neighborhood": "Sant Mart\u00ed / 22@", "pros": ["Ultra-premium student living experience", "Queen double beds in all studios with private baths and kitchens"], "cons": ["Drastically exceeds budget ceiling: \u20ac5,400/mo base rent (\u20ac1,383/mo per person vs \u20ac920 cap)", "28 min walk to UPF"], "red_flags": "Disqualified due to severe budget cap violation (+50% over ceiling)."}];
+        const upfCoords = [41.3894, 2.1915];
+
+        const map = L.map("map").setView(upfCoords, 14);
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors',
+            maxZoom: 19
+        }).addTo(map);
+
+        const campusIcon = L.divIcon({
+            className: "campus-marker",
+            html: '<div style="background: #ef4444; color: white; border-radius: 50%; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 11px; border: 3px solid white; box-shadow: 0 4px 8px rgba(0,0,0,0.5);">UPF</div>',
+            iconSize: [36, 36],
+            iconAnchor: [18, 18]
+        });
+        L.marker(upfCoords, { icon: campusIcon }).addTo(map)
+            .bindPopup("<b>UPF Ciutadella Campus</b><br>Carrer de Ramon Trias Fargas, 25-27<br><i>Target Anchor Point</i>")
+            .openPopup();
+
+        const listContainer = document.getElementById("listingList");
+        let markersGroup = L.layerGroup().addTo(map);
+
+        function renderListings(filteredProps) {
+            listContainer.innerHTML = "";
+            markersGroup.clearLayers();
+            document.getElementById("statCandidates").innerText = `${filteredProps.length} of ${properties.length} Properties`;
+
+            if (filteredProps.length === 0) {
+                listContainer.innerHTML = '<div style="text-align: center; padding: 3rem; color: var(--text-muted);">No properties match your current filters. Try relaxing the budget or commute criteria.</div>';
+                return;
+            }
+
+            filteredProps.forEach(p => {
+                let scoreClass = p.score >= 90 ? "score-high" : (p.score >= 80 ? "score-mid" : "score-low");
+                let pinColor = p.score >= 90 ? "#34d399" : (p.score >= 80 ? "#38bdf8" : "#fbbf24");
+
+                const propIcon = L.divIcon({
+                    className: "prop-marker",
+                    html: `<div style="background: ${pinColor}; color: #0f172a; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 11px; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">${p.rank}</div>`,
+                    iconSize: [26, 26],
+                    iconAnchor: [13, 13]
+                });
+
+                const streetViewUrl = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${p.lat},${p.lon}`;
+                const directionsUrl = `https://www.google.com/maps/dir/?api=1&origin=${p.lat},${p.lon}&destination=41.3894,2.1915&travelmode=walking`;
+
+                const marker = L.marker([p.lat, p.lon], { icon: propIcon }).addTo(markersGroup);
+                marker.bindPopup(`
+                    <b>#${p.rank} ${p.title}</b><br>
+                    <b>Value Score:</b> ${p.score}/100<br>
+                    <b>All-In Cost:</b> €${p.price_pp_eur} / $${p.price_pp_usd} per person/mo<br>
+                    <b>Commute:</b> ${p.walk_min} min walk to UPF<br>
+                    <b>Platform:</b> ${p.platform}<br>
+                    <div style="margin-top: 0.5rem; display: flex; gap: 0.5rem;">
+                        <a href="${p.url}" target="_blank" style="color: #0284c7; font-weight: bold;">Listing &rarr;</a>
+                        <a href="${streetViewUrl}" target="_blank" style="color: #818cf8; font-weight: bold;">Street View 360 &rarr;</a>
+                    </div>
+                `);
+
+                const card = document.createElement("div");
+                card.className = "listing-card";
+
+                let altBadgeHtml = "";
+                if (p.alt_url) {
+                    altBadgeHtml = `<span class="arbitrage-pill" title="Also on ${p.alt_name}">Arbitrage: Save vs ${p.alt_name}</span>`;
+                }
+
+                card.innerHTML = `
+                    <div class="listing-header">
+                        <div>
+                            <span class="rank-badge">#${p.rank}</span>
+                            <strong style="margin-left: 0.4rem; font-size: 0.95rem;">${p.title}</strong>
+                        </div>
+                        <span class="score-pill ${scoreClass}">${p.score} pts</span>
+                    </div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.3rem;">
+                        ${p.neighborhood} &bull; ${p.platform} ${altBadgeHtml}
+                    </div>
+                    <div class="meta-grid">
+                        <div><strong>🚶 ${p.walk_min} min</strong> to UPF</div>
+                        <div><strong>🛏️ ${p.beds} Bed / ${p.baths} Bath</strong></div>
+                        <div><strong>📐 ${p.m2 ? p.m2 + " m²" : "N/A"}</strong></div>
+                    </div>
+                    <div style="margin: 0.3rem 0;">
+                        ${p.has_balcony ? '<span class="tag">☀️ Balcony/Terrace</span>' : ""}
+                        ${p.utilities_included ? '<span class="tag">⚡ Utilities Included</span>' : '<span class="tag">💡 Utilities Est €250/mo</span>'}
+                        ${p.deposit_eur ? `<span class="tag">🛡️ Deposit: €${p.deposit_eur}</span>` : ""}
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 0.4rem;">
+                        <div>
+                            <span style="font-size: 1.15rem; font-weight: 700; color: #38bdf8;">€${p.price_pp_eur}</span>
+                            <span style="font-size: 0.75rem; color: var(--text-muted);">/ person / mo ($${p.price_pp_usd})</span>
+                        </div>
+                        <div class="action-btns">
+                            <a href="${p.url}" target="_blank" class="btn">View Deal</a>
+                            <a href="${streetViewUrl}" target="_blank" class="btn btn-secondary" title="View Street in 360">Street View</a>
+                            <a href="${directionsUrl}" target="_blank" class="btn btn-secondary" title="Directions to UPF">Route</a>
+                        </div>
+                    </div>
+                `;
+                card.addEventListener("click", (e) => {
+                    if (e.target.tagName !== "A") {
+                        map.flyTo([p.lat, p.lon], 16);
+                        marker.openPopup();
+                    }
+                });
+                listContainer.appendChild(card);
+            });
+        }
+
+        function applyFilters() {
+            const search = document.getElementById("filterSearch").value.toLowerCase();
+            const maxBudget = parseFloat(document.getElementById("filterBudget").value);
+            const maxWalk = parseInt(document.getElementById("filterWalk").value);
+            const platform = document.getElementById("filterPlatform").value;
+            const twoBaths = document.getElementById("filterTwoBaths").checked;
+            const balconyOnly = document.getElementById("filterBalcony").checked;
+
+            document.getElementById("budgetDisplay").innerText = `€${maxBudget}`;
+
+            const filtered = properties.filter(p => {
+                if (p.price_pp_eur > maxBudget) return false;
+                if (p.walk_min > maxWalk) return false;
+                if (platform !== "all" && !p.platform.toLowerCase().includes(platform.toLowerCase())) return false;
+                if (twoBaths && p.baths < 2) return false;
+                if (balconyOnly && !p.has_balcony) return false;
+                if (search) {
+                    const text = `${p.title} ${p.neighborhood} ${p.platform}`.toLowerCase();
+                    if (!text.includes(search)) return false;
+                }
+                return true;
+            });
+
+            renderListings(filtered);
+        }
+
+        document.getElementById("filterSearch").addEventListener("input", applyFilters);
+        document.getElementById("filterBudget").addEventListener("input", applyFilters);
+        document.getElementById("filterWalk").addEventListener("change", applyFilters);
+        document.getElementById("filterPlatform").addEventListener("change", applyFilters);
+        document.getElementById("filterTwoBaths").addEventListener("change", applyFilters);
+        document.getElementById("filterBalcony").addEventListener("change", applyFilters);
+
+        document.getElementById("resetFilters").addEventListener("click", () => {
+            document.getElementById("filterSearch").value = "";
+            document.getElementById("filterBudget").value = 920;
+            document.getElementById("filterWalk").value = 999;
+            document.getElementById("filterPlatform").value = "all";
+            document.getElementById("filterTwoBaths").checked = false;
+            document.getElementById("filterBalcony").checked = false;
+            applyFilters();
+        });
+
+        // Initial render
+        renderListings(properties);
+    </script>
+</body>
+</html>

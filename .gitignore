@@ -1,0 +1,26 @@
+# Publish only the reviewed project files. Original research remains local.
+/*
+!/.gitignore
+!/README.md
+!/RESEARCH_NOTES.md
+!/index.html
+!/housing_dashboard.html
+!/dashboard_template.html
+!/build_dashboard.py
+!/upf_housing_candidates.json
+!/tests/
+/tests/*
+!/tests/test_build.py
+!/.github/
+/.github/*
+!/.github/workflows/
+/.github/workflows/*
+!/.github/workflows/check.yml
+!/research/
+/research/*
+!/research/README.md
+!/research/map_agent_findings.json
+!/research/earlier_agent_findings.json
+!/research/map_agent_dashboard_original.html
+!/research/map_agent_application_notes.md
+!/research/map_agent_lease_notes.md
