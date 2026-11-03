@@ -23,12 +23,12 @@ body{height:100dvh;display:flex;flex-direction:column;overflow:hidden}.compact-h
 <header class="compact-header">
 <h1>Barcelona housing <span>· UPF Winter 2027</span></h1>
 <details id="aboutSearch"><summary>About this search</summary><div class="about-content">
-<h2>Search &amp; research notes</h2><p><a href="https://github.com/Alesiobarquin/abroad-search/blob/main/EXCLUSION_RECHECK.md">November 3 exclusion recheck: 31 reviewed, 6 reopened for clarification</a></p>
+<h2>Search &amp; research notes</h2><p><a href="https://github.com/Alesiobarquin/abroad-search/blob/main/CLOSE_WALK_SEARCH.md">New search: within a 10–15-minute walk</a> · <a href="https://github.com/Alesiobarquin/abroad-search/blob/main/EXCLUSION_RECHECK.md">Earlier exclusion recheck</a></p>
 <p class="intro">Both agents’ housing research, combined. Explore the map, filter the listings and compare each agent’s full findings before choosing places to contact.</p>
 <p class="small muted">Jan 1–Mar 31 · flexible Jan 5–Apr 1, 2027 · ceiling €3,680/month for four · research snapshot <time>2026-11-03</time></p>
 <nav aria-label="Research links"><a href="https://github.com/Alesiobarquin/abroad-search/blob/main/RESEARCH_NOTES.md">Research &amp; differences</a><a href="upf_housing_candidates.json">Download all findings (JSON)</a><a href="https://github.com/Alesiobarquin/abroad-search">GitHub repo / discussion</a></nav>
 
-<div class="stats"><div class="stat-card"><div class="stat-label">COMBINED FINDINGS</div><div class="stat-val">61</div></div><div class="stat-card"><div class="stat-label">ORIGINAL MAP FINDINGS KEPT</div><div class="stat-val">21 of 21</div></div><div class="stat-card"><div class="stat-label">ORIGINAL AGENT’S TOP SCORE*</div><div class="stat-val">97 / 100</div></div><div class="stat-card"><div class="stat-label">FULLY VERIFIED</div><div class="stat-val">0</div></div></div>
+<div class="stats"><div class="stat-card"><div class="stat-label">COMBINED FINDINGS</div><div class="stat-val" id="findingCount"></div></div><div class="stat-card"><div class="stat-label">ORIGINAL MAP FINDINGS KEPT</div><div class="stat-val">21 of 21</div></div><div class="stat-card"><div class="stat-label">ORIGINAL AGENT’S TOP SCORE*</div><div class="stat-val">97 / 100</div></div><div class="stat-card"><div class="stat-label">FULLY VERIFIED</div><div class="stat-val">0</div></div></div>
 <aside class="notice"><p><strong>No option is fully verified yet.</strong> Availability, academic lease purpose, mandatory features and final fees still need confirmation. Outreach is on hold.</p><small>Amounts labelled “subtotal” exclude unquoted costs. *Original agent scores and prices are preserved estimates, not independently verified. IDs are review labels. This is a snapshot, not a live feed.</small></aside>
 <h2>Map legend</h2><p class="map-note">UPF is red. Green = developed prospect; blue = preliminary lead; purple = residence; gray = exclusion. Dashed pins and shaded circles are approximate source points or area proxies, not exact addresses. Unlocated findings remain in the list. No commute is calculated from a proxy.</p><p class="small muted" id="pinCount"></p><div class="footer"><p>Three-month comparison: rent × 3 + utilities × 3 + mandatory fees + cleaning; divide by 12 for monthly cost per person. Deposits are refundable cash requirements and are shown separately. USD uses the original budget’s illustrative rate (€3,680 = $4,000), not a live FX quote.</p><p><a href="research/map_agent_findings.json">Original map agent: all 21 findings</a> · <a href="research/earlier_agent_findings.json">Earlier agent: all 49 findings</a> · <a href="research/map_agent_dashboard_original.html">Original HTML snapshot</a></p><p>Lease duration alone does not establish VAT treatment. Agency-fee rules and individual contracts need verification; unknown charges are not treated as zero. Public source links are provided for review. No personal documents or private correspondence are published.</p><noscript>This map needs JavaScript. You can still <a href="https://github.com/Alesiobarquin/abroad-search/blob/main/RESEARCH_NOTES.md">read the research notes</a> or <a href="upf_housing_candidates.json">download the findings</a>.</noscript></div></div></details>
 </header>
@@ -54,6 +54,7 @@ body{height:100dvh;display:flex;flex-direction:column;overflow:hidden}.compact-h
 const data=JSON.parse(document.getElementById('housing-data').textContent);
 const properties=data.listings;
 const $=id=>document.getElementById(id);
+$('findingCount').textContent=properties.length;
 const escapeHTML=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money=n=>new Intl.NumberFormat('en-IE',{style:'currency',currency:'EUR',maximumFractionDigits:2}).format(n);
 const number=n=>new Intl.NumberFormat('en',{maximumFractionDigits:2}).format(n);
@@ -67,7 +68,8 @@ let map=null,markersGroup=null;
 const markers=new Map();
 try{
  if(typeof L==='undefined')throw new Error('Map library unavailable');
- map=L.map('map').setView([data.target.latitude,data.target.longitude],13);
+ // Show loaded tiles even when the browser pauses background animations.
+ map=L.map('map',{fadeAnimation:false}).setView([data.target.latitude,data.target.longitude],13);
  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',maxZoom:19}).addTo(map);
  const campus=L.divIcon({className:'campus-marker',html:'<div class="pin" style="background:#fca5a5;width:38px;height:38px">UPF</div>',iconSize:[38,38],iconAnchor:[19,19]});
  L.marker([data.target.latitude,data.target.longitude],{icon:campus,title:'UPF Ciutadella Campus',alt:'UPF Ciutadella Campus'}).addTo(map).bindPopup('<b>UPF Ciutadella Campus</b><br>Carrer de Ramon Trias Fargas, 25–27');
@@ -84,7 +86,7 @@ function factsHTML(value){
 function listHTML(items){return `<ul>${items.map(x=>`<li>${escapeHTML(x)}</li>`).join('')}</ul>`;}
 function commuteText(p){
  const c=p.commute||{};
- if(c.walking_minutes_estimate!=null)return `${number(c.walking_minutes_estimate)} min walk · routed estimate`;
+ if(c.walking_minutes_estimate!=null)return `${number(c.walking_minutes_estimate)} min walk · ${c.origin_precision==='approximate'?'from approximate map point; exact door unconfirmed':'routed estimate'}`;
  if(c.walking_minutes!=null)return `${number(c.walking_minutes)} min walk · saved route snapshot`;
  if(p.original_map_findings?.walk_time_min!=null)return `${number(p.original_map_findings.walk_time_min)} min walk · original agent estimate`;
  return 'Exact commute not established';
@@ -147,8 +149,9 @@ function renderListings(filtered){
    const marker=L.marker([loc.lat,loc.lon],{icon,title:`${p.review_id}: ${p.title}${approx?' (approximate)':''}`,alt:`${p.review_id}: ${p.title}${approx?' (approximate location)':''}`}).addTo(markersGroup);
    const popupTitle=p.status==='benchmark'?p.title.split(' – ')[0]:(p.address||p.title);
    const popupLayout=p.status==='benchmark'?'4 individual studios':roomMeta;
-   const popupPrice=pp==null?'Price not quoted':`${p.status==='benchmark'?'From ':''}${money(pp)} <span>/ person / month</span>`;
-   const popupNote=p.status==='benchmark'?'Starting rate · trimester availability unconfirmed':p.status==='excluded'?'Excluded · see details':pp==null?'Dates and final cost unconfirmed':'Subtotal · fees and dates unconfirmed';
+   const startingRate=p.status==='benchmark'&&cost.basis!=='published_rate_scenario';
+   const popupPrice=pp==null?'Price not quoted':`${startingRate?'From ':''}${money(pp)} <span>/ person / month</span>`;
+   const popupNote=p.status==='benchmark'?(startingRate?'Starting rate · trimester availability unconfirmed':'Scenario · dates and extras unconfirmed'):p.status==='excluded'?'Excluded · see details':pp==null?'Dates and final cost unconfirmed':'Subtotal · fees and dates unconfirmed';
    marker.bindPopup(`<div class="popup-title">${escapeHTML(p.review_id)} · ${escapeHTML(popupTitle)}</div><p class="popup-meta">${popupLayout}</p><p class="popup-price">${popupPrice}</p><p class="popup-note">${escapeHTML(popupNote)}</p><div class="popup-actions">${link(p.url,'View listing')}<button type="button" class="btn popup-card" data-id="${escapeHTML(p.review_id)}">Details</button></div>`,{className:'housing-popup',minWidth:225,maxWidth:285});
    marker.bindTooltip(`${escapeHTML(p.review_id)} · ${escapeHTML(p.title)}${approx?' · approximate':''}`);
    marker.on('popupopen',e=>{e.popup.getElement().querySelector('.popup-card').addEventListener('click',()=>{card.scrollIntoView({behavior:'smooth',block:'start'});card.querySelector('details').open=true;});});

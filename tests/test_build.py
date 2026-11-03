@@ -17,17 +17,18 @@ class HousingReviewTest(unittest.TestCase):
     def test_merge_counts_and_existing_review_labels(self):
         validate(self.data)
         rows = self.data['listings']
-        self.assertEqual(len(rows), 61)
-        self.assertEqual(sum(p['status'] in ['prospect', 'lead'] for p in rows), 33)
-        self.assertEqual(sum(p['status'] == 'excluded' for p in rows), 25)
-        self.assertEqual(sum(p['status'] == 'benchmark' for p in rows), 3)
+        self.assertEqual(len(rows), 71)
+        self.assertEqual(self.data['merge_counts']['additional_research_records'], 10)
+        self.assertEqual(sum(p['status'] in ['prospect', 'lead'] for p in rows), 31)
+        self.assertEqual(sum(p['status'] == 'excluded' for p in rows), 36)
+        self.assertEqual(sum(p['status'] == 'benchmark' for p in rows), 4)
         self.assertTrue(set('ABCDEFGHIJKLMNO').issubset({p['review_id'] for p in rows}))
 
     def test_material_conflicts_and_costs(self):
         rows = {p['id']: p for p in self.data['listings']}
         for id in ['spotahome_201508', 'spotahome_1426235', 'spotahome_1403718', 'spotahome_932678']:
             self.assertEqual(rows[id]['status'], 'excluded')
-            self.assertEqual(len(rows[id]['research_tracks']), 2)
+            self.assertTrue({'Earlier review', 'Map repo'}.issubset(rows[id]['research_tracks']))
             self.assertTrue(rows[id]['conflicts'])
         self.assertEqual(rows['habitatgejove_2489']['cost']['subtotal_eur'], 6767)
         self.assertEqual(rows['idealista_112946294']['cost']['subtotal_eur'], 5469.63)
@@ -89,6 +90,28 @@ class HousingReviewTest(unittest.TestCase):
         embedded = html.split('<script id="housing-data" type="application/json">', 1)[1].split('</script>', 1)[0]
         self.assertNotIn('</script>', embedded)
         self.assertEqual(json.loads(embedded)['listings'][0]['title'], data['listings'][0]['title'])
+
+    def test_close_walk_search_dates_costs_and_deduplication(self):
+        rows = {p['review_id']: p for p in self.data['listings']}
+        for key in ['P', 'Y', 'J', 'V', 'AI', 'AJ']:
+            self.assertEqual(rows[key]['status'], 'excluded')
+        self.assertIn('https://www.uniplaces.com/accommodation/barcelona/767287', rows['R05']['alternate_urls'])
+        self.assertEqual(rows['R05']['commute']['origin_precision'], 'building')
+        self.assertLess(rows['R05']['commute']['walking_minutes_estimate'], 10)
+        self.assertGreater(rows['T']['commute']['walking_minutes_estimate'], 15)
+        self.assertGreater(rows['AE']['commute']['walking_minutes_estimate'], 15)
+        self.assertEqual(rows['AH']['cost']['subtotal_eur'], 11700)
+        self.assertGreater(rows['AH']['cost']['subtotal_eur'], self.data['budget']['three_month_total_eur'])
+        self.assertEqual(rows['AG']['cost']['subtotal_eur'], 13150)
+        self.assertEqual(rows['AG']['deposit_eur'], 2400)
+        self.assertAlmostEqual(rows['BM4']['cost']['subtotal_eur'], 10859.2)
+        self.assertEqual(rows['BM4']['deposit_eur'], 3200)
+        self.assertFalse(rows['BM4']['move_in_readiness']['kitchenware'])
+        self.assertEqual(rows['BM4']['cost']['basis'], 'published_rate_scenario')
+        invalid = copy.deepcopy(self.data)
+        invalid['merge_counts']['additional_research_records'] -= 1
+        with self.assertRaises(AssertionError):
+            validate(invalid)
 
     def test_generated_files_match_and_have_no_private_paths(self):
         expected = build(self.data)

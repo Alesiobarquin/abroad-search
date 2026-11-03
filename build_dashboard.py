@@ -14,7 +14,10 @@ def validate(data):
     assert len({p['review_id'] for p in listings}) == len(listings), 'Duplicate review IDs'
     assert len({p['url'] for p in listings}) == len(listings), 'Duplicate primary URLs'
     assert data['merge_counts']['distinct_records'] == len(listings)
-    assert data['merge_counts']['earlier_records'] + data['merge_counts']['map_repo_records'] - data['merge_counts']['overlapping_records'] == len(listings)
+    counts = data['merge_counts']
+    additional = counts.get('additional_research_records', 0)
+    assert isinstance(additional, int) and additional >= 0
+    assert counts['earlier_records'] + counts['map_repo_records'] - counts['overlapping_records'] + additional == len(listings)
     for p in listings:
         assert p['status'] in {'prospect', 'lead', 'excluded', 'benchmark'}
         readiness = p['move_in_readiness']

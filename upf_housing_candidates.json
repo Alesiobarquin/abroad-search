@@ -38,15 +38,16 @@
     "earlier_records": 49,
     "map_repo_records": 21,
     "overlapping_records": 9,
-    "distinct_records": 61,
-    "fully_verified": 0
+    "distinct_records": 71,
+    "fully_verified": 0,
+    "additional_research_records": 10
   },
   "method": {
     "unknown_fees_are_not_zero": true,
     "refundable_deposits_excluded_from_tco": true,
     "cost_divisor_for_monthly_per_person": 12,
     "scores_withheld_until_hard_filters_and_final_cost_verified": true,
-    "map_precision": "Building-number geocodes and approximate source / area points are labelled separately; no commute is inferred from a map pin.",
+    "map_precision": "Published building points, approximate listing pins and street / neighborhood proxies are distinguished. Walking estimates use OpenStreetMap routed-foot to the supplied campus anchor. Proxy-only records are not routed; approximate-point routes do not confirm a door-to-door commute.",
     "outreach": "On hold. No messages, bookings, applications or payments sent. Roommates choose properties first."
   },
   "listings": [
@@ -1731,42 +1732,74 @@
     {
       "id": "uniplaces_59248",
       "review_id": "J",
-      "status": "lead",
+      "status": "excluded",
       "title": "Interesting 4-bedroom apartment in Fort Pienc",
       "platform": "Uniplaces",
       "url": "https://www.uniplaces.com/accommodation/barcelona/59248",
       "alternate_urls": [],
       "research_tracks": [
-        "Earlier review"
+        "Earlier review",
+        "November 3 close-campus search"
       ],
-      "address": "",
-      "neighborhood": "Location not established",
-      "location": null,
+      "address": "Carrer d’Ausiàs Marc, 86–88",
+      "neighborhood": "El Fort Pienc",
+      "location": {
+        "lat": 41.3949455,
+        "lon": 2.1807811,
+        "precision": "approximate",
+        "radius_m": 150,
+        "label": "Uniplaces source point for the published Ausiàs Marc 86–88 address; building entrance not independently geocoded",
+        "source_url": "https://www.uniplaces.com/accommodation/barcelona/59248"
+      },
       "bedrooms": 4,
-      "bathrooms": null,
-      "area_m2": null,
-      "base_rent_eur": 2501,
+      "bathrooms": 2,
+      "area_m2": 80,
+      "base_rent_eur": 3501,
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "Fresh public page advertises availability from 2028-01-02, after the requested winter term. No acceptable Jan–Mar 2027 stay established.",
       "commute": {},
       "cost": {
-        "items": [],
-        "unknown": [
-          "Complete mandatory fees and final occupancy quote"
+        "items": [
+          {
+            "label": "Published Jan–Mar monthly rate: 3 × €3,501",
+            "amount_eur": 10503,
+            "estimated": false
+          },
+          {
+            "label": "Advertised landlord admin charge (payability requires clarification)",
+            "amount_eur": 100,
+            "estimated": false
+          }
         ],
-        "subtotal_eur": null,
-        "label": "No complete quote"
+        "subtotal_eur": 10603,
+        "label": "Out-of-window rate scenario; not an available winter quote",
+        "unknown": [
+          "Uniplaces booking fee",
+          "Final cleaning",
+          "Utilities above the €150/month allowance",
+          "Final contract and fee treatment"
+        ]
       },
       "deposit_eur": null,
       "issues": [
+        "Advertised opening 2028-01-02 excludes both requested winter windows as currently published.",
         "Search snippet only; direct listing/browser returned no usable property content. Not qualified."
       ],
       "conflicts": [],
       "details": {
         "availability": null,
-        "reason": "Search snippet only; direct listing/browser returned no usable property content. Not qualified."
+        "reason": "Search snippet only; direct listing/browser returned no usable property content. Not qualified.",
+        "fresh_availability": {
+          "available_from": "2028-01-02",
+          "checked_at": "2026-11-03",
+          "source_url": "https://www.uniplaces.com/accommodation/barcelona/59248"
+        },
+        "source_conflicts": [
+          "Header advertises two bathrooms while description mentions one common bathroom.",
+          "€2,501 is the undated minimum; published Jan–Mar rate is €3,501/month."
+        ]
       },
       "source_urls": [
         "https://www.uniplaces.com/accommodation/barcelona/59248"
@@ -1792,11 +1825,12 @@
       },
       "move_in_readiness": {
         "status": "unverified",
-        "bed_linen": null,
+        "bed_linen": true,
         "pillows_and_duvets": null,
-        "towels": null,
+        "towels": true,
         "kitchenware": null,
-        "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+        "note": "Public property amenities include linen and towels. Full winter bedding and kitchen inventory still unconfirmed; winter availability fails.",
+        "source_url": "https://www.uniplaces.com/accommodation/barcelona/59248"
       }
     },
     {
@@ -2144,13 +2178,14 @@
     {
       "id": "spotahome_127175",
       "review_id": "P",
-      "status": "lead",
+      "status": "excluded",
       "title": "Stylish 4-bedroom apartment for rent in Arc de Triomf area",
       "platform": "Spotahome",
       "url": "https://www.spotahome.com/barcelona/for-rent:apartments/127175",
       "alternate_urls": [],
       "research_tracks": [
-        "Map repo"
+        "Map repo",
+        "November 3 close-campus search"
       ],
       "address": "Carrer de Sicília",
       "neighborhood": "El Fort Pienc / Arc de Triomf",
@@ -2169,8 +2204,16 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
-      "commute": {},
+      "availability_note": "Fresh public page advertises availability from 2028-01-02, after the requested winter term. No acceptable Jan–Mar 2027 stay established.",
+      "commute": {
+        "walking_minutes_estimate": 18.68,
+        "walking_distance_m": 1401.3,
+        "origin_precision": "approximate",
+        "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
+        "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.18028993,41.3954975;2.1915,41.3894?overview=false&steps=false",
+        "checked_at": "2026-11-03",
+        "note": "Source map point only; exact apartment door unconfirmed."
+      },
       "cost": {
         "items": [
           {
@@ -2192,8 +2235,9 @@
         "subtotal_eur": 6750,
         "label": "Preliminary rent scenario; final cost unknown"
       },
-      "deposit_eur": null,
+      "deposit_eur": 1000,
       "issues": [
+        "Advertised opening 2028-01-02 excludes both requested winter windows as currently published.",
         "Continuous winter calendar, academic purpose, minimum stay, bedroom windows / desks, installed Wi-Fi speed and complete fees require confirmation.",
         "The earlier dashboard’s bed dimensions, room-by-room descriptions and service fees have not been substantiated; preserved below as the earlier agent’s unverified claims."
       ],
@@ -2214,7 +2258,13 @@
           "Water",
           "Heating",
           "Clothes dryer"
-        ]
+        ],
+        "fresh_availability": {
+          "available_from": "2028-01-02",
+          "checked_at": "2026-11-03",
+          "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/127175"
+        },
+        "utility_cap_conflict": "Description says €35/person/month (€140 for four), pricing summary says €220/month included. Resolve before relying on either cap."
       },
       "source_urls": [
         "https://www.spotahome.com/barcelona/for-rent:apartments/127175"
@@ -2315,11 +2365,12 @@
       },
       "move_in_readiness": {
         "status": "unverified",
-        "bed_linen": null,
+        "bed_linen": true,
         "pillows_and_duvets": null,
-        "towels": null,
+        "towels": true,
         "kitchenware": null,
-        "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+        "note": "The page explicitly supplies bed linen and towels; pillows, suitable winter bedding and kitchenware inventory for four remain unconfirmed.",
+        "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/127175"
       }
     },
     {
@@ -2870,7 +2921,15 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Continuous availability for the requested stay has not been verified.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 16.6,
+        "walking_distance_m": 1245.1,
+        "origin_precision": "approximate",
+        "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
+        "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.18847082,41.3824783;2.1915,41.3894?overview=false&steps=false",
+        "checked_at": "2026-11-03",
+        "note": "Source map point only; exact apartment door unconfirmed."
+      },
       "cost": {
         "items": [
           {
@@ -3205,67 +3264,96 @@
     {
       "id": "airbnb_1564369702322944311",
       "review_id": "V",
-      "status": "lead",
-      "title": "4-Bedroom Olympic Village Apartment near Bogatell Beach",
+      "status": "excluded",
+      "title": "Bed&BCN Vila Olímpica — four-bedroom apartment",
       "platform": "Airbnb Monthly Stays",
       "url": "https://www.airbnb.com/rooms/1564369702322944311",
-      "alternate_urls": [],
-      "research_tracks": [
-        "Map repo"
+      "alternate_urls": [
+        "https://es.bedandbcn.com/apartamentos-.barcelona/vila-olimpica-h1062/"
       ],
-      "address": "Avinguda d'Icària / Carrer de Salvador Espriu, 08005 Barcelona",
-      "neighborhood": "La Vila Olímpica del Poblenou (Tier 1)",
+      "research_tracks": [
+        "Map repo",
+        "November 3 close-campus search"
+      ],
+      "address": "",
+      "neighborhood": "La Vila Olímpica del Poblenou",
       "location": {
-        "lat": 41.3905,
-        "lon": 2.1975,
+        "lat": 41.392586004,
+        "lon": 2.195227146,
         "precision": "approximate",
-        "label": "Inherited listing / area map point; exact door location not confirmed",
-        "radius_m": 300,
-        "source_url": "https://www.airbnb.com/rooms/1564369702322944311"
+        "radius_m": 150,
+        "label": "Direct provider map point; exact street number not published",
+        "source_url": "https://es.bedandbcn.com/apartamentos-.barcelona/vila-olimpica-h1062/"
       },
       "bedrooms": 4,
       "bathrooms": 2.0,
-      "area_m2": 95,
-      "base_rent_eur": 3200,
-      "advertised_monthly_usd": null,
+      "area_m2": 85,
+      "base_rent_eur": null,
+      "advertised_monthly_usd": 11819,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
-      "commute": {},
+      "availability_note": "Airbnb rejects Jan 1–Mar 31. Jan 5–Apr 1 displays a Reserve option at $11,819/month; far above budget. No reservation submitted.",
+      "commute": {
+        "walking_minutes_estimate": 7.02,
+        "walking_distance_m": 526.5,
+        "origin_precision": "approximate",
+        "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
+        "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.195227146,41.392586004;2.1915,41.3894?overview=false&steps=false",
+        "checked_at": "2026-11-03",
+        "note": "Source map point only; exact apartment door unconfirmed."
+      },
       "cost": {
         "items": [
           {
-            "label": "Advertised rent × 3 (winter rate unconfirmed)",
-            "amount_eur": 9600,
-            "estimated": true
-          },
-          {
-            "label": "Winter utilities: 3 × €250 (allowance)",
-            "amount_eur": 750,
+            "label": "Flexible-date displayed $11,819/month × 3, converted at illustrative budget FX",
+            "amount_eur": 32620.44,
             "estimated": true
           }
         ],
+        "subtotal_eur": 32620.44,
+        "label": "Dated Airbnb monthly-display comparison; exceeds budget, not an exact stay invoice",
         "unknown": [
-          "Platform / agency / admin fees",
-          "Final cleaning",
-          "Winter rent and utility inclusions / caps"
-        ],
-        "subtotal_eur": 10350,
-        "label": "Preliminary rent scenario; final cost unknown"
+          "Exact 86-night itemized total and included platform/cleaning charges",
+          "Any additional tax and its applicability",
+          "Direct-provider long-stay quote; from-€142/day is not a Jan–Mar quote"
+        ]
       },
       "deposit_eur": null,
       "issues": [
-        "Continuous winter calendar, academic purpose, minimum stay, bedroom windows / desks, installed Wi-Fi speed and complete fees require confirmation.",
-        "The earlier dashboard’s bed dimensions, room-by-room descriptions and service fees have not been substantiated; preserved below as the earlier agent’s unverified claims."
+        "Flexible-date price exceeds the $4,000/month cap; the earlier €3,200 rent estimate is not supported by this dated quote.",
+        "Primary dates unavailable. Direct-provider page also excludes young groups; no written exception for four students.",
+        "Exact address, bedroom desks/windows, towels and complete winter arrival inventory unconfirmed."
       ],
       "conflicts": [
-        "Previous dashboard marked the calendar verified. Scraped date strings are not evidence of continuous availability."
+        "Previous dashboard marked the calendar verified. Scraped date strings are not evidence of continuous availability.",
+        "Bed&BCN h1062 is the same property: identical NRA/HUTB0030781, host business and four-room/six-bed description. Provider says 85 m², superseding the old unsupported 95 m² claim. Original record remains intact."
       ],
       "details": {
-        "advertised_amenities": []
+        "advertised_amenities": [],
+        "fresh_recheck": {
+          "primary": "Unavailable on Airbnb",
+          "flexible_monthly_display_usd": 11819,
+          "direct_provider": "Bed&BCN h1062; no young groups; from €142/day, not a winter monthly quote",
+          "bedroom_beds": [
+            "Double bed",
+            "Double bed",
+            "Two single beds",
+            "Two single beds"
+          ],
+          "bathrooms": [
+            "Bath, toilet and bidet",
+            "Shower and toilet"
+          ],
+          "heating": true,
+          "wifi": "Advertised high-speed",
+          "private_washer": true,
+          "deduplication_registration": "ESFCTU000008072000634921000000000000000000HUTB0030781",
+          "room_area_warning": "Description claims four 20 m² bedrooms inside an 85 m² flat; do not treat room areas as measured."
+        }
       },
       "source_urls": [
-        "https://www.airbnb.com/rooms/1564369702322944311"
+        "https://www.airbnb.com/rooms/1564369702322944311",
+        "https://es.bedandbcn.com/apartamentos-.barcelona/vila-olimpica-h1062/"
       ],
       "last_researched": "2026-11-03",
       "original_map_findings": {
@@ -3364,11 +3452,12 @@
       },
       "move_in_readiness": {
         "status": "unverified",
-        "bed_linen": null,
+        "bed_linen": true,
         "pillows_and_duvets": null,
         "towels": null,
-        "kitchenware": null,
-        "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
+        "kitchenware": true,
+        "note": "Provider lists sheets, extra blankets and cookware/tableware; towels and pillows / suitable winter bedding for all four remain unconfirmed.",
+        "source_url": "https://es.bedandbcn.com/apartamentos-.barcelona/vila-olimpica-h1062/"
       }
     },
     {
@@ -3707,13 +3796,14 @@
     {
       "id": "spotahome_907462",
       "review_id": "Y",
-      "status": "lead",
+      "status": "excluded",
       "title": "4-bedroom apartment for rent in El Fort Pienc, bills included.",
       "platform": "Spotahome",
       "url": "https://www.spotahome.com/barcelona/for-rent:apartments/907462",
       "alternate_urls": [],
       "research_tracks": [
-        "Map repo"
+        "Map repo",
+        "November 3 close-campus search"
       ],
       "address": "C/ de Sicília",
       "neighborhood": "El Fort Pienc",
@@ -3732,8 +3822,16 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
-      "commute": {},
+      "availability_note": "Fresh public page advertises availability from 2027-05-03, after the requested winter term. No acceptable Jan–Mar 2027 stay established.",
+      "commute": {
+        "walking_minutes_estimate": 18.71,
+        "walking_distance_m": 1402.8,
+        "origin_precision": "approximate",
+        "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
+        "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.18062459,41.39607125;2.1915,41.3894?overview=false&steps=false",
+        "checked_at": "2026-11-03",
+        "note": "Source map point only; exact apartment door unconfirmed."
+      },
       "cost": {
         "items": [
           {
@@ -3750,8 +3848,9 @@
         "subtotal_eur": 10800,
         "label": "Preliminary rent scenario; final cost unknown"
       },
-      "deposit_eur": null,
+      "deposit_eur": 3600,
       "issues": [
+        "Advertised opening 2027-05-03 excludes both requested winter windows as currently published.",
         "Continuous winter calendar, academic purpose, minimum stay, bedroom windows / desks, installed Wi-Fi speed and complete fees require confirmation.",
         "The earlier dashboard’s bed dimensions, room-by-room descriptions and service fees have not been substantiated; preserved below as the earlier agent’s unverified claims."
       ],
@@ -3775,7 +3874,12 @@
           "Water",
           "Heating"
         ],
-        "utility_note": "Title advertises bills included; caps and other charges unconfirmed."
+        "utility_note": "Title advertises bills included; caps and other charges unconfirmed.",
+        "fresh_availability": {
+          "available_from": "2027-05-03",
+          "checked_at": "2026-11-03",
+          "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/907462"
+        }
       },
       "source_urls": [
         "https://www.spotahome.com/barcelona/for-rent:apartments/907462"
@@ -4715,7 +4819,15 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Four simultaneous rooms for the full trimester have not been verified.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 17.97,
+        "walking_distance_m": 1347.5,
+        "origin_precision": "approximate",
+        "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
+        "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.1904,41.3812;2.1915,41.3894?overview=false&steps=false",
+        "checked_at": "2026-11-03",
+        "note": "Source map point only; exact apartment door unconfirmed."
+      },
       "cost": {
         "items": [
           {
@@ -5173,7 +5285,15 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 15.35,
+        "walking_distance_m": 1146.2,
+        "origin_precision": "approximate",
+        "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
+        "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.18587582,41.39707614;2.1915,41.3894?overview=false&steps=false",
+        "checked_at": "2026-11-03",
+        "note": "Source map point only; exact apartment door unconfirmed."
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -5493,7 +5613,15 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 19.15,
+        "walking_distance_m": 1436.3,
+        "origin_precision": "approximate",
+        "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
+        "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.18088626,41.3965778;2.1915,41.3894?overview=false&steps=false",
+        "checked_at": "2026-11-03",
+        "note": "Source map point only; exact apartment door unconfirmed."
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -5693,21 +5821,24 @@
       "url": "https://www.spotahome.com/barcelona/for-rent:apartments/201508",
       "alternate_urls": [
         "https://housinganywhere.com/room/ut760850/es/Barcelona/carrer-de-sardenya",
-        "https://www.idealista.com/inmueble/112594435/"
+        "https://www.idealista.com/inmueble/112594435/",
+        "https://www.uniplaces.com/accommodation/barcelona/767287",
+        "https://www.idealista.com/inmueble/110112687/"
       ],
       "research_tracks": [
         "Earlier review",
-        "Map repo"
+        "Map repo",
+        "November 3 close-campus search"
       ],
-      "address": "Carrer de Sardenya, Barcelona",
+      "address": "Carrer de Sardenya, 51",
       "neighborhood": "El Parc i la Llacuna del Poblenou",
       "location": {
-        "lat": 41.39121664,
-        "lon": 2.1881306599999735,
-        "precision": "approximate",
-        "label": "Inherited listing / area map point; exact door location not confirmed",
-        "radius_m": 300,
-        "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/201508"
+        "lat": 41.3919634,
+        "lon": 2.188271,
+        "precision": "building",
+        "radius_m": 0,
+        "label": "Published Sardenya 51 address in Uniplaces property data, matched to Spotahome by identical living-room photo; OSM building-number geocode",
+        "source_url": "https://nominatim.openstreetmap.org/search?q=Carrer+de+Sardenya+51%2C+Barcelona&format=jsonv2&limit=2&viewbox=2.15%2C41.42%2C2.23%2C41.36&bounded=1&addressdetails=1"
       },
       "bedrooms": 4,
       "bathrooms": 2,
@@ -5716,8 +5847,16 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
-      "commute": {},
+      "availability_note": "Close to campus (about 6 minutes from published Sardenya 51). Still excluded for missing sheets/towels. Uniplaces alias additionally requires 90 nights and has a January check-in gap-rule uncertainty; neither requested window is qualified.",
+      "commute": {
+        "walking_minutes_estimate": 5.66,
+        "walking_distance_m": 424.2,
+        "origin_precision": "building",
+        "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
+        "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.188271,41.3919634;2.1915,41.3894?overview=false&steps=false",
+        "checked_at": "2026-11-03",
+        "note": "Published building location; entrance and traffic signals may change the walking time."
+      },
       "cost": {
         "items": [
           {
@@ -5750,10 +5889,11 @@
         "Sheets, pillowcases, duvet covers and towels are explicitly not supplied; fails the required arrival inventory as advertised.",
         "Leisure-only policy requires a signed tourism declaration; obtain a contract / written approval accurately reflecting the disclosed UPF stay. Student status itself is not a blanket ban.",
         "Duration fits in principle, but max-three-month description conflicts with max-eleven-month metadata.",
-        "Continuous dates, exact address / route, room ventilation and complete fees remain unverified."
+        "Continuous dates, actual entrance, room ventilation and complete fees remain unverified. The published Sardenya 51 building now routes to 5.66 minutes; the Uniplaces alias has a 90-night minimum and a January gap-rule uncertainty."
       ],
       "conflicts": [
-        "The previous map ranked this as a candidate. Earlier property-page evidence records a hard-filter failure; retained as excluded."
+        "The previous map ranked this as a candidate. Earlier property-page evidence records a hard-filter failure; retained as excluded.",
+        "Fresh Uniplaces alias quotes different rent, utility, deposit and fee amounts; same property, not an additional flat. Its 90-night minimum and gap rule differ from Spotahome."
       ],
       "details": {
         "room_beds": [
@@ -5789,10 +5929,28 @@
           "available_from": "2026-12-01",
           "minimum_stay_days": 32,
           "maximum_stay_conflict": "Description says max 3 months; availability section says 11 months"
+        },
+        "cross_platform_recheck": {
+          "deduplication": "Uniplaces 767287 and Spotahome 201508 show the same living-room photo: gray sectional, yellow cushions, shelf, black tripod lamp, window alcove and AC. Both are 80 m², four double bedrooms, two bathrooms on Sardenya. Idealista 110112687 explicitly links to Spotahome 201508. Kept as one record.",
+          "uniplaces_base_monthly_eur": 2000,
+          "uniplaces_monthly_bills_eur": 200,
+          "uniplaces_advertised_admin_eur": 2420,
+          "uniplaces_contract_charge_eur": 242,
+          "uniplaces_cleaning_eur": 190,
+          "uniplaces_deposit_eur": 4000,
+          "uniplaces_subtotal_before_booking_eur": 9452,
+          "uniplaces_minimum_nights": 90,
+          "uniplaces_duration_result": "Neither 89-night primary nor 86-night flexible window meets 90 nights. Jan 1–Apr 1 would be 90 nights, subject to user preference, owner approval and calendar.",
+          "uniplaces_availability": "Public offer lists a period beginning Dec 1, 2026, but also a 14-day gap rule from the beginning of availability; January check-in eligibility is not established.",
+          "amenity_conflicts": "Uniplaces flags elevator, AC and linen/towels absent; Spotahome advertises elevator and individual AC/heating but also expressly excludes sheets/covers/towels.",
+          "fee_note": "Advertised landlord/contract charges are recorded as claims; require a revised written fee schedule. No platform is established as cheapest without its dated booking fee.",
+          "source_url": "https://www.uniplaces.com/accommodation/barcelona/767287"
         }
       },
       "source_urls": [
-        "https://www.spotahome.com/barcelona/for-rent:apartments/201508"
+        "https://www.spotahome.com/barcelona/for-rent:apartments/201508",
+        "https://www.uniplaces.com/accommodation/barcelona/767287",
+        "https://www.idealista.com/inmueble/110112687/"
       ],
       "last_researched": "2026-11-03",
       "original_map_findings": {
@@ -8888,6 +9046,989 @@
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
       }
+    },
+    {
+      "id": "casablanca_pujades_111744603",
+      "review_id": "AB",
+      "status": "lead",
+      "title": "Pujades facing Ciutadella — four bedrooms",
+      "platform": "Casa Blanca Barcelona / Indomio",
+      "url": "https://www.indomio.es/anuncios/102280401/",
+      "alternate_urls": [
+        "https://www.idealista.com/inmueble/111744603/",
+        "https://www.yaencontre.com/alquiler/piso/inmueble-91592-111744603"
+      ],
+      "research_tracks": [
+        "November 3 close-campus search"
+      ],
+      "address": "Passeig de Pujades",
+      "neighborhood": "Sant Pere / western Pujades",
+      "location": {
+        "lat": 41.3910123,
+        "lon": 2.186325,
+        "precision": "proxy",
+        "label": "Western Pujades street segment only; exact flat position unknown",
+        "radius_m": 400,
+        "source_url": "https://www.indomio.es/anuncios/102280401/"
+      },
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area_m2": 90,
+      "base_rent_eur": 2000,
+      "advertised_monthly_usd": null,
+      "calendar_verified": false,
+      "value_score": null,
+      "availability_note": "Indomio says updated Nov 1, 2026 and available from January (year omitted). Idealista alias is no longer published; continuous winter availability is unverified.",
+      "commute": {},
+      "cost": {
+        "items": [
+          {
+            "label": "Advertised rent: 3 × €2,000",
+            "amount_eur": 6000,
+            "estimated": false
+          },
+          {
+            "label": "Winter utilities: 3 × €250 allowance",
+            "amount_eur": 750,
+            "estimated": true
+          }
+        ],
+        "unknown": [
+          "Dated winter quote and full fee schedule",
+          "Final cleaning",
+          "Installed internet and any separate internet charge",
+          "Utility terms and linens / towels"
+        ],
+        "subtotal_eur": 6750,
+        "label": "Published-price comparison subtotal; dates and final costs unconfirmed"
+      },
+      "deposit_eur": 4000,
+      "issues": [
+        "Potential close-campus lead, not a verified 10–15-minute walk: street number withheld.",
+        "January availability omits the year; primary Idealista ad removed despite active syndication.",
+        "Heating/furniture advertised; washer, installed high-speed Wi-Fi, all desks, room windows, bedding and towels need confirmation."
+      ],
+      "conflicts": [],
+      "details": {
+        "rooms": [
+          "Two double bedrooms",
+          "Two single bedrooms"
+        ],
+        "property": {
+          "furnished": true,
+          "heating": "Individual heating advertised",
+          "elevator": true,
+          "floor": 6,
+          "balcony_or_terrace": true,
+          "kitchen": "Equipped with laundry area; washer not explicitly verified"
+        },
+        "lease": "Temporary rental; minimum and maximum term unquoted",
+        "source_ref": "111744603-Z12-8/11",
+        "source_caution": "Indomio header terrace / no balcony differs from description with balcony."
+      },
+      "source_urls": [
+        "https://www.indomio.es/anuncios/102280401/",
+        "https://www.idealista.com/inmueble/111744603/",
+        "https://www.yaencontre.com/alquiler/piso/inmueble-91592-111744603"
+      ],
+      "last_researched": "2026-11-03",
+      "move_in_readiness": {
+        "status": "unverified",
+        "bed_linen": null,
+        "pillows_and_duvets": null,
+        "towels": null,
+        "kitchenware": null,
+        "note": "Complete arrival inventory for four has not been confirmed."
+      }
+    },
+    {
+      "id": "dira_buenaventura_112635764",
+      "review_id": "AC",
+      "status": "excluded",
+      "title": "Buenaventura Muñoz — DÍRA four-bedroom ad",
+      "platform": "DÍRA Group / Yaencontre",
+      "url": "https://www.yaencontre.com/alquiler/piso/inmueble-56738-112635764",
+      "alternate_urls": [
+        "https://www.idealista.com/inmueble/112635764/"
+      ],
+      "research_tracks": [
+        "November 3 close-campus search"
+      ],
+      "address": "Carrer de Buenaventura Muñoz",
+      "neighborhood": "El Parc i la Llacuna del Poblenou",
+      "location": null,
+      "bedrooms": 4,
+      "bathrooms": 1.5,
+      "area_m2": 95,
+      "base_rent_eur": 1500,
+      "advertised_monthly_usd": null,
+      "calendar_verified": false,
+      "value_score": null,
+      "availability_note": "Idealista source no longer published when inspected. Yaencontre retains an older ad, last updated Sep 23, 2026; no winter calendar.",
+      "commute": {},
+      "cost": {
+        "items": [
+          {
+            "label": "Cached rent: 3 × €1,500",
+            "amount_eur": 4500,
+            "estimated": false
+          },
+          {
+            "label": "Winter utilities: 3 × €250 allowance",
+            "amount_eur": 750,
+            "estimated": true
+          },
+          {
+            "label": "Advertised one-month agency charge + 21% VAT (payability disputed)",
+            "amount_eur": 1815,
+            "estimated": false
+          }
+        ],
+        "unknown": [
+          "Final cleaning",
+          "January availability / any replacement listing",
+          "Revised lawful fee schedule and extra charges",
+          "Internet and arrival inventory"
+        ],
+        "subtotal_eur": 7065,
+        "label": "Published-price comparison subtotal; dates and final costs unconfirmed"
+      },
+      "deposit_eur": 3000,
+      "issues": [
+        "Original ad removed; not an active winter option as verified.",
+        "Advertises an 11-month contract with renewal; no three-month exception established.",
+        "Family preference and employment / payroll solvency requirements; guarantor acceptance for four students unknown."
+      ],
+      "conflicts": [],
+      "details": {
+        "rooms": [
+          "One double bedroom",
+          "Three single bedrooms"
+        ],
+        "property": {
+          "furnished": true,
+          "heating": "Individual gas heating",
+          "elevator": true,
+          "floor": 3,
+          "balcony_or_terrace": true
+        },
+        "bathrooms": "One full shower bathroom plus separate guest toilet; portal counts this as two bathrooms.",
+        "terms": "Two-month deposit; first rent in advance; advertised one-month agency charge plus VAT. The advance rent is not an additional occupancy cost."
+      },
+      "source_urls": [
+        "https://www.yaencontre.com/alquiler/piso/inmueble-56738-112635764",
+        "https://www.idealista.com/inmueble/112635764/"
+      ],
+      "last_researched": "2026-11-03",
+      "move_in_readiness": {
+        "status": "unverified",
+        "bed_linen": null,
+        "pillows_and_duvets": null,
+        "towels": null,
+        "kitchenware": null,
+        "note": "Complete arrival inventory for four has not been confirmed."
+      }
+    },
+    {
+      "id": "selekta_salvador_111822074",
+      "review_id": "AD",
+      "status": "excluded",
+      "title": "Salvador Espriu duplex — Selekta ref. 1828",
+      "platform": "Selekta Properties / Idealista",
+      "url": "https://www.idealista.com/inmueble/111822074/",
+      "alternate_urls": [
+        "https://www.yaencontre.com/alquiler/piso/inmueble-48918-111822074",
+        "https://www.solocasa.es/en-alquiler/duplex_1/duplex-en-alquiler-en-barcelona-barcelona-i1331371"
+      ],
+      "research_tracks": [
+        "November 3 close-campus search"
+      ],
+      "address": "Carrer de Salvador Espriu",
+      "neighborhood": "La Vila Olímpica del Poblenou",
+      "location": {
+        "lat": 41.387334,
+        "lon": 2.1950628,
+        "precision": "proxy",
+        "label": "Salvador Espriu street-area proxy, not the duplex address",
+        "radius_m": 450,
+        "source_url": "https://www.idealista.com/inmueble/111822074/"
+      },
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "area_m2": 154,
+      "base_rent_eur": 3334,
+      "advertised_monthly_usd": null,
+      "calendar_verified": false,
+      "value_score": null,
+      "availability_note": "Idealista removed; Yaencontre mirror now returns 410 Gone. Other indexed descriptions are not a live calendar.",
+      "commute": {},
+      "cost": {
+        "items": [
+          {
+            "label": "Last advertised rent: 3 × €3,334",
+            "amount_eur": 10002,
+            "estimated": false
+          },
+          {
+            "label": "Winter utilities: 3 × €250 allowance",
+            "amount_eur": 750,
+            "estimated": true
+          }
+        ],
+        "unknown": [
+          "Current availability and itemized winter quote",
+          "All mandatory fees and final cleaning",
+          "Whether IBI is included in €3,334",
+          "Bedding / towels and exact sleeping-room layout"
+        ],
+        "subtotal_eur": 10752,
+        "label": "Published-price comparison subtotal; dates and final costs unconfirmed"
+      },
+      "deposit_eur": null,
+      "issues": [
+        "No current active primary listing established.",
+        "Rent plus default winter utilities leaves just €288 of the €11,040 comparison cap for every fee and final cleaning.",
+        "Five rooms / five baths are portal metadata; the upstairs studio includes a sofa bed, so verify four independent real-bed bedrooms and actual bathroom count."
+      ],
+      "conflicts": [],
+      "details": {
+        "property": {
+          "furnished": true,
+          "heating": true,
+          "elevator": true,
+          "floor": 6,
+          "balcony_or_terrace": true,
+          "washer_and_dryer": "Advertised in cached description"
+        },
+        "area": "154 m² built / 150 m² usable",
+        "price_components": "Previous rent €3,193.59 plus €140.31 IBI totals €3,333.90, approximately the €3,334 headline. Do not assume IBI is another monthly surcharge.",
+        "source_ref": "1828"
+      },
+      "source_urls": [
+        "https://www.idealista.com/inmueble/111822074/",
+        "https://www.yaencontre.com/alquiler/piso/inmueble-48918-111822074",
+        "https://www.solocasa.es/en-alquiler/duplex_1/duplex-en-alquiler-en-barcelona-barcelona-i1331371"
+      ],
+      "last_researched": "2026-11-03",
+      "move_in_readiness": {
+        "status": "unverified",
+        "bed_linen": null,
+        "pillows_and_duvets": null,
+        "towels": null,
+        "kitchenware": null,
+        "note": "Complete arrival inventory for four has not been confirmed."
+      }
+    },
+    {
+      "id": "atbarcelona_ribes_576",
+      "review_id": "AE",
+      "status": "lead",
+      "title": "Ribes — four double bedrooms with balcony",
+      "platform": "AtBarcelona",
+      "url": "https://www.atbarcelona.es/fichadetalle.aspx?id=11204",
+      "alternate_urls": [
+        "https://www.idealista.com/inmueble/112851383/"
+      ],
+      "research_tracks": [
+        "November 3 close-campus search"
+      ],
+      "address": "Carrer de Ribes",
+      "neighborhood": "El Fort Pienc",
+      "location": {
+        "lat": 41.398505,
+        "lon": 2.18341380000004,
+        "precision": "approximate",
+        "label": "Provider-published map point; no street number supplied",
+        "radius_m": 300,
+        "source_url": "https://www.atbarcelona.es/fichadetalle.aspx?id=11204"
+      },
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area_m2": 92,
+      "base_rent_eur": 2200,
+      "advertised_monthly_usd": null,
+      "calendar_verified": false,
+      "value_score": null,
+      "availability_note": "Provider says available Nov 4, 2026; January–March continuity unverified. Description permits 32 days to 4–6 months, but the features table requires exactly six months.",
+      "commute": {
+        "walking_minutes_estimate": 18.5,
+        "walking_distance_m": 1385.2,
+        "origin_precision": "approximate",
+        "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
+        "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.18341380000004,41.398505;2.1915,41.3894?overview=false&steps=false",
+        "checked_at": "2026-11-03",
+        "note": "Source map point only; exact apartment door unconfirmed."
+      },
+      "cost": {
+        "items": [
+          {
+            "label": "Advertised rent: 3 × €2,200",
+            "amount_eur": 6600,
+            "estimated": false
+          },
+          {
+            "label": "Winter utilities: 3 × €250 allowance",
+            "amount_eur": 750,
+            "estimated": true
+          }
+        ],
+        "unknown": [
+          "Agency / contract fees and any tax treatment",
+          "Final cleaning",
+          "Water and electricity reconciliation",
+          "Bedding / towels package"
+        ],
+        "subtotal_eur": 7350,
+        "label": "Published-price comparison subtotal; dates and final costs unconfirmed"
+      },
+      "deposit_eur": 4400,
+      "issues": [
+        "Provider map point routes to 18.5 minutes; outside the requested 10–15-minute focus unless the actual door materially differs.",
+        "Exclusive leisure / holiday terms require written acceptance of the disclosed UPF stay.",
+        "Six-month minimum in structured terms conflicts with 32-day minimum in description.",
+        "Bedroom windows / desks and sheets, towels, pillows and winter bedding unconfirmed."
+      ],
+      "conflicts": [],
+      "details": {
+        "rooms": [
+          "Three rooms with 135 cm double beds",
+          "One room with 150 cm double bed"
+        ],
+        "property": {
+          "furnished": true,
+          "heating": "Central gas heating",
+          "wifi": "Complimentary installed Wi-Fi; speed unquoted",
+          "private_washer": true,
+          "dishwasher": true,
+          "kitchenware": true,
+          "elevator": true,
+          "floor": "Portal 4th / agency real height 3rd",
+          "balcony_or_terrace": true
+        },
+        "conflicts": [
+          "Balcony 6 m² in description / 4 m² in table",
+          "Four beds in description / three beds in amenities table",
+          "Two exterior bedrooms recorded; windows in remaining two need inspection",
+          "90 m² agency / 92 m² built and 90 usable portal"
+        ],
+        "source_ref": "576 / 576_2_2"
+      },
+      "source_urls": [
+        "https://www.atbarcelona.es/fichadetalle.aspx?id=11204",
+        "https://www.idealista.com/inmueble/112851383/"
+      ],
+      "last_researched": "2026-11-03",
+      "move_in_readiness": {
+        "status": "unverified",
+        "bed_linen": null,
+        "pillows_and_duvets": null,
+        "towels": null,
+        "kitchenware": true,
+        "note": "Cooking utensils, cutlery and dishes expressly listed; bed linen and towels are not confirmed.",
+        "source_url": "https://www.atbarcelona.es/fichadetalle.aspx?id=11204"
+      }
+    },
+    {
+      "id": "roomhousing_rh2",
+      "review_id": "AF",
+      "status": "excluded",
+      "title": "RH2 — Ciutadella four-room duplex",
+      "platform": "Room Housing",
+      "url": "https://www.roomhousing.es/rh2--ciutadella-villa-ol%C3%ADmpica",
+      "alternate_urls": [],
+      "research_tracks": [
+        "November 3 close-campus search"
+      ],
+      "address": "Wellington / Ciutadella area",
+      "neighborhood": "Ciutadella / Wellington",
+      "location": null,
+      "bedrooms": 4,
+      "bathrooms": null,
+      "area_m2": 124,
+      "base_rent_eur": 3760,
+      "advertised_monthly_usd": null,
+      "calendar_verified": false,
+      "value_score": null,
+      "availability_note": "Provider advertises all four room types at €940/month each. Simultaneous January–March vacancy in the same flat has not been verified.",
+      "commute": {},
+      "cost": {
+        "items": [
+          {
+            "label": "Four rooms: €940 × 4 × 3 months, utilities / Wi-Fi included",
+            "amount_eur": 11280,
+            "estimated": false
+          }
+        ],
+        "unknown": [
+          "Any booking / admin / final cleaning charges",
+          "Deposit",
+          "Guaranteed assignment of all four rooms in this same unit",
+          "Arrival linen / towel inventory"
+        ],
+        "subtotal_eur": 11280,
+        "label": "Published-price comparison subtotal; dates and final costs unconfirmed"
+      },
+      "deposit_eur": null,
+      "issues": [
+        "€3,760/month for four already exceeds the €3,680 cap by €80/month, before any fees.",
+        "Individual-room ads do not establish that all four are vacant together; no incumbent occupants may remain."
+      ],
+      "conflicts": [],
+      "details": {
+        "property": {
+          "furnished": true,
+          "balcony_or_terrace": true,
+          "wifi": "High-speed included",
+          "cleaning": "Common areas included"
+        },
+        "rooms": "Four separate bedroom offers on the exact same unit page; room dimensions / desks / beds need individual inspection.",
+        "bathroom_fixture_counts": "RH2: one shower and one WC; not established as 1.5 baths.",
+        "eligibility": "Provider specifically welcomes UPF students.",
+        "advertised_walk_to_upf_minutes": 2
+      },
+      "source_urls": [
+        "https://www.roomhousing.es/rh2--ciutadella-villa-ol%C3%ADmpica"
+      ],
+      "last_researched": "2026-11-03",
+      "move_in_readiness": {
+        "status": "unverified",
+        "bed_linen": null,
+        "pillows_and_duvets": null,
+        "towels": null,
+        "kitchenware": null,
+        "note": "Complete arrival inventory for four has not been confirmed."
+      }
+    },
+    {
+      "id": "roomhousing_rh11",
+      "review_id": "AG",
+      "status": "excluded",
+      "title": "RH11 — Ciutadella four-room duplex",
+      "platform": "Room Housing",
+      "url": "https://www.roomhousing.es/arh11---ciutadella-villa-ol%C3%ADmpica",
+      "alternate_urls": [
+        "https://www.idealista.com/inmueble/88773545/",
+        "https://www.roomhousing.es/en-gb/arh11---r1",
+        "https://www.roomhousing.es/en-gb/arh11---r2",
+        "https://www.roomhousing.es/en-gb/arh11---r3",
+        "https://www.roomhousing.es/en-gb/arh11---r4"
+      ],
+      "research_tracks": [
+        "November 3 close-campus search"
+      ],
+      "address": "Carrer de Wellington, 70",
+      "neighborhood": "Ciutadella / Wellington",
+      "location": {
+        "lat": 41.3913221,
+        "lon": 2.1873646,
+        "precision": "building",
+        "label": "Wellington 70 from RH11-R3 provider ad, matched by unit reference; OSM house-number geocode",
+        "radius_m": 0,
+        "source_url": "https://www.idealista.com/inmueble/88773545/"
+      },
+      "bedrooms": 4,
+      "bathrooms": 2.5,
+      "area_m2": 124,
+      "base_rent_eur": 3760,
+      "advertised_monthly_usd": null,
+      "calendar_verified": false,
+      "value_score": null,
+      "availability_note": "Provider advertises all four room types at €940/month each. Simultaneous January–March vacancy in the same flat has not been verified.",
+      "commute": {
+        "walking_minutes_estimate": 6.8,
+        "walking_distance_m": 510.3,
+        "origin_precision": "building",
+        "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
+        "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.1873646,41.3913221;2.1915,41.3894?overview=false&steps=false",
+        "checked_at": "2026-11-03",
+        "note": "Published building location; entrance and traffic signals may change the walking time."
+      },
+      "cost": {
+        "items": [
+          {
+            "label": "Four rooms: €940 × 4 × 3 months, utilities / Wi-Fi included",
+            "amount_eur": 11280,
+            "estimated": false
+          },
+          {
+            "label": "Advertised management charges: €400 × 4 (payability requires clarification)",
+            "amount_eur": 1600,
+            "estimated": false
+          },
+          {
+            "label": "Winter utility overage allowance: (€250 group estimate − €160 included) × 3",
+            "amount_eur": 270,
+            "estimated": true
+          }
+        ],
+        "unknown": [
+          "Any further platform / cleaning fees and tax treatment",
+          "Revised management-fee schedule / payability",
+          "Actual utilities beyond the €40/person/month included cap",
+          "All four same-unit rooms for the exact winter dates",
+          "First-day linen / towel inventory"
+        ],
+        "subtotal_eur": 13150,
+        "label": "Published rent / management charges plus estimated winter overages; not an available-stay quote"
+      },
+      "deposit_eur": 2400,
+      "issues": [
+        "€3,760/month for four already exceeds the €3,680 cap by €80/month, before any fees.",
+        "Each of the four room pages additionally advertises a €400 management charge and only €40/person/month of included utilities. Comparison includes €1,600 advertised charges plus €270 estimated winter overage.",
+        "Individual-room ads do not establish that all four are vacant together; no incumbent occupants may remain."
+      ],
+      "conflicts": [],
+      "details": {
+        "property": {
+          "furnished": true,
+          "balcony_or_terrace": true,
+          "wifi": "High-speed included",
+          "cleaning": "Common areas included",
+          "private_washer": true,
+          "dryer": true,
+          "heating": "Individual electric heating",
+          "elevator": true
+        },
+        "rooms": "Four separate bedroom offers on the exact same unit page; room dimensions / desks / beds need individual inspection.",
+        "bathroom_fixture_counts": "RH11: two showers and three WCs; upstairs ensuite plus lower full bathroom and guest toilet.",
+        "eligibility": "Provider specifically welcomes UPF students.",
+        "advertised_walk_to_upf_minutes": 2,
+        "room_contract_terms": {
+          "checked_at": "2026-11-03",
+          "all_four_pages_agree": true,
+          "monthly_per_room_eur": 940,
+          "refundable_deposit_per_room_eur": 600,
+          "advertised_management_charge_per_room_eur": 400,
+          "minimum_nights": 32,
+          "utility_cap_per_room_monthly_eur": 40,
+          "age_range": "18–35",
+          "source_urls": [
+            "https://www.roomhousing.es/en-gb/arh11---r1",
+            "https://www.roomhousing.es/en-gb/arh11---r2",
+            "https://www.roomhousing.es/en-gb/arh11---r3",
+            "https://www.roomhousing.es/en-gb/arh11---r4"
+          ],
+          "fee_treatment": "Published charge recorded, not legal acceptance; base rent alone is still over budget even if charges are revised."
+        }
+      },
+      "source_urls": [
+        "https://www.roomhousing.es/arh11---ciutadella-villa-ol%C3%ADmpica",
+        "https://www.idealista.com/inmueble/88773545/",
+        "https://www.roomhousing.es/en-gb/arh11---r1",
+        "https://www.roomhousing.es/en-gb/arh11---r2",
+        "https://www.roomhousing.es/en-gb/arh11---r3",
+        "https://www.roomhousing.es/en-gb/arh11---r4"
+      ],
+      "last_researched": "2026-11-03",
+      "move_in_readiness": {
+        "status": "unverified",
+        "bed_linen": null,
+        "pillows_and_duvets": null,
+        "towels": null,
+        "kitchenware": null,
+        "note": "Complete arrival inventory for four has not been confirmed."
+      }
+    },
+    {
+      "id": "housinganywhere_ut1695882",
+      "review_id": "AH",
+      "status": "excluded",
+      "title": "Buenaventura Muñoz — student-friendly four-bedroom flat",
+      "platform": "HousingAnywhere",
+      "url": "https://housinganywhere.com/room/ut1695882/es/Barcelona/carrer-de-buenaventura-mu-oz",
+      "alternate_urls": [
+        "https://www.enalquiler.com/alquiler_piso_barcelona/alquiler-piso-amueblado-sant-marti_7152385.html",
+        "https://rentberry.com/es/apartments/172669077-four-br-carrer-de-buenaventura-munoz-62-64-08018-barcelona-spain",
+        "https://housinganywhere.com/pricing/tenants"
+      ],
+      "research_tracks": [
+        "November 3 close-campus search"
+      ],
+      "address": "Carrer de Buenaventura Muñoz",
+      "neighborhood": "El Parc i la Llacuna del Poblenou",
+      "location": {
+        "lat": 41.3935115,
+        "lon": 2.1875019,
+        "precision": "approximate",
+        "label": "Secondary listing suggests Buenaventura Muñoz 62–64; exact primary address not confirmed",
+        "radius_m": 200,
+        "source_url": "https://housinganywhere.com/room/ut1695882/es/Barcelona/carrer-de-buenaventura-mu-oz"
+      },
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area_m2": 90,
+      "base_rent_eur": 3600,
+      "advertised_monthly_usd": null,
+      "calendar_verified": false,
+      "value_score": null,
+      "availability_note": "No continuous January–March calendar verified. Public page accepts students and monthly contracts.",
+      "commute": {
+        "walking_minutes_estimate": 8.82,
+        "walking_distance_m": 661,
+        "origin_precision": "approximate",
+        "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
+        "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.1875019,41.3935115;2.1915,41.3894?overview=false&steps=false",
+        "checked_at": "2026-11-03",
+        "note": "Source map point only; exact apartment door unconfirmed."
+      },
+      "cost": {
+        "items": [
+          {
+            "label": "Rent: 3 × €3,600, advertised utilities / Wi-Fi included",
+            "amount_eur": 10800,
+            "estimated": false
+          },
+          {
+            "label": "Minimum published Tenant Protection scenario: 25% of first rent",
+            "amount_eur": 900,
+            "estimated": true
+          }
+        ],
+        "unknown": [
+          "Exact dated platform fee (published range 25–40%)",
+          "Final cleaning / additional landlord fees",
+          "Utility caps",
+          "Calendar and refundable deposit"
+        ],
+        "subtotal_eur": 11700,
+        "label": "Published-price comparison subtotal; dates and final costs unconfirmed"
+      },
+      "deposit_eur": null,
+      "issues": [
+        "At the published minimum platform-fee scenario, €11,700 total / €975 per person per month exceeds the €920 cap before cleaning.",
+        "Primary page withholds house number; 62–64 is a syndication claim, not landlord-confirmed door location.",
+        "Sheets, pillows / winter bedding and towels still unconfirmed."
+      ],
+      "conflicts": [],
+      "details": {
+        "property": {
+          "furnished": true,
+          "heating": "Electric heating",
+          "wifi": "High-speed advertised, included",
+          "private_washer": true,
+          "dryer": true,
+          "kitchenware": true,
+          "floor": 4
+        },
+        "lease": "Monthly contract; full calendar months billed, so confirm April 1 billing.",
+        "students_accepted": true,
+        "provider_fee_basis": "HousingAnywhere official pricing: one-time approximately 25–40% of first-month rent, minimum €175. Used 25% conservatively, not an exact quote.",
+        "source_conflicts": "Secondary Rentberry header says one bath while primary and description say two. Secondary €1,000 deposit not adopted without a primary quote."
+      },
+      "source_urls": [
+        "https://housinganywhere.com/room/ut1695882/es/Barcelona/carrer-de-buenaventura-mu-oz",
+        "https://www.enalquiler.com/alquiler_piso_barcelona/alquiler-piso-amueblado-sant-marti_7152385.html",
+        "https://rentberry.com/es/apartments/172669077-four-br-carrer-de-buenaventura-munoz-62-64-08018-barcelona-spain",
+        "https://housinganywhere.com/pricing/tenants"
+      ],
+      "last_researched": "2026-11-03",
+      "move_in_readiness": {
+        "status": "unverified",
+        "bed_linen": null,
+        "pillows_and_duvets": null,
+        "towels": null,
+        "kitchenware": true,
+        "note": "Kitchenware is expressly included; complete bedding and towel inventory for four is not confirmed.",
+        "source_url": "https://housinganywhere.com/room/ut1695882/es/Barcelona/carrer-de-buenaventura-mu-oz"
+      }
+    },
+    {
+      "id": "shbarcelona_I8419_2",
+      "review_id": "AI",
+      "status": "excluded",
+      "title": "Sardenya / Almogàvers — four-bedroom furnished flat",
+      "platform": "ShBarcelona",
+      "url": "https://shbarcelona.com/es/m/piso-alquiler-eixample-balcon-terraza--8419",
+      "alternate_urls": [],
+      "research_tracks": [
+        "November 3 close-campus search"
+      ],
+      "address": "Sardenya / Almogàvers",
+      "neighborhood": "El Fort Pienc / Marina",
+      "location": {
+        "lat": 41.3933985,
+        "lon": 2.186393800000019,
+        "precision": "approximate",
+        "label": "ShBarcelona public source map point; exact apartment door not confirmed",
+        "radius_m": 150,
+        "source_url": "https://shbarcelona.com/es/m/piso-alquiler-eixample-balcon-terraza--8419"
+      },
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area_m2": 75,
+      "base_rent_eur": 1995,
+      "advertised_monthly_usd": null,
+      "calendar_verified": false,
+      "value_score": null,
+      "availability_note": "Official opening July 7, 2027, after the winter term.",
+      "commute": {},
+      "cost": {
+        "items": [
+          {
+            "label": "Advertised rent: 3 × €1,995",
+            "amount_eur": 5985,
+            "estimated": false
+          },
+          {
+            "label": "Winter utilities: 3 × €250 allowance",
+            "amount_eur": 750,
+            "estimated": true
+          },
+          {
+            "label": "Advertised 1–3 month agency charge €1,397 + VAT (payability disputed)",
+            "amount_eur": 1690.37,
+            "estimated": false
+          }
+        ],
+        "unknown": [
+          "Final cleaning",
+          "Revised fee schedule",
+          "Winter calendar if provider corrects the opening date"
+        ],
+        "subtotal_eur": 8425.37,
+        "label": "Published-price comparison subtotal; dates and final costs unconfirmed"
+      },
+      "deposit_eur": 3990,
+      "issues": [
+        "Official available-from date July 7, 2027 excludes both requested windows."
+      ],
+      "conflicts": [],
+      "details": {
+        "rooms": [
+          "One double bedroom",
+          "Three single bedrooms"
+        ],
+        "property": {
+          "furnished": true,
+          "heating": "Gas radiators",
+          "wifi": true,
+          "private_washer": true,
+          "dishwasher": true,
+          "elevator": true,
+          "floor": 2
+        },
+        "linen": "Bed linen advertised; towels / pillows / winter duvet not independently established.",
+        "source_ref": "I8419-2"
+      },
+      "source_urls": [
+        "https://shbarcelona.com/es/m/piso-alquiler-eixample-balcon-terraza--8419"
+      ],
+      "last_researched": "2026-11-03",
+      "move_in_readiness": {
+        "status": "unverified",
+        "bed_linen": true,
+        "pillows_and_duvets": null,
+        "towels": null,
+        "kitchenware": null,
+        "note": "Bed linen is advertised; remaining arrival inventory unconfirmed. The July opening independently excludes winter.",
+        "source_url": "https://shbarcelona.com/es/m/piso-alquiler-eixample-balcon-terraza--8419"
+      }
+    },
+    {
+      "id": "airbnb_18185332",
+      "review_id": "AJ",
+      "status": "excluded",
+      "title": "Four rooms in Vila Olímpica — Sergio",
+      "platform": "Airbnb Monthly Stays",
+      "url": "https://www.airbnb.com/rooms/18185332",
+      "alternate_urls": [],
+      "research_tracks": [
+        "November 3 close-campus search"
+      ],
+      "address": "",
+      "neighborhood": "Vila Olímpica / Marina (listing description)",
+      "location": null,
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "area_m2": null,
+      "base_rent_eur": null,
+      "advertised_monthly_usd": null,
+      "calendar_verified": false,
+      "value_score": null,
+      "availability_note": "Airbnb displays “Those dates are not available” for both Jan 1–Mar 31 and Jan 5–Apr 1 with four adults.",
+      "commute": {},
+      "cost": {
+        "items": [],
+        "unknown": [
+          "No available-stay quote for either requested window",
+          "Refundable deposit and full fee / tax breakdown"
+        ],
+        "subtotal_eur": null,
+        "label": "Published-price comparison subtotal; dates and final costs unconfirmed"
+      },
+      "deposit_eur": null,
+      "issues": [
+        "Both requested date ranges are unavailable on the native Airbnb page.",
+        "Three bedrooms face an interior courtyard; inspect daylight / ventilation if dates reopen.",
+        "Only one dedicated bedroom desk described; study capacity for all four unverified."
+      ],
+      "conflicts": [],
+      "details": {
+        "rooms": [
+          "Double bed 140 × 190 cm with desk",
+          "Double bed 140 × 190 cm",
+          "Trundle bed with two 90 × 190 cm mattresses",
+          "Bunk / trundle combination with three 90 × 190 cm mattresses"
+        ],
+        "property": {
+          "furnished": true,
+          "heating": "Gas radiators in all rooms and heat-pump units",
+          "wifi": true,
+          "private_washer": true,
+          "dishwasher": true,
+          "elevator": true,
+          "floor": 2
+        },
+        "linen": "Sheets and towels explicitly included for the booked number of people.",
+        "registration": "ESFCNT00000805400033955600000000000000000000000000007",
+        "review_note": "4.45/5 from 29 reviews; historic heating / check-in complaints warrant a fresh maintenance check if availability changes."
+      },
+      "source_urls": [
+        "https://www.airbnb.com/rooms/18185332"
+      ],
+      "last_researched": "2026-11-03",
+      "move_in_readiness": {
+        "status": "unverified",
+        "bed_linen": true,
+        "pillows_and_duvets": null,
+        "towels": true,
+        "kitchenware": true,
+        "note": "Sheets and towels expressly supplied; all-four winter bedding and kitchen inventory require confirmation.",
+        "source_url": "https://www.airbnb.com/rooms/18185332"
+      }
+    },
+    {
+      "id": "resa_la_ciutadella",
+      "review_id": "BM4",
+      "status": "benchmark",
+      "title": "Resa La Ciutadella – four private studios",
+      "platform": "RESA",
+      "url": "https://resa.es/es/residencias/barcelona/la-ciutadella/",
+      "alternate_urls": [
+        "https://cms.resa.es/sites/default/files/2026-02/2026_Solicitud_Ciutadella_RN.pdf"
+      ],
+      "research_tracks": [
+        "November 3 close-campus search"
+      ],
+      "address": "Passeig de Pujades, 33–37",
+      "neighborhood": "El Parc i la Llacuna / Ciutadella",
+      "location": {
+        "lat": 41.391730397211475,
+        "lon": 2.1865270835401773,
+        "precision": "building",
+        "label": "Official residence building map point; street-number geocode agrees within about 45 m",
+        "radius_m": 0,
+        "source_url": "https://resa.es/es/residencias/barcelona/la-ciutadella/"
+      },
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "area_m2": null,
+      "base_rent_eur": 2618,
+      "advertised_monthly_usd": null,
+      "calendar_verified": false,
+      "value_score": null,
+      "availability_note": "Official 2026–27 schedule offers intermediate stays from one to under 9.5 months; no four-room Jan–Mar allocation established.",
+      "commute": {
+        "walking_minutes_estimate": 8.31,
+        "walking_distance_m": 623.7,
+        "origin_precision": "building",
+        "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
+        "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.1865270835401773,41.391730397211475;2.1915,41.3894?overview=false&steps=true",
+        "checked_at": "2026-11-03",
+        "note": "Published building location; entrance and traffic signals may change the walking time.",
+        "route": "Official building point → Wellington / Pujades → Ramon Turró → Ramon Trias Fargas; campus anchor 623.7 m."
+      },
+      "cost": {
+        "items": [
+          {
+            "label": "Four individual studios: €654.50 × 4 × 3 months",
+            "amount_eur": 7854,
+            "estimated": false
+          },
+          {
+            "label": "Climatized-studio utilities allowance: €71.50 × 4 × 3",
+            "amount_eur": 858,
+            "estimated": false
+          },
+          {
+            "label": "Weekly sheet / towel service: €34.60 × 4 × 3",
+            "amount_eur": 415.2,
+            "estimated": false
+          },
+          {
+            "label": "Premium Wi-Fi up to 100 Mbps: €6 × 4 × 3",
+            "amount_eur": 72,
+            "estimated": false
+          },
+          {
+            "label": "Enrollment fee: conservative three-month tier €335 × 4",
+            "amount_eur": 1340,
+            "estimated": true
+          },
+          {
+            "label": "Final settlement / room cleaning: €80 × 4",
+            "amount_eur": 320,
+            "estimated": false
+          }
+        ],
+        "unknown": [
+          "Four simultaneous private studios and exact dated stay invoice",
+          "Kitchenware supply: explicitly excluded from student studios",
+          "Coin-operated laundry tariff",
+          "Electricity above provision; metered reconciliation",
+          "Whether 89 / 86 nights qualify for lower €165 enrollment tier",
+          "Pillows and suitable winter duvet inventory; first-day sheets/towels setup"
+        ],
+        "subtotal_eur": 10859.2,
+        "label": "Published 2026–27 residence scenario; laundry / kitchenware and allocation not quoted",
+        "basis": "published_rate_scenario"
+      },
+      "deposit_eur": 3200,
+      "issues": [
+        "€904.93/person/month comparison excludes kitchenware and paid laundry; only €180.80 group headroom remains before the €11,040 cap.",
+        "Student studios expressly exclude cookware / tableware; arrival readiness fails unless the residence supplies an agreed package.",
+        "Laundry is shared, paid self-service, not an in-unit washer; residence benchmark only.",
+        "Admission prioritizes first-year UPF undergraduates and full-year stays; winter exchange acceptance and four rooms must be confirmed."
+      ],
+      "conflicts": [],
+      "details": {
+        "property": {
+          "furnished": true,
+          "heating": true,
+          "wifi": "5 Mbps base; 100 Mbps premium included in this scenario",
+          "private_bathrooms": 4,
+          "private_kitchenettes": 4,
+          "laundry": "Paid communal self-service",
+          "balcony_or_terrace": "Shared residence terrace; no private balcony established"
+        },
+        "rate_scope": "Per person per month, VAT already included in official schedule; one adult per private studio. Not four roommates in one apartment.",
+        "utilities_per_person_monthly_eur": {
+          "water": 26.5,
+          "electricity_advance": 20,
+          "climate_control": 25
+        },
+        "deposit": "€800 per new resident, separate from occupancy total",
+        "reservation_credit": "€200 per person paid to reserve is credited to first rent, not another TCO charge.",
+        "enrollment_fee_tiers": "€335 each for 3 to under 9.5 months; €165 each for under 3 months. Conservative comparison uses €335; exact 89 / 86-night treatment unquoted.",
+        "lower_enrollment_scenario_eur": 10179.2,
+        "optional_cleaning_excluded": "€42.70/person/month room cleaning is optional and not included.",
+        "resa_hub": "€88 applies only for stays of at least 4 months, not added to this scenario.",
+        "source_page": 6
+      },
+      "source_urls": [
+        "https://resa.es/es/residencias/barcelona/la-ciutadella/",
+        "https://cms.resa.es/sites/default/files/2026-02/2026_Solicitud_Ciutadella_RN.pdf"
+      ],
+      "last_researched": "2026-11-03",
+      "move_in_readiness": {
+        "status": "not_ready_as_advertised",
+        "bed_linen": true,
+        "pillows_and_duvets": null,
+        "towels": true,
+        "kitchenware": false,
+        "note": "The priced optional weekly linen/towel service is included in this scenario; student studios explicitly exclude kitchenware. First-day setup and winter duvet / pillows still need confirmation.",
+        "source_url": "https://resa.es/es/residencias/barcelona/la-ciutadella/"
+      }
     }
   ],
   "requirements": {
@@ -8932,5 +10073,50 @@
       "Public pages and metadata do not establish uninterrupted availability for the requested dates.",
       "No landlord was contacted and no holiday-purpose declaration or booking was submitted."
     ]
+  },
+  "close_walk_search": {
+    "checked_at": "2026-11-03",
+    "focus": "10–15-minute walking distance to supplied UPF Ciutadella campus anchor",
+    "new_review_ids": [
+      "AB",
+      "AC",
+      "AD",
+      "AE",
+      "AF",
+      "AG",
+      "AH",
+      "AI",
+      "AJ",
+      "BM4"
+    ],
+    "fully_qualified_added": 0,
+    "original_records_preserved": 61,
+    "deduplicated_new_urls": {
+      "R05": [
+        "https://www.uniplaces.com/accommodation/barcelona/767287",
+        "https://www.idealista.com/inmueble/110112687/"
+      ],
+      "V": [
+        "https://es.bedandbcn.com/apartamentos-.barcelona/vila-olimpica-h1062/"
+      ]
+    },
+    "winter_calendar_corrections": [
+      "P",
+      "Y",
+      "J",
+      "V"
+    ],
+    "airbnb_map_search": {
+      "primary": "No exact matches with four bedrooms, at least 1.5 bathrooms, four adults and $4,000/month in the close-campus map area.",
+      "flexible": "No exact matches with the same filters.",
+      "bounds": {
+        "north": 41.401,
+        "east": 2.208,
+        "south": 41.38,
+        "west": 2.18
+      },
+      "limitation": "Map-area bounds are a search envelope, not a walking-time isochrone. Zero results is a dated platform observation, not proof of no inventory anywhere."
+    },
+    "outreach": "No inquiries, applications or reservations sent."
   }
 }
