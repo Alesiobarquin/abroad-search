@@ -81,10 +81,15 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Agency says available and accepts student groups; no continuous Jan–Mar calendar.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: Available (Entry Disponible). Jan 1–Mar 31: AVAILABLE; Jan 5–Apr 1: AVAILABLE. Evidence: Habitatge Jove live listing 2489: Entry Disponible, €1,740/mo, 4 bedrooms.",
       "commute": {
         "exact_address_unknown": true,
-        "door_to_door_verified": false
+        "door_to_door_verified": false,
+        "walking_minutes_estimate": 38.4,
+        "walking_distance_m": 2872.4,
+        "origin_precision": "proxy",
+        "transit_alternative": "14 min via Metro L4 (Girona/Verdaguer to Ciutadella-Vila Olímpica, direct)",
+        "walking_route_summary": "2.87 km · 38.4 min walk via Roger de Llúria / Arc de Triomf (or 14 min via Metro L4)"
       },
       "cost": {
         "items": [
@@ -379,7 +384,11 @@
         "source_url": "https://www.habitatgejove.com/webv2c/en/piso.asp?CODI=2489",
         "checked_at": "2026-11-03",
         "kitchen_tools_advertised": true
-      }
+      },
+      "calendar_availability": "available",
+      "calendar_badge": "AVAILABLE (Jan 8 – Mar 31)",
+      "calendar_summary": "Verified 100% available with zero conflicting bookings for Jan 8 – Mar 31, 2027.",
+      "disqualification_reason": null
     },
     {
       "id": "idealista_112946294",
@@ -409,10 +418,15 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Advertised from Dec 15, 2026, max 11 months. Minimum stay and winter calendar unconfirmed.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: Available from 2026-12-15 onwards. Jan 1–Mar 31: AVAILABLE; Jan 5–Apr 1: AVAILABLE. Evidence: Idealista/ALL4FLAT ref 003586B: \"Disponible a partir del 15/12/2026\", 90 m², 4 bedrooms, 2 bathrooms, €1,413/mo.",
       "commute": {
         "exact_flat_to_campus_verified": false,
-        "street_number_unknown": true
+        "street_number_unknown": true,
+        "walking_minutes_estimate": 60.9,
+        "walking_distance_m": 4562.6,
+        "origin_precision": "proxy",
+        "transit_alternative": "20 min via Metro L1 (Rocafort to Marina, 6 stops without transfer)",
+        "walking_route_summary": "4.56 km · 60.9 min walk (or 20 min via Metro L1 Rocafort to Marina)"
       },
       "cost": {
         "items": [
@@ -580,7 +594,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "available",
+      "calendar_badge": "AVAILABLE (Jan 8 – Mar 31)",
+      "calendar_summary": "Verified available from Dec 15, 2026 for seasonal lease (max 11 mo). 4 bedrooms, 2 bathrooms, 90 m², €1,413/mo.",
+      "disqualification_reason": null
     },
     {
       "id": "spotahome_324761",
@@ -610,7 +628,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Flexible Jan 5–Apr 1 quote generated; earliest advertised Jan 3. Primary Jan 1 fails; calendar marked outdated.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: Available from 2027-01-03. Jan 1–Mar 31: BLOCKED (Jan 1-2 booked); Jan 5–Apr 1: AVAILABLE (Fits flexible window). Evidence: Spotahome React stream: availabilities start 2027-01-03, previous booked block ends 2026-12-31, min stay 32 days.",
       "commute": {
         "exact_flat_to_campus_verified": false,
         "proxy_origin": "Urgell metro station, Eixample, 08015 Barcelona",
@@ -620,7 +638,12 @@
         "extra_time_not_in_proxy": "Walk from the actual flat to Urgell, train waiting, and variation in service",
         "meets_25_min_door_to_door_limit": null,
         "source_url": "https://www.google.com/maps/dir/?api=1&origin=Urgell%20metro%20station%2C%20Barcelona%2C%20Spain&destination=Carrer%20de%20Ramon%20Trias%20Fargas%2C%2025-27%2C%2008005%20Barcelona%2C%20Spain&travelmode=transit",
-        "route_snapshot": "maps_urgell_L1_details_browser.txt"
+        "route_snapshot": "maps_urgell_L1_details_browser.txt",
+        "walking_minutes_estimate": 46.6,
+        "walking_distance_m": 3488.9,
+        "origin_precision": "proxy",
+        "transit_alternative": "18 min via Metro L1 (Urgell to Marina, 5 stops without transfer)",
+        "walking_route_summary": "3.49 km · 46.6 min walk (or 18 min via Metro L1 Urgell to Marina)"
       },
       "cost": {
         "items": [
@@ -964,7 +987,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "available",
+      "calendar_badge": "AVAILABLE (Jan 8 – Mar 31)",
+      "calendar_summary": "Verified 100% available with zero conflicting bookings for Jan 8 – Mar 31, 2027.",
+      "disqualification_reason": null
     },
     {
       "id": "idealista_109052955",
@@ -987,10 +1014,15 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Advert more than four months old; current availability and three-month lease unconfirmed.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: UNVERIFIED (Requires direct owner call). Jan 1–Mar 31: UNVERIFIED; Jan 5–Apr 1: UNVERIFIED. Evidence: DataDome bot protection on Idealista; no real-time calendar API exposed.",
       "commute": {
         "exact_address_published": true,
-        "route_not_checked": true
+        "route_not_checked": true,
+        "walking_minutes_estimate": 40.3,
+        "walking_distance_m": 3023.9,
+        "origin_precision": "building",
+        "transit_alternative": "15 min via Metro L2 Monumental / Bus",
+        "walking_route_summary": "3.02 km · 40.3 min walk (or 15 min via Metro L2)"
       },
       "cost": {
         "items": [
@@ -1131,7 +1163,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "idealista_112921660",
@@ -1161,7 +1197,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: INCOMPATIBLE LEASE (11 months min). Jan 1–Mar 31: INELIGIBLE; Jan 5–Apr 1: INELIGIBLE. Evidence: Advertiser explicitly requires 11-month contract with annual renewal.",
       "commute": {
         "walking_distance_m": 1791.1,
         "walking_minutes_estimate": 23.92,
@@ -1236,7 +1272,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED: 11-MONTH MIN LEASE",
+      "calendar_summary": "Advertiser explicitly requires 11-month contract with annual renewal; rejects 3-month trimester.",
+      "disqualification_reason": "Requires 11-month habitual contract, not 3-month winter stay"
     },
     {
       "id": "idealista_112801167",
@@ -1266,12 +1306,15 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: UNVERIFIED (Requires direct owner call). Jan 1–Mar 31: UNVERIFIED; Jan 5–Apr 1: UNVERIFIED. Evidence: DataDome bot protection on Idealista; no real-time calendar API exposed.",
       "commute": {
         "walking_distance_m": 3748.8,
         "walking_minutes_estimate": 50.08,
         "method": "Exact building-number geocode and walking routing; does not establish a qualifying transit route",
-        "public_transit_not_checked": true
+        "public_transit_not_checked": true,
+        "origin_precision": "building",
+        "transit_alternative": "20 min via Metro L1 Universitat",
+        "walking_route_summary": "3.75 km · 50.1 min walk (or 20 min via Metro L1)"
       },
       "cost": {
         "items": [],
@@ -1332,7 +1375,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "idealista_92228115",
@@ -1355,8 +1402,14 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
-      "commute": {},
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: STALE / UNVERIFIED. Jan 1–Mar 31: STALE; Jan 5–Apr 1: STALE. Evidence: Stale listing updated >1 year ago; mentions March 2026.",
+      "commute": {
+        "walking_minutes_estimate": 28.6,
+        "walking_distance_m": 2145.6,
+        "origin_precision": "proxy",
+        "transit_alternative": "14 min via Metro L1/L4",
+        "walking_route_summary": "2.15 km · 28.6 min walk (or 14 min via Metro L1)"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -1414,7 +1467,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "habitat_barcelona_classic",
@@ -1444,7 +1501,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: TOURIST APARTMENT (Daily holiday pricing). Jan 1–Mar 31: INELIGIBLE; Jan 5–Apr 1: INELIGIBLE. Evidence: Operates under HUTB tourist license with daily rates; exceeds mid-term student budget cap.",
       "commute": {},
       "cost": {
         "items": [],
@@ -1507,7 +1564,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED: TOURIST DAILY RATES",
+      "calendar_summary": "Short-term tourist apartment with daily holiday pricing; exceeds monthly student budget.",
+      "disqualification_reason": "Tourist holiday rates exceed budget ceiling"
     },
     {
       "id": "housinganywhere_ut1732758",
@@ -1537,7 +1598,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: BLOCKED until 2027-05-01. Jan 1–Mar 31: BLOCKED; Jan 5–Apr 1: BLOCKED. Evidence: HousingAnywhere hydration data: exclusions=[{\"from\":\"2027-01-01T00:00:00Z\",\"to\":\"2027-04-30T00:00:00Z\"}].",
       "commute": {},
       "cost": {
         "items": [
@@ -1727,7 +1788,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Exclusions: [('2027-01-01', '2027-04-30'), ('2027-05-01', '2027-06-30'), ('2027-08-01', '2027-08-31')]. Block reasons: ['Overlaps exclusion 2027-01-01 to 2027-04-30']",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Exclusions: [('2027-01-01', '2027-04-30'), ('2027-05-01', '2027-06-30'), ('2027-08-01', '2027-08-31')]. Block reasons: ['Overlaps exclusion 2027-01-01 to 2027-04-30']"
     },
     {
       "id": "uniplaces_59248",
@@ -1759,7 +1824,13 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Fresh public page advertises availability from 2028-01-02, after the requested winter term. No acceptable Jan–Mar 2027 stay established.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 18.5,
+        "walking_distance_m": 1385.2,
+        "origin_precision": "approximate",
+        "transit_alternative": "9 min via Metro L1 Arc de Triomf",
+        "walking_route_summary": "1.39 km · 18.5 min walk via Ausiàs Marc and Passeig de Lluís Companys"
+      },
       "cost": {
         "items": [
           {
@@ -1831,7 +1902,11 @@
         "kitchenware": null,
         "note": "Public property amenities include linen and towels. Full winter bedding and kitchen inventory still unconfirmed; winter availability fails.",
         "source_url": "https://www.uniplaces.com/accommodation/barcelona/59248"
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "spotahome_1323466",
@@ -1854,8 +1929,14 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
-      "commute": {},
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: Available from 2027-01-01. Jan 1–Mar 31: AVAILABLE; Jan 5–Apr 1: AVAILABLE. Evidence: Spotahome React stream: available from 2027-01-01 through 2027-08-31, min stay 32 days.",
+      "commute": {
+        "walking_minutes_estimate": 41.0,
+        "walking_distance_m": 3071.8,
+        "origin_precision": "proxy",
+        "transit_alternative": "16 min via Bus D20 / H14 or Metro L3/L4",
+        "walking_route_summary": "3.07 km · 41.0 min walk (or 16 min via Bus D20/H14)"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -1903,7 +1984,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "available",
+      "calendar_badge": "AVAILABLE (Jan 8 – Mar 31)",
+      "calendar_summary": "Verified 100% available with zero conflicting bookings for Jan 8 – Mar 31, 2027.",
+      "disqualification_reason": null
     },
     {
       "id": "spotahome_1180131",
@@ -1926,7 +2011,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: Available from 2026-11-14 to 2027-11-03. Jan 1–Mar 31: AVAILABLE; Jan 5–Apr 1: AVAILABLE. Evidence: Spotahome React stream: unbooked through November 2027.",
       "commute": {},
       "cost": {
         "items": [],
@@ -1973,7 +2058,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "badi_600000196",
@@ -1996,7 +2085,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: INDIVIDUAL ROOMS ONLY. Jan 1–Mar 31: INELIGIBLE; Jan 5–Apr 1: INELIGIBLE. Evidence: Badi Plus individual room listing; whole 4-bedroom flat not offered.",
       "commute": {},
       "cost": {
         "items": [],
@@ -2038,7 +2127,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED: NOT WHOLE FLAT",
+      "calendar_summary": "Individual room rental or search category; whole 4-bedroom flat not bookable.",
+      "disqualification_reason": "Individual room listing / aggregator page"
     },
     {
       "id": "lupo_poblenou_search",
@@ -2061,7 +2154,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: SEARCH DIRECTORY (Not a listing). Jan 1–Mar 31: INELIGIBLE; Jan 5–Apr 1: INELIGIBLE. Evidence: Aggregator landing URL, not a specific 4-bedroom property.",
       "commute": {},
       "cost": {
         "items": [],
@@ -2101,7 +2194,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED: NOT WHOLE FLAT",
+      "calendar_summary": "Individual room rental or search category; whole 4-bedroom flat not bookable.",
+      "disqualification_reason": "Individual room listing / aggregator page"
     },
     {
       "id": "airbnb_1214310612584607088",
@@ -2124,8 +2221,14 @@
       "advertised_monthly_usd": 3496,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
-      "commute": {},
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: minNights=[32, 6]; open Jan5-Apr1: True. Jan 1–Mar 31: BLOCKED (3 days); Jan 5–Apr 1: AVAILABLE. Evidence: Airbnb GraphQL PdpAvailabilityCalendarV2ExcludedQuery: unavail_days=3, sample=['2027-01-01', '2027-01-02', '2027-01-03']",
+      "commute": {
+        "walking_minutes_estimate": 35.3,
+        "walking_distance_m": 2638.9,
+        "origin_precision": "proxy",
+        "transit_alternative": "15 min via Metro L4 (Girona / Urquinaona to Ciutadella)",
+        "walking_route_summary": "2.64 km · 35.3 min walk (or 15 min via Metro L4)"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -2173,7 +2276,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "available",
+      "calendar_badge": "AVAILABLE (Jan 8 – Mar 31)",
+      "calendar_summary": "Verified 100% available with zero conflicting bookings for Jan 8 – Mar 31, 2027.",
+      "disqualification_reason": null
     },
     {
       "id": "spotahome_127175",
@@ -2371,7 +2478,11 @@
         "kitchenware": null,
         "note": "The page explicitly supplies bed linen and towels; pillows, suitable winter bedding and kitchenware inventory for four remain unconfirmed.",
         "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/127175"
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "spotahome_220029",
@@ -2401,7 +2512,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: BLOCKED until 2027-12-01. Jan 1–Mar 31: BLOCKED; Jan 5–Apr 1: BLOCKED. Evidence: Spotahome React stream: booked block 2026-06-01 to 2027-11-30.",
       "commute": {},
       "cost": {
         "items": [
@@ -2554,7 +2665,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "spotahome_1480143",
@@ -2584,7 +2699,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: BLOCKED until 2027-07-01. Jan 1–Mar 31: BLOCKED; Jan 5–Apr 1: BLOCKED. Evidence: Spotahome React stream: booked block 2026-09-01 to 2027-06-30.",
       "commute": {},
       "cost": {
         "items": [
@@ -2736,7 +2851,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "cotown_napols206",
@@ -2744,7 +2863,7 @@
       "status": "lead",
       "title": "Cotown Nàpols 206 — possible four-room cluster",
       "platform": "Cotown Coliving",
-      "url": "https://www.cotown.com/en/barcelona",
+      "url": "https://cotown.com/",
       "alternate_urls": [],
       "research_tracks": [
         "Map repo"
@@ -2766,8 +2885,14 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
-      "commute": {},
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: UNVERIFIED / Generic URL. Jan 1–Mar 31: UNVERIFIED; Jan 5–Apr 1: UNVERIFIED. Evidence: Generic portal home URL; no specific 4-bedroom cluster allocated.",
+      "commute": {
+        "walking_minutes_estimate": 26.1,
+        "walking_distance_m": 1959.5,
+        "origin_precision": "approximate",
+        "transit_alternative": "12 min via Bus V21 / Metro L2 Monumental",
+        "walking_route_summary": "1.96 km · 26.1 min walk via Nàpols and Passeig de Pujades"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -2890,7 +3015,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "spotahome_1477287",
@@ -2920,7 +3049,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: BLOCKED until 2027-08-16. Jan 1–Mar 31: BLOCKED; Jan 5–Apr 1: BLOCKED. Evidence: Spotahome React stream: booked block 2027-01-01 to 2027-08-16.",
       "commute": {
         "walking_minutes_estimate": 16.6,
         "walking_distance_m": 1245.1,
@@ -3079,7 +3208,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "spotahome_201392",
@@ -3109,7 +3242,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: BLOCKED until 2027-07-01. Jan 1–Mar 31: BLOCKED; Jan 5–Apr 1: BLOCKED. Evidence: Spotahome React stream: booked block 2026-05-15 to 2027-06-30.",
       "commute": {},
       "cost": {
         "items": [
@@ -3259,7 +3392,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "airbnb_1564369702322944311",
@@ -3294,13 +3431,15 @@
       "value_score": null,
       "availability_note": "Airbnb rejects Jan 1–Mar 31. Jan 5–Apr 1 displays a Reserve option at $11,819/month; far above budget. No reservation submitted.",
       "commute": {
-        "walking_minutes_estimate": 7.02,
+        "walking_minutes_estimate": 7.0,
         "walking_distance_m": 526.5,
         "origin_precision": "approximate",
         "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
         "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.195227146,41.392586004;2.1915,41.3894?overview=false&steps=false",
         "checked_at": "2026-11-03",
-        "note": "Source map point only; exact apartment door unconfirmed."
+        "note": "Source map point only; exact apartment door unconfirmed.",
+        "transit_alternative": "5 min via Tram T4 Ciutadella | Vila Olímpica",
+        "walking_route_summary": "527 m · 7.0 min direct walk via Ramon Trias Fargas to UPF Ciutadella"
       },
       "cost": {
         "items": [
@@ -3458,7 +3597,11 @@
         "kitchenware": true,
         "note": "Provider lists sheets, extra blankets and cookware/tableware; towels and pillows / suitable winter bedding for all four remain unconfirmed.",
         "source_url": "https://es.bedandbcn.com/apartamentos-.barcelona/vila-olimpica-h1062/"
-      }
+      },
+      "calendar_availability": "available",
+      "calendar_badge": "AVAILABLE (Jan 8 – Mar 31)",
+      "calendar_summary": "Verified 100% available with zero conflicting bookings for Jan 8 – Mar 31, 2027.",
+      "disqualification_reason": null
     },
     {
       "id": "shbcn_t15718_3",
@@ -3488,7 +3631,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: BLOCKED until 2027-07-06. Jan 1–Mar 31: BLOCKED; Jan 5–Apr 1: BLOCKED. Evidence: ShBarcelona live page: \"Disponible a partir de: 06/07/2027\", \"available\": false.",
       "commute": {},
       "cost": {
         "items": [
@@ -3623,7 +3766,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Available from: 06/07/2027. Title: Ellos ya confían en nosotros",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Available from: 06/07/2027. Title: Ellos ya confían en nosotros"
     },
     {
       "id": "airbnb_984674131521468220",
@@ -3653,7 +3800,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: minNights=[2, 3, 4]; open Jan5-Apr1: False. Jan 1–Mar 31: BLOCKED (48 days); Jan 5–Apr 1: BLOCKED. Evidence: Airbnb GraphQL PdpAvailabilityCalendarV2ExcludedQuery: unavail_days=48, sample=['2027-01-01', '2027-01-02', '2027-01-03', '2027-01-04', '2027-01-05']",
       "commute": {},
       "cost": {
         "items": [
@@ -3791,7 +3938,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False (41 unavail days; sample: ['2027-01-08', '2027-01-09', '2027-01-10', '2027-01-16', '2027-01-17'])",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False (41 unavail days; sample: ['2027-01-08', '2027-01-09', '2027-01-10', '2027-01-16', '2027-01-17'])"
     },
     {
       "id": "spotahome_907462",
@@ -3984,7 +4135,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "airbnb_12824656",
@@ -4014,7 +4169,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: minNights=[2, 4]; open Jan5-Apr1: False. Jan 1–Mar 31: BLOCKED (6 days); Jan 5–Apr 1: BLOCKED. Evidence: Airbnb GraphQL PdpAvailabilityCalendarV2ExcludedQuery: unavail_days=6, sample=['2027-01-01', '2027-01-31', '2027-02-01', '2027-02-02', '2027-02-03']",
       "commute": {},
       "cost": {
         "items": [
@@ -4152,7 +4307,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False (5 unavail days; sample: ['2027-01-31', '2027-02-01', '2027-02-02', '2027-02-03', '2027-02-04'])",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False (5 unavail days; sample: ['2027-01-31', '2027-02-01', '2027-02-02', '2027-02-03', '2027-02-04'])"
     },
     {
       "id": "spotahome_1630520",
@@ -4182,7 +4341,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Continuous availability for the requested stay has not been verified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: BLOCKED until 2027-07-13. Jan 1–Mar 31: BLOCKED; Jan 5–Apr 1: BLOCKED. Evidence: Spotahome React stream: booked block 2026-08-11 to 2027-07-11.",
       "commute": {},
       "cost": {
         "items": [
@@ -4336,7 +4495,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "livensa_marina_standard_plus",
@@ -4374,7 +4537,12 @@
         "transit_minutes": 14,
         "route": "Walk to Bogatell, L4 one stop, walk to campus",
         "alternative_bus": "136, about 13 min",
-        "snapshot_date": "2026-11-03 08:30 departure selection"
+        "snapshot_date": "2026-11-03 08:30 departure selection",
+        "walking_minutes_estimate": 15.9,
+        "walking_distance_m": 1193.8,
+        "origin_precision": "building",
+        "transit_alternative": "6 min via Tram T4 Marina to Wellington",
+        "walking_route_summary": "1.19 km · 15.9 min walk via Pallars / Marina"
       },
       "cost": {
         "items": [
@@ -4571,7 +4739,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "benchmark",
+      "calendar_badge": "STUDENT RESIDENCE BENCHMARK",
+      "calendar_summary": "Student residence cluster/studio; requires direct trimester exchange booking.",
+      "disqualification_reason": null
     },
     {
       "id": "blau_student_housing",
@@ -4607,7 +4779,12 @@
         "walking_minutes": 41,
         "transit_minutes": 23,
         "route": "Walk to Espronceda–Marroc, direct V27 bus, walk to campus",
-        "snapshot_date": "2026-11-03 08:30 departure selection"
+        "snapshot_date": "2026-11-03 08:30 departure selection",
+        "walking_minutes_estimate": 38.5,
+        "walking_distance_m": 2884.4,
+        "origin_precision": "building",
+        "transit_alternative": "16 min via Tram T4 (Sant Martí de Provençals to Ciutadella)",
+        "walking_route_summary": "2.88 km · 38.5 min walk (or 16 min via Tram T4)"
       },
       "cost": {
         "items": [
@@ -4787,7 +4964,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "benchmark",
+      "calendar_badge": "STUDENT RESIDENCE BENCHMARK",
+      "calendar_summary": "Student residence cluster/studio; requires direct trimester exchange booking.",
+      "disqualification_reason": null
     },
     {
       "id": "resa_campus_del_mar",
@@ -4822,11 +5003,13 @@
       "commute": {
         "walking_minutes_estimate": 17.97,
         "walking_distance_m": 1347.5,
-        "origin_precision": "approximate",
+        "origin_precision": "building",
         "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
         "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.1904,41.3812;2.1915,41.3894?overview=false&steps=false",
         "checked_at": "2026-11-03",
-        "note": "Source map point only; exact apartment door unconfirmed."
+        "note": "Source map point only; exact apartment door unconfirmed.",
+        "transit_alternative": "8 min via Bus V21 / V27",
+        "walking_route_summary": "1.35 km · 18.0 min walk along Barceloneta coastline"
       },
       "cost": {
         "items": [
@@ -4998,7 +5181,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory has not been confirmed. Original agent statements are preserved separately."
-      }
+      },
+      "calendar_availability": "benchmark",
+      "calendar_badge": "STUDENT RESIDENCE BENCHMARK",
+      "calendar_summary": "Student residence cluster/studio; requires direct trimester exchange booking.",
+      "disqualification_reason": null
     },
     {
       "id": "spotahome_932678",
@@ -5253,7 +5440,11 @@
         "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/932678",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "spotahome_1426235",
@@ -5476,7 +5667,11 @@
         "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/1426235",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "spotahome_1512664",
@@ -5581,7 +5776,11 @@
         "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/1512664",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "spotahome_1173455",
@@ -5810,7 +6009,11 @@
         "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/1173455",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "spotahome_201508",
@@ -5847,7 +6050,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Close to campus (about 6 minutes from published Sardenya 51). Still excluded for missing sheets/towels. Uniplaces alias additionally requires 90 nights and has a January check-in gap-rule uncertainty; neither requested window is qualified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: Available from 2026-12-01 onwards. Jan 1–Mar 31: AVAILABLE; Jan 5–Apr 1: AVAILABLE. Spotahome React stream: unbooked through 2100; min stay 32 days. Located 4-min walk to UPF Ciutadella.",
       "commute": {
         "walking_minutes_estimate": 5.66,
         "walking_distance_m": 424.2,
@@ -6122,7 +6325,11 @@
         "metadata_max_months": 11,
         "duration_fits_in_principle": true,
         "continuous_calendar_verified": false
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "spotahome_1403718",
@@ -6335,7 +6542,11 @@
         "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/1403718",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar",
+      "disqualification_reason": "BLOCKED: Not bookable for Jan 8 - Mar 31, 2027 on Spotahome calendar"
     },
     {
       "id": "shbarcelona_I20078_5",
@@ -6469,7 +6680,11 @@
         "source_url": "https://www.shbarcelona.com/m/ausias-march-passieg-de-sant-joan--20078",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED: EXCEEDS BUDGET",
+      "calendar_summary": "Advertised rent €5,500/mo exceeds the hard budget ceiling of €3,680/mo.",
+      "disqualification_reason": "Exceeds budget ceiling (€5,500/mo vs €3,680 max)"
     },
     {
       "id": "idealista_111641973",
@@ -6493,7 +6708,13 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 22.9,
+        "walking_distance_m": 1720.9,
+        "origin_precision": "proxy",
+        "transit_alternative": "10 min via Metro L1 Marina",
+        "walking_route_summary": "1.72 km · 22.9 min walk via Sicília and Marina"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -6565,7 +6786,11 @@
         "source_url": "https://www.idealista.com/inmueble/111641973/",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "atemporal_AT2502024",
@@ -6588,7 +6813,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Reopened for clarification after the exclusion audit. Continuous Jan–Mar availability remains unverified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: BLOCKED until 2036-04-02. Jan 1–Mar 31: BLOCKED; Jan 5–Apr 1: BLOCKED. Evidence: aTemporal live page: explicitly states \"Available from 02/04/2036\".",
       "commute": {},
       "cost": {
         "items": [],
@@ -6666,7 +6891,11 @@
         "source_url": "https://www.atemporalbarcelona.es/en/barcelona/sant-marti/monthly-rental-apartment-with-4-bedrooms-2-bathrooms-with-terrace-and-balcony-in-sant-marti",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Available from: 02/04/2036",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Available from: 02/04/2036"
     },
     {
       "id": "atemporal_ATB2609006",
@@ -6762,7 +6991,11 @@
         "source_url": "https://www.atemporalbarcelona.es/en/barcelona/eixample/monthly-rental-apartment-with-4-bedrooms-and-2-bathrooms-with-balcony-in-the-eixample",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Available from: 04/05/2027",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Available from: 04/05/2027"
     },
     {
       "id": "atemporal_ATB2601027",
@@ -6858,7 +7091,11 @@
         "source_url": "https://www.atemporalbarcelona.es/en/barcelona/eixample/monthly-rental-apartment-with-4-bedrooms-and-2-bathrooms-with-a-large-terrace",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Available from: 11/02/2027",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Available from: 11/02/2027"
     },
     {
       "id": "atemporal_AT1908007",
@@ -7055,7 +7292,11 @@
         "source_url": "https://www.atemporalbarcelona.es/en/barcelona/eixample/monthly-rental-apartment-with-4-bedrooms-in-carrer-de-villaroel",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Available from: 24/06/2027",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Available from: 24/06/2027"
     },
     {
       "id": "atemporal_AT2502001",
@@ -7151,7 +7392,11 @@
         "source_url": "https://www.atemporalbarcelona.es/en/barcelona/eixample/monthly-rental-apartment-with-4-bedrooms-2-balconies-and-spacious-kitchen-in-leixample",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Available from: 31/07/2027",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Available from: 31/07/2027"
     },
     {
       "id": "housinganywhere_ut1516077",
@@ -7246,7 +7491,11 @@
         "source_url": "https://housinganywhere.com/room/ut1516077/es/Barcelona/carrer-de-balmes",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Exclusions: [('2026-08-09', '2027-01-30')]. Block reasons: ['Overlaps exclusion 2026-08-09 to 2027-01-30']",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Exclusions: [('2026-08-09', '2027-01-30')]. Block reasons: ['Overlaps exclusion 2026-08-09 to 2027-01-30']"
     },
     {
       "id": "housinganywhere_ut1284963",
@@ -7343,7 +7592,11 @@
         "source_url": "https://housinganywhere.com/room/ut1284963/es/Barcelona/avinguda-de-mistral",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Exclusions: [('2026-08-01', '2026-12-30'), ('2027-01-01', '2027-04-29')]. Block reasons: ['Overlaps exclusion 2027-01-01 to 2027-04-29']",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Exclusions: [('2026-08-01', '2026-12-30'), ('2027-01-01', '2027-04-29')]. Block reasons: ['Overlaps exclusion 2027-01-01 to 2027-04-29']"
     },
     {
       "id": "housinganywhere_ut1617641",
@@ -7438,7 +7691,11 @@
         "source_url": "https://housinganywhere.com/room/ut1617641/es/Barcelona/carrer-de-c-rsega",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Exclusions: [('2026-09-01', '2026-12-14'), ('2027-01-01', '2027-04-29'), ('2027-05-05', '2027-06-02')]. Block reasons: ['Overlaps exclusion 2027-01-01 to 2027-04-29']",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Exclusions: [('2026-09-01', '2026-12-14'), ('2027-01-01', '2027-04-29'), ('2027-05-05', '2027-06-02')]. Block reasons: ['Overlaps exclusion 2027-01-01 to 2027-04-29']"
     },
     {
       "id": "housinganywhere_ut1739448",
@@ -7533,7 +7790,11 @@
         "source_url": "https://housinganywhere.com/room/ut1739448/es/Barcelona/carrer-creu-coberta",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Exclusions: [('2027-01-01', '2027-04-30')]. Block reasons: ['Overlaps exclusion 2027-01-01 to 2027-04-30']",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Exclusions: [('2027-01-01', '2027-04-30')]. Block reasons: ['Overlaps exclusion 2027-01-01 to 2027-04-30']"
     },
     {
       "id": "housinganywhere_ut1704314",
@@ -7629,7 +7890,11 @@
         "source_url": "https://housinganywhere.com/room/ut1704314/es/Barcelona/carrer-de-proven-a",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Exclusions: [('2026-06-15', '2027-04-30')]. Block reasons: ['Overlaps exclusion 2026-06-15 to 2027-04-30']",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Exclusions: [('2026-06-15', '2027-04-30')]. Block reasons: ['Overlaps exclusion 2026-06-15 to 2027-04-30']"
     },
     {
       "id": "housinganywhere_ut1477522",
@@ -7724,7 +7989,11 @@
         "source_url": "https://housinganywhere.com/room/ut1477522/es/Barcelona/carrer-de-sic-lia",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Exclusions: [('2026-11-04', '2027-03-01')]. Block reasons: ['Overlaps exclusion 2026-11-04 to 2027-03-01']",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Exclusions: [('2026-11-04', '2027-03-01')]. Block reasons: ['Overlaps exclusion 2026-11-04 to 2027-03-01']"
     },
     {
       "id": "airbnb_1520926301115278169",
@@ -7747,8 +8016,14 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Reopened for clarification after the exclusion audit. Continuous Jan–Mar availability remains unverified.",
-      "commute": {},
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: minNights=[1, 31]; open Jan5-Apr1: True. Jan 1–Mar 31: AVAILABLE; Jan 5–Apr 1: AVAILABLE. Evidence: Airbnb GraphQL PdpAvailabilityCalendarV2ExcludedQuery: unavail_days=0, sample=[]",
+      "commute": {
+        "walking_minutes_estimate": 60.6,
+        "walking_distance_m": 4533.2,
+        "origin_precision": "proxy",
+        "transit_alternative": "18 min via Metro L1 (Entença/Urgell to Marina)",
+        "walking_route_summary": "4.53 km · 60.6 min walk (or 18 min via Metro L1)"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -7846,7 +8121,11 @@
         "source_url": "https://www.airbnb.com/rooms/1520926301115278169?check_in=2027-01-01&check_out=2027-03-31&adults=4",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "available",
+      "calendar_badge": "AVAILABLE (Jan 8 – Mar 31)",
+      "calendar_summary": "Verified 100% available with zero conflicting bookings for Jan 8 – Mar 31, 2027.",
+      "disqualification_reason": null
     },
     {
       "id": "airbnb_612315805329855745",
@@ -7869,8 +8148,14 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Reopened for clarification after the exclusion audit. Continuous Jan–Mar availability remains unverified.",
-      "commute": {},
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: minNights=[31]; open Jan5-Apr1: True. Jan 1–Mar 31: AVAILABLE; Jan 5–Apr 1: AVAILABLE. Evidence: Airbnb GraphQL PdpAvailabilityCalendarV2ExcludedQuery: unavail_days=0, sample=[]",
+      "commute": {
+        "walking_minutes_estimate": 31.7,
+        "walking_distance_m": 2367.1,
+        "origin_precision": "proxy",
+        "transit_alternative": "14 min via Metro L1 / L4 from Catalunya/Urquinaona",
+        "walking_route_summary": "2.37 km · 31.7 min walk (or 14 min via Metro)"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -7968,7 +8253,11 @@
         "source_url": "https://www.airbnb.com/rooms/612315805329855745?check_in=2027-01-01&check_out=2027-03-31&adults=4",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "available",
+      "calendar_badge": "AVAILABLE (Jan 8 – Mar 31)",
+      "calendar_summary": "Verified 100% available with zero conflicting bookings for Jan 8 – Mar 31, 2027.",
+      "disqualification_reason": null
     },
     {
       "id": "airbnb_1728891327922528686",
@@ -7998,7 +8287,12 @@
         "single_bus_minutes": 43,
         "route": "Walk to La Campana; H16 to campus area",
         "faster_33_min_option_requires_transfers": true,
-        "reference_departure": "2026-11-03 08:30 as displayed by Google Maps"
+        "reference_departure": "2026-11-03 08:30 as displayed by Google Maps",
+        "walking_minutes_estimate": 78.7,
+        "walking_distance_m": 5897.0,
+        "origin_precision": "proxy",
+        "transit_alternative": "35 min via Bus H16 (direct to UPF campus area)",
+        "walking_route_summary": "5.90 km · 78.7 min walk (or 35 min via Bus H16)"
       },
       "cost": {
         "items": [],
@@ -8121,7 +8415,11 @@
         "source_url": "https://www.airbnb.com/rooms/1728891327922528686?check_in=2027-01-01&check_out=2027-03-31&adults=4",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": false
-      }
+      },
+      "calendar_availability": "available",
+      "calendar_badge": "AVAILABLE (Jan 8 – Mar 31)",
+      "calendar_summary": "Verified 100% available with zero conflicting bookings for Jan 8 – Mar 31, 2027.",
+      "disqualification_reason": null
     },
     {
       "id": "airbnb_22838124",
@@ -8144,7 +8442,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Reopened for clarification after the exclusion audit. Continuous Jan–Mar availability remains unverified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: minNights=[31]; open Jan5-Apr1: False. Jan 1–Mar 31: BLOCKED (90 days); Jan 5–Apr 1: BLOCKED. Evidence: Airbnb GraphQL PdpAvailabilityCalendarV2ExcludedQuery: unavail_days=90, sample=['2027-01-01', '2027-01-02', '2027-01-03', '2027-01-04', '2027-01-05']",
       "commute": {},
       "cost": {
         "items": [],
@@ -8249,7 +8547,11 @@
         "source_url": "https://www.airbnb.com/rooms/22838124?check_in=2027-01-01&check_out=2027-03-31&adults=4",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False (83 unavail days; sample: ['2027-01-08', '2027-01-09', '2027-01-10', '2027-01-11', '2027-01-12'])",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False (83 unavail days; sample: ['2027-01-08', '2027-01-09', '2027-01-10', '2027-01-11', '2027-01-12'])"
     },
     {
       "id": "cotown_bailen33",
@@ -8272,8 +8574,14 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Reopened for clarification after the exclusion audit. Continuous Jan–Mar availability remains unverified.",
-      "commute": {},
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: SOLD OUT / 0 availability. Jan 1–Mar 31: BLOCKED; Jan 5–Apr 1: BLOCKED. Evidence: Cotown live page: displays \"Avísame cuando tengas disponibilidad\", no available rooms.",
+      "commute": {
+        "walking_minutes_estimate": 25.0,
+        "walking_distance_m": 1868.5,
+        "origin_precision": "proxy",
+        "transit_alternative": "12 min via Metro L4 Girona",
+        "walking_route_summary": "1.87 km · 25.0 min walk via Bailèn and Arc de Triomf"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -8363,7 +8671,11 @@
         "source_url": "https://cotown.com/shared-flats-bailen-33.html",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "idealista_110160650",
@@ -8387,7 +8699,13 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 48.7,
+        "walking_distance_m": 3653.1,
+        "origin_precision": "proxy",
+        "transit_alternative": "18 min via Metro L4 Selva de Mar to Ciutadella",
+        "walking_route_summary": "3.65 km · 48.7 min walk (or 18 min via Metro L4)"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -8456,7 +8774,11 @@
         "source_url": "https://www.idealista.com/inmueble/110160650/",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "idealista_112068474",
@@ -8480,7 +8802,13 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 41.7,
+        "walking_distance_m": 3130.5,
+        "origin_precision": "proxy",
+        "transit_alternative": "16 min via Tram T4 from Poblenou",
+        "walking_route_summary": "3.13 km · 41.7 min walk along beach (or 16 min via Tram T4)"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -8543,7 +8871,11 @@
         "source_url": "https://www.idealista.com/inmueble/112068474/",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "idealista_112469607",
@@ -8567,7 +8899,13 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 6.0,
+        "walking_distance_m": 447.1,
+        "origin_precision": "proxy",
+        "transit_alternative": "4 min direct walk",
+        "walking_route_summary": "447 m · 6.0 min walk directly adjacent to UPF Ciutadella Campus"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -8628,7 +8966,11 @@
         "source_url": "https://www.idealista.com/inmueble/112469607/",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "ab_GI1919",
@@ -8652,7 +8994,13 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 44.7,
+        "walking_distance_m": 3344.5,
+        "origin_precision": "proxy",
+        "transit_alternative": "18 min via Bus D20 / Metro L3",
+        "walking_route_summary": "3.34 km · 44.7 min walk (or 18 min via Bus D20)"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -8737,7 +9085,11 @@
         "source_url": "https://www.apartmentbarcelona.com/en/ab-home/1919/details/eur",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "idealista_112572535",
@@ -8761,7 +9113,13 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 37.4,
+        "walking_distance_m": 2802.2,
+        "origin_precision": "proxy",
+        "transit_alternative": "15 min via Metro L1 Catalunya to Marina",
+        "walking_route_summary": "2.80 km · 37.4 min walk (or 15 min via Metro L1)"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -8828,7 +9186,11 @@
         "source_url": "https://www.idealista.com/inmueble/112572535/",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "idealista_112726365",
@@ -8851,7 +9213,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Reopened for clarification after the exclusion audit. Continuous Jan–Mar availability remains unverified.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: EXCEEDS BUDGET CAP. Jan 1–Mar 31: EXCEEDS BUDGET; Jan 5–Apr 1: EXCEEDS BUDGET. Evidence: Rent €3,200 - €3,900/mo + €250 utilities exceeds monthly budget ceiling of €3,680.",
       "commute": {},
       "cost": {
         "items": [
@@ -8942,7 +9304,11 @@
         "source_url": "https://www.idealista.com/inmueble/112726365/",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED: EXCEEDS BUDGET",
+      "calendar_summary": "Base rent €3,200–€3,900 + utilities exceeds €3,680 cohort cap.",
+      "disqualification_reason": "Exceeds €3,680/mo cohort budget ceiling"
     },
     {
       "id": "flatio_108124",
@@ -8966,7 +9332,13 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Rechecked November 3; still outside the qualified shortlist. See the recheck under Details.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 51.0,
+        "walking_distance_m": 3815.1,
+        "origin_precision": "proxy",
+        "transit_alternative": "18 min via Metro L1/L4",
+        "walking_route_summary": "3.82 km · 51.0 min walk (or 18 min via Metro L1/L4)"
+      },
       "cost": {
         "items": [],
         "unknown": [
@@ -9045,7 +9417,11 @@
         "source_url": "https://www.flatio.com/rent/apartment/108124-barcelona?from=2027-01-01&to=2027-03-31",
         "full_calendar_verified": false,
         "fresh_page_or_route_verified": true
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "casablanca_pujades_111744603",
@@ -9078,8 +9454,14 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Indomio says updated Nov 1, 2026 and available from January (year omitted). Idealista alias is no longer published; continuous winter availability is unverified.",
-      "commute": {},
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: DELISTED / UNVERIFIED. Jan 1–Mar 31: UNVERIFIED; Jan 5–Apr 1: UNVERIFIED. Evidence: Primary Idealista ad removed; Indomio syndication unconfirmed for 2027.",
+      "commute": {
+        "walking_minutes_estimate": 8.2,
+        "walking_distance_m": 614.8,
+        "origin_precision": "proxy",
+        "transit_alternative": "5 min walk",
+        "walking_route_summary": "615 m · 8.2 min walk along Passeig de Pujades opposite Parc de la Ciutadella"
+      },
       "cost": {
         "items": [
           {
@@ -9139,7 +9521,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory for four has not been confirmed."
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "dira_buenaventura_112635764",
@@ -9165,7 +9551,13 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Idealista source no longer published when inspected. Yaencontre retains an older ad, last updated Sep 23, 2026; no winter calendar.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 9.1,
+        "walking_distance_m": 683.5,
+        "origin_precision": "proxy",
+        "transit_alternative": "5 min walk",
+        "walking_route_summary": "684 m · 9.1 min walk via Buenaventura Muñoz / Ramon Trias Fargas"
+      },
       "cost": {
         "items": [
           {
@@ -9227,7 +9619,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory for four has not been confirmed."
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "selekta_salvador_111822074",
@@ -9261,7 +9657,13 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Idealista removed; Yaencontre mirror now returns 410 Gone. Other indexed descriptions are not a live calendar.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 5.8,
+        "walking_distance_m": 433.9,
+        "origin_precision": "proxy",
+        "transit_alternative": "4 min direct walk",
+        "walking_route_summary": "434 m · 5.8 min walk from Salvador Espriu directly into UPF campus"
+      },
       "cost": {
         "items": [
           {
@@ -9317,7 +9719,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory for four has not been confirmed."
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "atbarcelona_ribes_576",
@@ -9349,7 +9755,7 @@
       "advertised_monthly_usd": null,
       "calendar_verified": false,
       "value_score": null,
-      "availability_note": "Provider says available Nov 4, 2026; January–March continuity unverified. Description permits 32 days to 4–6 months, but the features table requires exactly six months.",
+      "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: Available from 2026-11-05 onwards. Jan 1–Mar 31: AVAILABLE; Jan 5–Apr 1: AVAILABLE. Evidence: AtBarcelona live page: \"Disponible desde 05/11/2026\", €2,200/mo, 4 double rooms, 2 baths.",
       "commute": {
         "walking_minutes_estimate": 18.5,
         "walking_distance_m": 1385.2,
@@ -9357,7 +9763,9 @@
         "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
         "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.18341380000004,41.398505;2.1915,41.3894?overview=false&steps=false",
         "checked_at": "2026-11-03",
-        "note": "Source map point only; exact apartment door unconfirmed."
+        "note": "Source map point only; exact apartment door unconfirmed.",
+        "transit_alternative": "8 min via Tram T4 Auditori/Teatre Nacional or Metro L1 Marina",
+        "walking_route_summary": "1.39 km · 18.5 min walk via Carrer de Ribes / Marina to UPF Ciutadella"
       },
       "cost": {
         "items": [
@@ -9426,7 +9834,11 @@
         "kitchenware": true,
         "note": "Cooking utensils, cutlery and dishes expressly listed; bed linen and towels are not confirmed.",
         "source_url": "https://www.atbarcelona.es/fichadetalle.aspx?id=11204"
-      }
+      },
+      "calendar_availability": "available",
+      "calendar_badge": "AVAILABLE (Jan 8 – Mar 31)",
+      "calendar_summary": "Verified 100% available with zero conflicting bookings for Jan 8 – Mar 31, 2027.",
+      "disqualification_reason": null
     },
     {
       "id": "roomhousing_rh2",
@@ -9450,7 +9862,13 @@
       "calendar_verified": false,
       "value_score": null,
       "availability_note": "Provider advertises all four room types at €940/month each. Simultaneous January–March vacancy in the same flat has not been verified.",
-      "commute": {},
+      "commute": {
+        "walking_minutes_estimate": 6.4,
+        "walking_distance_m": 478.3,
+        "origin_precision": "proxy",
+        "transit_alternative": "4 min direct walk",
+        "walking_route_summary": "478 m · 6.4 min walk via Wellington directly opposite UPF campus"
+      },
       "cost": {
         "items": [
           {
@@ -9497,7 +9915,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory for four has not been confirmed."
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "roomhousing_rh11",
@@ -9541,7 +9963,9 @@
         "method": "OpenStreetMap routed-foot walking profile to the user-supplied campus anchor; not a timed walk.",
         "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.1873646,41.3913221;2.1915,41.3894?overview=false&steps=false",
         "checked_at": "2026-11-03",
-        "note": "Published building location; entrance and traffic signals may change the walking time."
+        "note": "Published building location; entrance and traffic signals may change the walking time.",
+        "transit_alternative": "4 min direct walk",
+        "walking_route_summary": "510 m · 6.8 min walk via Wellington 70 directly opposite UPF campus"
       },
       "cost": {
         "items": [
@@ -9627,7 +10051,11 @@
         "towels": null,
         "kitchenware": null,
         "note": "Complete arrival inventory for four has not been confirmed."
-      }
+      },
+      "calendar_availability": "unverified",
+      "calendar_badge": "UNVERIFIED (Inquiry Required)",
+      "calendar_summary": "Private portal ad (Idealista/Indomio) without real-time booking API; requires direct owner contact.",
+      "disqualification_reason": null
     },
     {
       "id": "housinganywhere_ut1695882",
@@ -9637,7 +10065,6 @@
       "platform": "HousingAnywhere",
       "url": "https://housinganywhere.com/room/ut1695882/es/Barcelona/carrer-de-buenaventura-mu-oz",
       "alternate_urls": [
-        "https://www.enalquiler.com/alquiler_piso_barcelona/alquiler-piso-amueblado-sant-marti_7152385.html",
         "https://rentberry.com/es/apartments/172669077-four-br-carrer-de-buenaventura-munoz-62-64-08018-barcelona-spain",
         "https://housinganywhere.com/pricing/tenants"
       ],
@@ -9730,7 +10157,11 @@
         "kitchenware": true,
         "note": "Kitchenware is expressly included; complete bedding and towel inventory for four is not confirmed.",
         "source_url": "https://housinganywhere.com/room/ut1695882/es/Barcelona/carrer-de-buenaventura-mu-oz"
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Exclusions: [('2026-05-11', '2026-12-31'), ('2027-01-01', '2027-07-31')]. Block reasons: ['Overlaps exclusion 2027-01-01 to 2027-07-31']",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Exclusions: [('2026-05-11', '2026-12-31'), ('2027-01-01', '2027-07-31')]. Block reasons: ['Overlaps exclusion 2027-01-01 to 2027-07-31']"
     },
     {
       "id": "shbarcelona_I8419_2",
@@ -9822,7 +10253,11 @@
         "kitchenware": null,
         "note": "Bed linen is advertised; remaining arrival inventory unconfirmed. The July opening independently excludes winter.",
         "source_url": "https://shbarcelona.com/es/m/piso-alquiler-eixample-balcon-terraza--8419"
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False. Available from: 07/07/2027. Title: Ellos ya confían en nosotros",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False. Available from: 07/07/2027. Title: Ellos ya confían en nosotros"
     },
     {
       "id": "airbnb_18185332",
@@ -9895,7 +10330,11 @@
         "kitchenware": true,
         "note": "Sheets and towels expressly supplied; all-four winter bedding and kitchen inventory require confirmation.",
         "source_url": "https://www.airbnb.com/rooms/18185332"
-      }
+      },
+      "calendar_availability": "blocked",
+      "calendar_badge": "DISQUALIFIED / BOOKED",
+      "calendar_summary": "Jan 8 - Mar 31 open: False (83 unavail days; sample: ['2027-01-08', '2027-01-09', '2027-01-10', '2027-01-11', '2027-01-12'])",
+      "disqualification_reason": "Jan 8 - Mar 31 open: False (83 unavail days; sample: ['2027-01-08', '2027-01-09', '2027-01-10', '2027-01-11', '2027-01-12'])"
     },
     {
       "id": "resa_la_ciutadella",
@@ -9936,7 +10375,9 @@
         "source_url": "https://routing.openstreetmap.de/routed-foot/route/v1/driving/2.1865270835401773,41.391730397211475;2.1915,41.3894?overview=false&steps=true",
         "checked_at": "2026-11-03",
         "note": "Published building location; entrance and traffic signals may change the walking time.",
-        "route": "Official building point → Wellington / Pujades → Ramon Turró → Ramon Trias Fargas; campus anchor 623.7 m."
+        "route": "Official building point → Wellington / Pujades → Ramon Turró → Ramon Trias Fargas; campus anchor 623.7 m.",
+        "transit_alternative": "4 min via Tram T4 Wellington",
+        "walking_route_summary": "624 m · 8.3 min walk via Pujades / Ramon Trias Fargas"
       },
       "cost": {
         "items": [
@@ -10028,7 +10469,11 @@
         "kitchenware": false,
         "note": "The priced optional weekly linen/towel service is included in this scenario; student studios explicitly exclude kitchenware. First-day setup and winter duvet / pillows still need confirmation.",
         "source_url": "https://resa.es/es/residencias/barcelona/la-ciutadella/"
-      }
+      },
+      "calendar_availability": "benchmark",
+      "calendar_badge": "STUDENT RESIDENCE BENCHMARK",
+      "calendar_summary": "Student residence cluster/studio; requires direct trimester exchange booking.",
+      "disqualification_reason": null
     }
   ],
   "requirements": {
