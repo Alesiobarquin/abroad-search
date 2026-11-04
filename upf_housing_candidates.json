@@ -1006,7 +1006,14 @@
       ],
       "address": "Carrer de Sicília 220",
       "neighborhood": "El Fort Pienc",
-      "location": null,
+      "location": {
+        "lat": 41.40563,
+        "lon": 2.16804,
+        "precision": "proxy",
+        "label": "Carrer de Sicília 220 geocoded point",
+        "radius_m": 200,
+        "source_url": "https://www.idealista.com/inmueble/109052955/"
+      },
       "bedrooms": 4,
       "bathrooms": 2,
       "area_m2": 86,
@@ -1394,7 +1401,14 @@
       ],
       "address": "",
       "neighborhood": "Location not established",
-      "location": null,
+      "location": {
+        "lat": 41.39948,
+        "lon": 2.17461,
+        "precision": "proxy",
+        "label": "Carrer d’Aragó street area proxy",
+        "radius_m": 400,
+        "source_url": "https://www.idealista.com/inmueble/92228115/"
+      },
       "bedrooms": 4,
       "bathrooms": 2,
       "area_m2": 95,
@@ -1921,7 +1935,14 @@
       ],
       "address": "",
       "neighborhood": "Location not established",
-      "location": null,
+      "location": {
+        "lat": 41.38181,
+        "lon": 2.16963,
+        "precision": "approximate",
+        "label": "Spotahome map point (Carrer del Pintor Fortuny / El Raval)",
+        "radius_m": 150,
+        "source_url": "https://www.spotahome.com/barcelona/for-rent:apartments/1323466"
+      },
       "bedrooms": 5,
       "bathrooms": null,
       "area_m2": null,
@@ -1931,11 +1952,11 @@
       "value_score": null,
       "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: Available from 2027-01-01. Jan 1–Mar 31: AVAILABLE; Jan 5–Apr 1: AVAILABLE. Evidence: Spotahome React stream: available from 2027-01-01 through 2027-08-31, min stay 32 days.",
       "commute": {
-        "walking_minutes_estimate": 41.0,
-        "walking_distance_m": 3071.8,
-        "origin_precision": "proxy",
-        "transit_alternative": "16 min via Bus D20 / H14 or Metro L3/L4",
-        "walking_route_summary": "3.07 km · 41.0 min walk (or 16 min via Bus D20/H14)"
+        "walking_minutes_estimate": 35.9,
+        "walking_distance_m": 2690.8,
+        "origin_precision": "approximate",
+        "transit_alternative": "15 min via Metro L3 Liceu to Catalunya or Bus D20",
+        "walking_route_summary": "2.69 km · 35.9 min walk via Pintor Fortuny / Arc de Triomf to UPF Ciutadella"
       },
       "cost": {
         "items": [],
@@ -2213,7 +2234,14 @@
       ],
       "address": "",
       "neighborhood": "Eixample (search card)",
-      "location": null,
+      "location": {
+        "lat": 41.3918,
+        "lon": 2.1487,
+        "precision": "approximate",
+        "label": "Airbnb provider area map point (L’Esquerra de l’Eixample)",
+        "radius_m": 250,
+        "source_url": "https://www.airbnb.com/rooms/1214310612584607088"
+      },
       "bedrooms": 4,
       "bathrooms": 2,
       "area_m2": null,
@@ -2223,11 +2251,11 @@
       "value_score": null,
       "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: minNights=[32, 6]; open Jan5-Apr1: True. Jan 1–Mar 31: BLOCKED (3 days); Jan 5–Apr 1: AVAILABLE. Evidence: Airbnb GraphQL PdpAvailabilityCalendarV2ExcludedQuery: unavail_days=3, sample=['2027-01-01', '2027-01-02', '2027-01-03']",
       "commute": {
-        "walking_minutes_estimate": 35.3,
-        "walking_distance_m": 2638.9,
-        "origin_precision": "proxy",
-        "transit_alternative": "15 min via Metro L4 (Girona / Urquinaona to Ciutadella)",
-        "walking_route_summary": "2.64 km · 35.3 min walk (or 15 min via Metro L4)"
+        "walking_minutes_estimate": 60.2,
+        "walking_distance_m": 4511.5,
+        "origin_precision": "approximate",
+        "transit_alternative": "16 min via Metro L1/L4",
+        "walking_route_summary": "4.51 km · 60.2 min walk (or 16 min via Metro L1/L4)"
       },
       "cost": {
         "items": [],
@@ -6699,7 +6727,14 @@
       ],
       "address": "",
       "neighborhood": "Fort Pienc",
-      "location": null,
+      "location": {
+        "lat": 41.39799,
+        "lon": 2.17837,
+        "precision": "proxy",
+        "label": "Carrer de Sicília 212 geocoded point",
+        "radius_m": 200,
+        "source_url": "https://www.idealista.com/inmueble/111641973/"
+      },
       "bedrooms": 4,
       "bathrooms": null,
       "area_m2": 95,
@@ -8008,7 +8043,14 @@
       ],
       "address": "",
       "neighborhood": "Eixample Esquerra",
-      "location": null,
+      "location": {
+        "lat": 41.381,
+        "lon": 2.1551,
+        "precision": "approximate",
+        "label": "Airbnb / UKIO provider map point (Carrer de Viladomat)",
+        "radius_m": 200,
+        "source_url": "https://www.airbnb.com/rooms/1520926301115278169"
+      },
       "bedrooms": null,
       "bathrooms": null,
       "area_m2": null,
@@ -8018,11 +8060,11 @@
       "value_score": null,
       "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: minNights=[1, 31]; open Jan5-Apr1: True. Jan 1–Mar 31: AVAILABLE; Jan 5–Apr 1: AVAILABLE. Evidence: Airbnb GraphQL PdpAvailabilityCalendarV2ExcludedQuery: unavail_days=0, sample=[]",
       "commute": {
-        "walking_minutes_estimate": 60.6,
-        "walking_distance_m": 4533.2,
-        "origin_precision": "proxy",
+        "walking_minutes_estimate": 52.0,
+        "walking_distance_m": 3894.2,
+        "origin_precision": "approximate",
         "transit_alternative": "18 min via Metro L1 (Entença/Urgell to Marina)",
-        "walking_route_summary": "4.53 km · 60.6 min walk (or 18 min via Metro L1)"
+        "walking_route_summary": "3.89 km · 52.0 min walk (or 18 min via Metro L1)"
       },
       "cost": {
         "items": [],
@@ -8140,7 +8182,14 @@
       ],
       "address": "",
       "neighborhood": "Nou Barris / Llucmajor",
-      "location": null,
+      "location": {
+        "lat": 41.43615,
+        "lon": 2.17145,
+        "precision": "approximate",
+        "label": "Airbnb provider area map point",
+        "radius_m": 250,
+        "source_url": "https://www.airbnb.com/rooms/612315805329855745"
+      },
       "bedrooms": 4,
       "bathrooms": 1.5,
       "area_m2": null,
@@ -8150,11 +8199,11 @@
       "value_score": null,
       "availability_note": "[LIVE AUDIT VERIFIED] Calendar Status: minNights=[31]; open Jan5-Apr1: True. Jan 1–Mar 31: AVAILABLE; Jan 5–Apr 1: AVAILABLE. Evidence: Airbnb GraphQL PdpAvailabilityCalendarV2ExcludedQuery: unavail_days=0, sample=[]",
       "commute": {
-        "walking_minutes_estimate": 31.7,
-        "walking_distance_m": 2367.1,
-        "origin_precision": "proxy",
-        "transit_alternative": "14 min via Metro L1 / L4 from Catalunya/Urquinaona",
-        "walking_route_summary": "2.37 km · 31.7 min walk (or 14 min via Metro)"
+        "walking_minutes_estimate": 80.4,
+        "walking_distance_m": 6021.7,
+        "origin_precision": "approximate",
+        "transit_alternative": "20 min via Metro L1 Fabra i Puig to Marina",
+        "walking_route_summary": "6.02 km · 80.4 min walk (or 20 min via Metro L1 direct to Marina)"
       },
       "cost": {
         "items": [],
@@ -8272,7 +8321,14 @@
       ],
       "address": "",
       "neighborhood": "Sants-Montjuïc / La Bordeta",
-      "location": null,
+      "location": {
+        "lat": 41.369,
+        "lon": 2.1382,
+        "precision": "approximate",
+        "label": "Airbnb provider map point (Carrer de Mossèn Amadeu Oller)",
+        "radius_m": 200,
+        "source_url": "https://www.airbnb.com/rooms/1728891327922528686"
+      },
       "bedrooms": 4,
       "bathrooms": 2,
       "area_m2": null,
@@ -8288,11 +8344,11 @@
         "route": "Walk to La Campana; H16 to campus area",
         "faster_33_min_option_requires_transfers": true,
         "reference_departure": "2026-11-03 08:30 as displayed by Google Maps",
-        "walking_minutes_estimate": 78.7,
-        "walking_distance_m": 5897.0,
-        "origin_precision": "proxy",
-        "transit_alternative": "35 min via Bus H16 (direct to UPF campus area)",
-        "walking_route_summary": "5.90 km · 78.7 min walk (or 35 min via Bus H16)"
+        "walking_minutes_estimate": 78.5,
+        "walking_distance_m": 5882.9,
+        "origin_precision": "approximate",
+        "transit_alternative": "35 min via Bus H16 direct to UPF campus",
+        "walking_route_summary": "5.88 km · 78.5 min walk (or 35 min via Bus H16 direct)"
       },
       "cost": {
         "items": [],
@@ -8566,7 +8622,14 @@
       ],
       "address": "",
       "neighborhood": "Dreta de l’Eixample",
-      "location": null,
+      "location": {
+        "lat": 41.3933,
+        "lon": 2.17522,
+        "precision": "proxy",
+        "label": "Carrer de Bailèn 33 building location",
+        "radius_m": 200,
+        "source_url": "https://cotown.com/"
+      },
       "bedrooms": null,
       "bathrooms": null,
       "area_m2": null,
@@ -8690,7 +8753,14 @@
       ],
       "address": "",
       "neighborhood": "Location not established",
-      "location": null,
+      "location": {
+        "lat": 41.41496,
+        "lon": 2.20093,
+        "precision": "proxy",
+        "label": "Carrer de la Selva de Mar area proxy",
+        "radius_m": 400,
+        "source_url": "https://www.idealista.com/inmueble/110160650/"
+      },
       "bedrooms": 4,
       "bathrooms": 3,
       "area_m2": 180,
@@ -8793,7 +8863,14 @@
       ],
       "address": "",
       "neighborhood": "Location not established",
-      "location": null,
+      "location": {
+        "lat": 41.40639,
+        "lon": 2.21713,
+        "precision": "proxy",
+        "label": "Passeig de Garcia Fària 81 geocoded point",
+        "radius_m": 200,
+        "source_url": "https://www.idealista.com/inmueble/112068474/"
+      },
       "bedrooms": 4,
       "bathrooms": 2,
       "area_m2": 169,
@@ -8890,7 +8967,14 @@
       ],
       "address": "",
       "neighborhood": "Location not established",
-      "location": null,
+      "location": {
+        "lat": 41.38781,
+        "lon": 2.19571,
+        "precision": "proxy",
+        "label": "Carrer de Salvador Espriu / Vila Olímpica proxy",
+        "radius_m": 200,
+        "source_url": "https://www.idealista.com/inmueble/112469607/"
+      },
       "bedrooms": 4,
       "bathrooms": 2,
       "area_m2": 133,
@@ -8985,7 +9069,14 @@
       ],
       "address": "",
       "neighborhood": "Location not established",
-      "location": null,
+      "location": {
+        "lat": 41.37395,
+        "lon": 2.16629,
+        "precision": "proxy",
+        "label": "Carrer de Salvà / Paral·lel area proxy",
+        "radius_m": 300,
+        "source_url": "https://www.abapartments.com/"
+      },
       "bedrooms": 4,
       "bathrooms": 2,
       "area_m2": 100,
@@ -9104,7 +9195,14 @@
       ],
       "address": "",
       "neighborhood": "Location not established",
-      "location": null,
+      "location": {
+        "lat": 41.38506,
+        "lon": 2.16562,
+        "precision": "proxy",
+        "label": "Carrer dels Tallers area proxy",
+        "radius_m": 200,
+        "source_url": "https://www.idealista.com/inmueble/112572535/"
+      },
       "bedrooms": 4,
       "bathrooms": null,
       "area_m2": 122,
@@ -9323,7 +9421,14 @@
       ],
       "address": "",
       "neighborhood": "Location not established",
-      "location": null,
+      "location": {
+        "lat": 41.39435,
+        "lon": 2.15597,
+        "precision": "proxy",
+        "label": "Carrer de Balmes area proxy",
+        "radius_m": 400,
+        "source_url": "https://www.flatio.com/rent/apartment/108124-barcelona"
+      },
       "bedrooms": 3,
       "bathrooms": 2,
       "area_m2": 90,
@@ -9542,7 +9647,14 @@
       ],
       "address": "Carrer de Buenaventura Muñoz",
       "neighborhood": "El Parc i la Llacuna del Poblenou",
-      "location": null,
+      "location": {
+        "lat": 41.39379,
+        "lon": 2.18772,
+        "precision": "proxy",
+        "label": "Carrer de Buenaventura Muñoz street segment",
+        "radius_m": 250,
+        "source_url": "https://www.yaencontre.com/alquiler/piso/inmueble-56738-112635764"
+      },
       "bedrooms": 4,
       "bathrooms": 1.5,
       "area_m2": 95,
@@ -9853,7 +9965,14 @@
       ],
       "address": "Wellington / Ciutadella area",
       "neighborhood": "Ciutadella / Wellington",
-      "location": null,
+      "location": {
+        "lat": 41.39108,
+        "lon": 2.18749,
+        "precision": "proxy",
+        "label": "Carrer de Wellington area opposite UPF",
+        "radius_m": 200,
+        "source_url": "https://www.roomhousing.es/rh2--ciutadella-villa-ol%C3%ADmpica"
+      },
       "bedrooms": 4,
       "bathrooms": null,
       "area_m2": 124,
