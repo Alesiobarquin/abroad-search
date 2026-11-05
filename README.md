@@ -2,7 +2,7 @@
 
 A shared housing review for four students attending UPF Ciutadella in January–March 2027. It combines two AI-assisted research sets in an interactive map, with costs, room details, source links and unresolved questions.
 
-**[Open the housing map](https://alesiobarquin.github.io/abroad-search/)** · [Research notes and all options](RESEARCH_NOTES.md) · [Download the data](upf_housing_candidates.json)
+**[Open the housing map](https://alesiobarquin.github.io/abroad-search/)** · [Research notes and all options](RESEARCH_NOTES.md) · [Download the data](upf_housing_candidates.json) · [Agent Guide](AGENTS.md)
 
 ## Use it with your roommates
 
